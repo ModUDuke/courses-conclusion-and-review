@@ -18,25 +18,13 @@ The food scientists at breakfast cereal manufacturer Puritan Wheat Inc. have dev
 
 In this experiment on the two cereals, which of the following is the outcome variable in Puritan Wheat's analysis?
 
+`@hint`
+
+
 `@possible_answers`
 - The brand of cereal.
 - The amount of milk that each flake of cereal can absorb.
 - The time it takes for the cereal to get soggy.
 - Individual flakes.
 
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
-
-`@sct`
-```{r}
-msg1 = "This is the experimental condition that causes the outcome, i.e. the treatment variable, also called the independent variable (because we have the freedom to manipulate its value in an experiment). Try again."
-msg2 = "This is likely correlated with how the dependent variable, but is not mentioned in the prompt. Try again"
-msg3 = "Correct! The outcome variable is one's outcome of interest. You will see it also called the dependent variable, because its value depends on the treatment. You might also see the treatment being called the independent variable, because we have the freedom to manipulate its value in an experiment."
-msg4 = "Not quite. Try again"
-test_mc(correct = 3, feedback_msgs = c(msg1,msg2,msg3,msg4))
-```
+`@feedback`
