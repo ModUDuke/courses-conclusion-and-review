@@ -7,7 +7,7 @@ free_preview: true
 ## Comparing Breakfast Cereals: Outcome Variables
 
 ```yaml
-type: MultipleChoiceExercise
+type: PureMultipleChoiceExercise
 key: 362bf33c36
 lang: r
 xp: 50
