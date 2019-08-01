@@ -387,7 +387,7 @@ success_msg("Good work! We can see a clear difference in the treatment effect am
 
 ```yaml
 type: VideoExercise
-key: 6b8a71d25a
+key: 876c51fc02
 lang: r
 xp: 50
 skills: 1
