@@ -57,3 +57,32 @@ On the right are a series of numerical distributions. The correlations between t
 - R's correlation function is broken.
 
 `@feedback`
+
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: MultipleChoiceExercise
+key: 676a366f3f
+xp: 50
+```
+
+
+
+`@possible_answers`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
