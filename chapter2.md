@@ -151,7 +151,7 @@ skills: 1
 As you can see in this chart, the per capita consumption of mozzarella cheese in the US is highly correlated with the number of PhDs awarded annually in Civil Engineering in the US. In fact, it’s a 95% correlation. Therefore, does this strong data prove that these two variables are **causally** connected?
 
 `@possible_answers`
-- Definitely. 95% correlations do not just happen in real life—there must be a cause and effect reason behind it, even if we don’t know what it is.
+- Definitely. 95% correlations do not just happen in real life, so there must be a cause and effect reason behind it, even if we don’t know what it is.
 - [No. This is just a spurious correlation between random variables, and even very strong correlations do not imply causation.]
 
 `@feedback`
