@@ -51,12 +51,12 @@ Puritan Wheat generates some data from a sample of individual flakes in a box of
 - [Individual flakes]
 
 `@feedback`
-```{r}
 - This is the experimental condition that causes the outcome, i.e. the treatment (a.k.a. independent) variable. Try again.
 - Not quite. Try again.
 - This is the outcome (a.k.a. dependent) variable in our analysis, try again.
 - Correct! The unit of analysis is what or who is being studied or sampled. Often our unit of analyses are individual people, but in this example, we are studying a sample of cereal flakes.
-```
+
+
 ---
 
 ## Anscombe Quartet
@@ -126,12 +126,10 @@ grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quadrant -- Correlation D
 ```
 
 `@feedback`
-```{r}
 - Look at the graphs to the right of the page. Are you sure they look identical?
 - Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
 - Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
 - Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
-```
 
 ---
 
@@ -154,10 +152,8 @@ As you can see in this chart, the per capita consumption of mozzarella cheese in
 - [No. This is just a spurious correlation between random variables, and even very strong correlations do not imply causation.]
 
 `@feedback`
-```{r}
 - It can be so tempting to assume that any strong correlations in our data are telling us about the cause and effect relationships going on in real life, but don’t give into that temptation! We’ll need to do more to find a causality. Try again.
 - Correct! You will find many correlations in your data, sometimes very strong ones like this, but that does not mean there’s any causal relationship between them. Sometimes a correlation may help you ask better questions about what’s going on, but don’t assume they are causal by themselves.
-```
 
 ---
 
@@ -179,11 +175,9 @@ Why are confounding variables a potential problem for causal inference?
 - Because confounders are not observed
 
 `@feedback`
-```{r}
 - Almost, but remember, the main reason we worry about confounders has to do with effects on the outcome, not on treatment assignment. Try again.
 - Correct! Confounders are called *confounders* for a reason---because when they are present, we cannot distinguish the effect of treatment from the effect of the confounder. To learn causal effects, we want to compare people with treatment and people without treatment. If those two groups of people differ in their values of some potential confounding variable, then we can't tell if differences in outcomes are due to differences in treatment, or differences in the confounder.
 - Unobserved variables are not always a problem in causal inference, because they may not have any effect on outomes. Try again.
-```
 
 
 ---
@@ -217,11 +211,9 @@ Since the number of baseball games that this individual went to appears to incre
 - [It's too early to tell.]
 
 `@feedback`
-```{r}
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
 - Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion.
-```
 
 ---
 
@@ -356,12 +348,10 @@ p<-ggplot(df, aes(x=`Control and Treatment Groups`,y=`Percent Intending to Quit`
 ```
 
 `@feedback`
-```{r}
 - Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked.
 - Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive.  Try again.
 - While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again.
 - You're right about the gender-specific effects, but not the pooled effects. Check your results again.
-```
 
 ---
 
@@ -463,13 +453,10 @@ Which of the following answers could support a **causal explanation** for this r
 
 
 `@feedback`
-
-```{r}
 - This answer is close to correct, but not quite. Remember, eBay sells its goods to people across the world---why would the correlation be so strong with rainfall just in Sonoma County? Try again.
 - This is a possible explanation for the correlation between eBay sales and rainfall in Sonoma County, but not one that involves the rainfall causing the sales. Instead it would suggest that this correlation is spurious. Try again.
 - This is what it means for there to be a correlation between rainfall in Sonoma County and eBay sales, but it is not a causal explanation for this correlation. Try again.
 - Good Job. As ridiculous as this sounds, it is what a causal relationship between rainfall in Sonoma County and eBay sales might suggest. Of course, residents of Sonoma County would have to be providing a huge proportion of all eBay transactions for this to be correct.
-```
 
 
 ---
@@ -495,13 +482,10 @@ Annual Apple iPhone sales are highly correlated with annual eBay sales. If this 
 - Buying an iPhone makes people more comfortable with using technology for market transactions.
 
 `@feedback`
-
-```{r}
 - This would suggest a causal relationship rather than a spurious correlation. Try again.
 - Correct! This would cause both iPhone and eBay sales to increase, but has nothing to say about a link between the two.
 - This would suggest a causal relationship rather than a spurious correlation. Try again.
 - This would suggest a causal relationship rather than a spurious correlation. Try again.
-```
 
 
 
@@ -530,12 +514,10 @@ Why might it be risky to implement a policy that has an that has average treatme
 
 `@feedback`
 
-```{r}
 - This is not true. With tremendous sample size (n > 1,000,000), confidence intervals rarely cross 0, even for relatively insignificant treatment effects. Try again.
 - Correct! It would be very risky to implement a policy that could potentially have the opposite effect than you intended.
 - This is often how such confidence intervals are interpreted, but this is a mistake. A confidence interval that contains zero does is not evidence that there is no treatment effect, but that it is uncertain whether there is a treatment effect. Try again.
 - A confidence interval that contains zero is inherently problematic.  Try again.
-```
 
 ---
 
@@ -878,13 +860,11 @@ Suppose that, of the group that received the mail offer, 40% of people opted in.
 - [Yes, because the set of people opting in are probably people with worse spending habits.]
 
 `@feedback`
-
-```{r}
 - While this is a possibility, it is unlikely to actually be the case. Try again.
 - This is partially correct. A low compliance rate is one symptom of a noncompliance problem.
 - While high compliance rates indicate a lower noncompliance problem, the rate of 40% in this situation is likely to be problematic.
 - Correct! In this situation, researchers at CreditCo should be worried about the spending habits of those who opted in to the offer.
-```
+
 
 
 ---
@@ -911,14 +891,12 @@ Which one of the following approaches is *NOT* a way to deal with treatment nonc
 - Assume Random Compliance
 
 `@feedback`
-
-```{r}
 - Bounds Analysis is definitely a common method used to deal with noncompliance, and we're looking for a way that is **NOT** appropriate, so try again.
 - Instrumental variables is definitely a common method used to deal with noncompliance, and we're looking for a way that is **NOT** appropriate, so try again.
 - Correct! Randomized Control Trials are not a valid way to correct for noncompliance, because they themselves are susceptible to treatment noncompliance.
 - Intention to Treat Analysis is definitely a common way to deal with noncompliance, and we're looking for a way that is **NOT** appropriate, so try again
 - Assuming Random Compliance is not always applicable, but it is nonetheless commonly used to deal with noncompliance, so try again.
-```
+
 
 
 ---
@@ -944,13 +922,10 @@ Which of the following is an accurate description of an "as-if" natural experime
 - A zoological experiment conducted in a naturalistic setting by investigators. Treatment assignment was not literally random, but it was unrelated to variables that affect the outcome.
 
 `@feedback`
-
-```{r}
 - This describes a true natural experiment. Try again.
 - Well done. Although there might be a pattern to who got treated in an as-if experiment, the pattern should cause no bias in one's outcome of interest.
 - This would not even be a natural experiment! Try again.
 - This would not even be a natural experiment! Try again.
-```
 
 
 ---
@@ -1634,11 +1609,9 @@ ggplot(data=WePhone,aes(Age, `Price Sold`))+geom_point()+geom_abline(intercept =
 ```
 
 `@feedback`
-```{r}
 - Correct! As the age of WePhones increased, the price at which they were sold decreased.
 - Although the plot does not indicate if their results were statistically significant, they do indicate a relationship. Try again.
 - Think this through carefully. Does an increase in age increase or decrease the price sold of a WePhone? Try again.
-```
 
 ---
 
@@ -1677,11 +1650,9 @@ ggplot(data=WePhone,aes(`Price Sold`,Age))+geom_point()+geom_abline(intercept = 
 ```
 
 `@feedback`
-```{r}
 - This phrasing does not address a causal interpretation of the relationship, but rather is a description of an association between WePhone age and sales price.
 - This is the most intuitive explanation for the relationship between WePhone sale price and age, but not for this particular regression model, which was designed to use age as the dependent variable. Try again.
 - Correct! Well, at least according to this model. This is an example of reverse causality. Obviously, we know that in reality the age of any object can only be influenced by time, so we know that this interpretation of their causal relationship is false: price sold cannot cause a phone's age. The analyst should try a different model next time.
-```
 
 ---
 
@@ -1723,12 +1694,10 @@ Based on this formula, what is a valid predicted price for a WePhone that is exa
 ```
 
 `@feedback`
-```{r}
 - Not quite. Try again.
 - Well done! Notice any advantages of regression models versus t-tests? In a t.test, we can only predict the outcome from a binary treatment variable (that is, the outcome for respondents in the treatment versus control group), In a regression model, we can predict the outcome from a continuous treatment variable (e.g. age).
 - Oops, that's too high. Try again.
 - That's too low. Try again.
-```
 
 ---
 
@@ -1762,12 +1731,10 @@ Papers often report several regression models next to each other. This table sho
 
 
 `@feedback`
-```{r}
 - Although this is often true, this is not indicated in this figure. If you look at the standard errors, the statistical significance of property rights protections on GDP is relatively small and consistent across models. Try again.
 - This would mean that the omitted variables confound the relationship between property rights protections and GDP by decreasing the it. Try again
 - This is usually not true, nor shown in this figure. Try again.
 - Correct! Without controlling for these variables, the relationship between property rights protections and GDP seemed larger than it truly was.
-```
 
 ---
 
@@ -1794,12 +1761,10 @@ Although regression models are great for summarizing the association between var
 
 
 `@feedback`
-```{r}
 - Correct. Put even more simply, any causal interpretation of a regression model assumes that the relationships observed in the data are unconfounded. In most cases, this is impossible to verify empirically. However, it is a pretty large assumption. Most variations of regression models that we will describe in later chapters try to reduce the strength of this assumption.
 - This is actually a summary of the gambler's fallacy. Try again
 - This is an assumption that regression models make, but it is not a description of the unconfoundedness assumption
 - This is an assumption that regression models make, but it is not a description of the unconfoundedness assumption
-```
 
 
 ---
