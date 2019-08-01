@@ -120,12 +120,15 @@ plot4 <- ggplot(anscombe, aes(x=x4, y=y4)) + geom_point(size=circle.size, pch=21
 grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax to produce graphs borrowed from Sean Dolinar (stats.seandolinar.com-Tutorials)")
 ```
 
+`@hint`
+
+
 `@sample_code`
 ```{r}
 grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quadrant -- Correlation Demostration', bottom="Syntax to produce this graph borrowed from Sean Dolinar (stats.seandolinar.com)")
 ```
 
-`@feedback`
+`@sct`
 - Look at the graphs to the right of the page. Are you sure they look identical?
 - Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
 - Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
