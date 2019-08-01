@@ -4,8 +4,8 @@ output: html_document
 free_preview: true
 
 
-## Introduction Chapter 
-## If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.
+### Introduction Chapter 
+### If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.
 ---
 
 ## Comparing Breakfast Cereals: Outcome Variables
@@ -37,31 +37,4 @@ msg4 = "Not quite. Try again"
 test_mc(correct = 3, feedback_msgs = c(msg1,msg2,msg3,msg4))
 ```
 
----
 
-## Comparing Breakfast Cereals: Units of Analysis
-
-```yaml
-type: MultipleChoiceExercise
-key: 50d28d8b25
-lang: r
-xp: 50
-skills: 1
-```
-
-Puritan Wheat generates some data from a sample of individual flakes in a box of TechnoCrunch and from a box of its competitor's cereal, NeoPuff's. Puritan Wheat intends to examine the average time it takes for each flake to become soggy. What is the unit of analysis in this study?
-
-`@instructions`
-- The brand of cereal.
-- The amount of milk that each flake of cereal can absorb.
-- The time it takes for the cereal to get soggy.
-- Individual flakes.
-
-`@sct`
-```{r}
-msg1 = "This is the experimental condition that causes the outcome, i.e. the treatment (a.k.a. independent) variable. Try again"
-msg2 = "Not quite. Try again"
-msg3 = "This is the outcome (a.k.a. dependent) variable in our analysis, try again."
-msg4 = "Correct! The unit of analysis is 'what' or 'who' is being studied/sampled. Often our unit of analyses are individual people, but in this example, we are studying a sample of cereal flakes."
-test_mc(correct = 4, feedback_msgs = c(msg1,msg2,msg3,msg4))
-```
