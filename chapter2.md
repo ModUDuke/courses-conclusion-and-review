@@ -2159,9 +2159,9 @@ success_msg("Good work! Even though our model in Solution 1 appears similar to o
 
 ```yaml
 type: VideoExercise
-key: 5c9d6dd3fc
+key: 6f0ace9f0e
 xp: 50
-video_link: //player.vimeo.com/video/293196315
+video_link: "//player.vimeo.com/video/293196315"
 ```
 
 
