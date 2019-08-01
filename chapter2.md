@@ -25,12 +25,10 @@ In this experiment on the two cereals, which of the following is the outcome var
 - Individual flakes.
 
 `@feedback`
-```{r}
 - This is the experimental condition that causes the outcome, i.e. the treatment variable, also called the independent variable (because we have the freedom to manipulate its value in an experiment). Try again.
 - This is likely correlated with how the dependent variable, but is not mentioned in the prompt. Try again
 - Correct! The outcome variable is one's outcome of interest. You will see it also called the dependent variable, because its value depends on the treatment. You might also see the treatment being called the independent variable, because we have the freedom to manipulate its value in an experiment.
 - Not quite. Try again.
-```
 
 ---
 
