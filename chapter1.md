@@ -33,7 +33,6 @@ In this experiment on the two cereals, which of the following is the outcome var
 - Correct! The outcome variable is one's outcome of interest. You will see it also called the dependent variable, because its value depends on the treatment. You might also see the treatment being called the independent variable, because we have the freedom to manipulate its value in an experiment.
 - Not quite. Try again.
 
-
 ---
 
 ## Anscombe Quartet
@@ -48,11 +47,14 @@ skills: 1
 
 On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?
 
-`@instructions`
+`@possible_answers`
 - The graphs are identical.
 - [Correlations do not give a perfect summary of how a dataset is distributed.]
 - There is no meaningful difference in the distribution of datapoints across these graphs.
 - R's correlation function is broken.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -97,14 +99,11 @@ plot4 <- ggplot(anscombe, aes(x=x4, y=y4)) + geom_point(size=circle.size, pch=21
 grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax to produce graphs borrowed from Sean Dolinar (stats.seandolinar.com-Tutorials)")
 ```
 
-`@sample_code`
-```{r}
-grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quadrant -- Correlation Demostration', bottom="Syntax to produce this graph borrowed from Sean Dolinar (stats.seandolinar.com)")
-```
-
 `@sct`
 ```{r}
 - Look at the graphs to the right of the page. Are you sure they look identical?
 - Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
 - Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
 - "Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
+
+```
