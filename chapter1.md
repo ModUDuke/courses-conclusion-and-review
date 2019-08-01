@@ -166,3 +166,6 @@ Since the number of baseball games that this individual went to appears to incre
 - [It's too early to tell.]
 
 `@feedback`
+- Almost, but remember, the main reason we worry about confounders has to do with effects on the outcome, not on treatment assignment. Try again.
+- Correct! Confounders are called *confounders* for a reason---because when they are present, we cannot distinguish the effect of treatment from the effect of the confounder. To learn causal effects, we want to compare people with treatment and people without treatment. If those two groups of people differ in their values of some potential confounding variable, then we can't tell if differences in outcomes are due to differences in treatment, or differences in the confounder.
+- Unobserved variables are not always a problem in causal inference, because they may not have any effect on outomes. Try again.
