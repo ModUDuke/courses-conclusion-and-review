@@ -380,16 +380,16 @@ test_object("Solution1")
 test_object("Solution2")
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
+
 ---
 
 ## Let’s Code: A Problem with Employee Unhappiness
 
 ```yaml
 type: VideoExercise
-key: 25f5876268
+key: 6b8a71d25a
 lang: r
 xp: 50
 skills: 1
-video_link: "//player.vimeo.com/video/276320364"
+video_link: //player.vimeo.com/video/276320364
 ```
-
