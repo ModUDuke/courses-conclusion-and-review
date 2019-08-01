@@ -132,3 +132,39 @@ grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax 
 - Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
 - Unless the webserver just broke, the correlation function is working perfectly, and it is not the reason these graphs seem different. Try again.
 ```
+
+---
+
+## Baseball Ad Campaign: Early Success?
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 0ecec920ef
+lang: r
+xp: 50
+skills: 1
+```
+
+Let’s see what happened in the first month of the ad campaign for our individual fan. Take a look at the following table:
+
+| Month    |Attended|Ads Served|
+|----------|-------:|---------:|
+| April    |   0    |    0     |
+| May      |   1    |    0     |
+| June     |   2    |    0     |
+| July     |   7    |    5     |
+| August   |   -    |    -     |
+| September|   -    |    -     |
+
+Since the number of baseball games that this individual went to appears to increase after viewing 5 ads, can we conclude that the advertising campaign caused the individual to go to more games?
+
+`@possible_answers`
+- Yes, the treatment had a positive effect on the outcome variable.
+- No, the treatment had no effect.
+- [It's too early to tell.]
+
+`@sct`
+```{r}
+- Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables
+- Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables
+- Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion
