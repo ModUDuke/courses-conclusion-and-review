@@ -75,7 +75,7 @@ On the right are a series of numerical distributions. The correlations between t
 - The graphs are identical.
 - [Correlations do not give a perfect summary of how a dataset is distributed.]
 - There is no meaningful difference in the distribution of datapoints across these graphs.
-- R's correlation function is broken.
+- The correlation function is broken.
 
 `@pre_exercise_code`
 ```{r}
