@@ -57,8 +57,8 @@ Puritan Wheat generates some data from a sample of individual flakes in a box of
 - This is the experimental condition that causes the outcome, i.e. the treatment (a.k.a. independent) variable. Try again.
 - Not quite. Try again.
 - This is the outcome (a.k.a. dependent) variable in our analysis, try again.
-- Correct! The unit of analysis is 'what' or 'who' is being studied/sampled. Often our unit of analyses are individual people, but in this example, we are studying a sample of cereal flakes.
-
+- Correct! The unit of analysis is what or who is being studied or sampled. Often our unit of analyses are individual people, but in this example, we are studying a sample of cereal flakes.
+```
 ---
 
 ## Anscombe Quartet
