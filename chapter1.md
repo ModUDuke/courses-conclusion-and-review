@@ -71,7 +71,6 @@ xp: 50
 
 On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?
 
-
 `@possible_answers`
 - The graphs are identical.
 - [Correlations do not give a perfect summary of how a dataset is distributed.]
@@ -158,13 +157,12 @@ Let’s see what happened in the first month of the ad campaign for our individu
 
 Since the number of baseball games that this individual went to appears to increase after viewing 5 ads, can we conclude that the advertising campaign caused the individual to go to more games?
 
+`@hint`
+
+
 `@possible_answers`
 - Yes, the treatment had a positive effect on the outcome variable.
 - No, the treatment had no effect.
 - [It's too early to tell.]
 
-`@sct`
-```{r}
-- Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables
-- Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables
-- Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion
+`@feedback`
