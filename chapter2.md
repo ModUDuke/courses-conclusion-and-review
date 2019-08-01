@@ -47,10 +47,10 @@ skills: 1
 Puritan Wheat generates some data from a sample of individual flakes in a box of TechnoCrunch and from a box of its competitor's cereal, NeoPuff's. Puritan Wheat intends to examine the average time it takes for each flake to become soggy. What is the unit of analysis in this study?
 
 `@possible_answers`
-- The brand of cereal.
-- The amount of milk that each flake of cereal can absorb.
-- The time it takes for the cereal to get soggy.
-- [Individual flakes.]
+- The brand of cereal
+- The amount of milk that each flake of cereal can absorb
+- The time it takes for the cereal to get soggy
+- [Individual flakes]
 
 `@feedback`
 ```{r}
