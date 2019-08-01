@@ -3,14 +3,8 @@ title: 'testing 2'
 description: ooo
 
 ---
-title: "collection of review exercies"
-output: html_document
 
-## Introduction Chapter 
-## If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.
----
-
-## Comparing Breakfast Cereals: Outcome Variables
+## INTRO: Comparing Breakfast Cereals: Outcome Variables
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -442,15 +436,9 @@ test_object("Solution2")
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
 
-
-
-
-## Experiments
-## If you want to go through these topics in more detail, take our free Causal Inference with R - Experiments course here on DataCamp.
-
 ---
 
-## Rainfall in Sonoma County and eBay sales
+## EXP: Rainfall in Sonoma County and eBay sales
 
 ```yaml
 type: PureMultipleChoiceExercise 
@@ -1609,14 +1597,9 @@ success_msg("Good work! Hooray!! Our naive estimate of the average treatment eff
 ```
 
 
-
-## Regression & Modeling with Regression
-## If you want to go through these topics in more detail, take our free Causal Inference with R - Regression & Modeling course here on DataCamp.
-
-
 ---
 
-## Interpreting Regressions
+## REG: Interpreting Regressions
 
 ```yaml
 type: MultipleChoiceExercise
@@ -2405,18 +2388,9 @@ success_msg("Good work! In our unmatched model, the treatment effect (playing NE
 ```
 
 
-
-
-
-
-## Instrumental Variables & Regression Discontinuity
-## If you want to go through these topics in more detail, take our free Causal Inference with R - IV/RDD course here on DataCamp.
-
-
-
 ---
 
-## What is the Relationship Between the Instrument and the Outcome?
+## IV: What is the Relationship Between the Instrument and the Outcome?
 
 ```yaml
 type: PureMultipleChoiceExercise
