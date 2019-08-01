@@ -389,5 +389,7 @@ success_msg("Good work! We can see a clear difference in the treatment effect am
 type: VideoExercise
 key: 876c51fc02
 xp: 50
+
+`@projector_key`
 video_link: //player.vimeo.com/video/276320364
 ```
