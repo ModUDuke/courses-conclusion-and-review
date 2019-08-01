@@ -1,10 +1,10 @@
 ---
-title: 'collection of review exercies'
-output: html_document
-free_preview: true
+title: 'Introduction'
+description: If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.
+
 ---
 
-## Comparing Breakfast Cereals: Outcome Variables
+## INTRO: Comparing Breakfast Cereals: Outcome Variables
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -17,9 +17,6 @@ skills: 1
 The food scientists at breakfast cereal manufacturer Puritan Wheat Inc. have developed a new breakfast cereal product called TechnoCrunch. It has a biodegradable nanomaterial coating designed to keep its flakes crispy in milk for longer than the flakes in its competitor cereal, NeoPuffs. Now Puritan Wheat wants to run an experiment to see if the formula works, so it compares the time it takes for TechnoCrunch to get soggy in milk versus the time it takes for NeoPuffs to get soggy. 
 
 In this experiment on the two cereals, which of the following is the outcome variable in Puritan Wheat's analysis?
-
-`@hint`
-
 
 `@possible_answers`
 - The brand of cereal.
@@ -35,38 +32,41 @@ In this experiment on the two cereals, which of the following is the outcome var
 
 ---
 
-## Anscombe Quartet
+## Comparing Breakfast Cereals: Units of Analysis
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: c229f94a13
+key: 50d28d8b25
 lang: r
 xp: 50
 skills: 1
 ```
 
-On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?![](https://assets.datacamp.com/production/repositories/5268/datasets/8150e39d444f5f1b2e4fda290fd6d32e9740a9db/Anscombe%20Quartet%20smaller.png)
-
-`@hint`
-
+Puritan Wheat generates some data from a sample of individual flakes in a box of TechnoCrunch and from a box of its competitor's cereal, NeoPuff's. Puritan Wheat intends to examine the average time it takes for each flake to become soggy. What is the unit of analysis in this study?
 
 `@possible_answers`
-- The graphs are identical.
-- [Correlations do not give a perfect summary of how a dataset is distributed.]
-- There is no meaningful difference in the distribution of datapoints across these graphs.
-- R's correlation function is broken.
+- The brand of cereal
+- The amount of milk that each flake of cereal can absorb
+- The time it takes for the cereal to get soggy
+- [Individual flakes]
 
 `@feedback`
+- This is the experimental condition that causes the outcome, i.e. the treatment (a.k.a. independent) variable. Try again.
+- Not quite. Try again.
+- This is the outcome (a.k.a. dependent) variable in our analysis, try again.
+- Correct! The unit of analysis is what or who is being studied or sampled. Often our unit of analyses are individual people, but in this example, we are studying a sample of cereal flakes.
 
 
 ---
 
-## Insert exercise title here
+## Anscombe Quartet
 
 ```yaml
 type: MultipleChoiceExercise
-key: 676a366f3f
+key: c229f94a13
+lang: r
 xp: 50
+skills: 1
 ```
 
 On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?
@@ -75,10 +75,7 @@ On the right are a series of numerical distributions. The correlations between t
 - The graphs are identical.
 - [Correlations do not give a perfect summary of how a dataset is distributed.]
 - There is no meaningful difference in the distribution of datapoints across these graphs.
-- R's correlation function is broken.
-
-`@hint`
-
+- The correlation function is broken.
 
 `@pre_exercise_code`
 ```{r}
@@ -121,16 +118,70 @@ plot4 <- ggplot(anscombe, aes(x=x4, y=y4)) + geom_point(size=circle.size, pch=21
   annotate("text", x = 15, y = 6, label = paste("correlation = ", cor4))
 
 grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax to produce graphs borrowed from Sean Dolinar (stats.seandolinar.com-Tutorials)")
+```
 
+`@hint`
+
+
+`@sample_code`
+```{r}
+grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quadrant -- Correlation Demostration', bottom="Syntax to produce this graph borrowed from Sean Dolinar (stats.seandolinar.com)")
 ```
 
 `@sct`
-```{r}
 - Look at the graphs to the right of the page. Are you sure they look identical?
 - Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
 - Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
-- Unless the webserver just broke, the correlation function is working perfectly, and it is not the reason these graphs seem different. Try again.
+- Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
+
+---
+
+## Learn Engineering by Eating Cheese?
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 4b7a7da2a4
+lang: r
+xp: 50
+skills: 1
 ```
+
+![](https://assets.datacamp.com/production/repositories/1444/datasets/fdf1e1ca75881f0c95ccd9c843580761cda5612e/chart.jpeg)
+
+As you can see in this chart, the per capita consumption of mozzarella cheese in the US is highly correlated with the number of PhDs awarded annually in Civil Engineering in the US. In fact, it’s a 95% correlation. Therefore, does this strong data prove that these two variables are **causally** connected?
+
+`@possible_answers`
+- Definitely. 95% correlations do not just happen in real life, so there must be a cause and effect reason behind it, even if we don’t know what it is.
+- [No. This is just a spurious correlation between random variables, and even very strong correlations do not imply causation.]
+
+`@feedback`
+- It can be so tempting to assume that any strong correlations in our data are telling us about the cause and effect relationships going on in real life, but don’t give into that temptation! We’ll need to do more to find a causality. Try again.
+- Correct! You will find many correlations in your data, sometimes very strong ones like this, but that does not mean there’s any causal relationship between them. Sometimes a correlation may help you ask better questions about what’s going on, but don’t assume they are causal by themselves.
+
+---
+
+## Understanding Confounders
+
+```yaml
+type: PureMultipleChoiceExercise
+key: ac9bc35c31
+lang: r
+xp: 50
+skills: 1
+```
+
+Why are confounding variables a potential problem for causal inference?
+
+`@possible_answers`
+- Because confounding variables prevent the treatment from being randomly assigned
+- [Because confounding variables might alter the association between the treatment and dependent variable]
+- Because confounders are not observed
+
+`@feedback`
+- Almost, but remember, the main reason we worry about confounders has to do with effects on the outcome, not on treatment assignment. Try again.
+- Correct! Confounders are called *confounders* for a reason---because when they are present, we cannot distinguish the effect of treatment from the effect of the confounder. To learn causal effects, we want to compare people with treatment and people without treatment. If those two groups of people differ in their values of some potential confounding variable, then we can't tell if differences in outcomes are due to differences in treatment, or differences in the confounder.
+- Unobserved variables are not always a problem in causal inference, because they may not have any effect on outomes. Try again.
+
 
 ---
 
@@ -157,18 +208,15 @@ Let’s see what happened in the first month of the ad campaign for our individu
 
 Since the number of baseball games that this individual went to appears to increase after viewing 5 ads, can we conclude that the advertising campaign caused the individual to go to more games?
 
-`@hint`
-
-
 `@possible_answers`
 - Yes, the treatment had a positive effect on the outcome variable.
 - No, the treatment had no effect.
 - [It's too early to tell.]
 
 `@feedback`
-- Almost, but remember, the main reason we worry about confounders has to do with effects on the outcome, not on treatment assignment. Try again.
-- Correct! Confounders are called *confounders* for a reason---because when they are present, we cannot distinguish the effect of treatment from the effect of the confounder. To learn causal effects, we want to compare people with treatment and people without treatment. If those two groups of people differ in their values of some potential confounding variable, then we can't tell if differences in outcomes are due to differences in treatment, or differences in the confounder.
-- Unobserved variables are not always a problem in causal inference, because they may not have any effect on outomes. Try again.
+- Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
+- Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
+- Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion.
 
 ---
 
@@ -177,9 +225,7 @@ Since the number of baseball games that this individual went to appears to incre
 ```yaml
 type: VideoExercise
 key: 6b8a71d25a
-lang: r
 xp: 50
-skills: 1
 video_link: //player.vimeo.com/video/276320364
 ```
 
@@ -267,14 +313,11 @@ Since reducing the size of HR seems to reduce the rate of employee turnover, the
 
 However, his chief operating officer (COO) warns him that reducing the size of HR might be unpopular among certain minority groups within the company, particularly among women. The COO sends the CEO a figure (illustrated in the R workspace) showing the results of his experiment among men and women. Which of the following does the figure suggest?
 
-`@possible_answers`
-- While the pooled average treatment effect is slightly negative, and the average treatment effect for men is negative, the average treatment effect for women is positive.
+`@instructions`
+- [While the pooled average treatment effect is slightly negative, and the average treatment effect for men is negative, the average treatment effect for women is positive.]
 - While the pooled average treatment effect is slightly positive, and the average treatment effect for men is positive, the average treatment effect for women is negative.
 - While the pooled average treatment effect is slightly negative, and the average treatment effect for men is positive, the average treatment effect for women is negative.
 - While the pooled average treatment effect is slightly positive, and the average treatment effect for men is negative, the average treatment effect for women is positive.
-
-`@hint`
-
 
 `@pre_exercise_code`
 ```{r}
@@ -301,14 +344,17 @@ n=382
     p+geom_point(size=3)+geom_line(size=2)+scale_y_continuous(label = percent,limits = c(0,1))
 ```
 
-`@sct`
+`@sample_code`
 ```{r}
-msg1 = "Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
-msg2 = "Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive.  Try again."
-msg3 = "While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again."
-msg4 = "You're right about the gender-specific effects, but not the pooled effects. Check your results again."
-test_mc(correct = 1, feedback_msgs = c(msg1,msg2,msg3,msg4))
+p<-ggplot(df, aes(x=`Control and Treatment Groups`,y=`Percent Intending to Quit`,group=Gender,color=Gender))
+    p+geom_point(size=3)+geom_line(size=2)+scale_y_continuous(label = percent,limits = c(0,1))
 ```
+
+`@feedback`
+- Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked.
+- Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive.  Try again.
+- While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again.
+- You're right about the gender-specific effects, but not the pooled effects. Check your results again.
 
 ---
 
@@ -379,15 +425,4 @@ Solution2 <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==1])-me
 test_object("Solution1")
 test_object("Solution2")
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
-```
-
----
-
-## Let’s Code: A Problem with Employee Unhappiness
-
-```yaml
-type: VideoExercise
-key: 876c51fc02
-xp: 50
-video_link: //player.vimeo.com/video/276320364
 ```
