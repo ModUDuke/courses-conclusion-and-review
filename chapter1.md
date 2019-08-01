@@ -388,8 +388,6 @@ success_msg("Good work! We can see a clear difference in the treatment effect am
 ```yaml
 type: VideoExercise
 key: 876c51fc02
-lang: r
 xp: 50
-skills: 1
 video_link: //player.vimeo.com/video/276320364
 ```
