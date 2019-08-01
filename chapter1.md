@@ -45,7 +45,7 @@ xp: 50
 skills: 1
 ```
 
-On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?
+On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?![](https://assets.datacamp.com/production/repositories/5268/datasets/8150e39d444f5f1b2e4fda290fd6d32e9740a9db/Anscombe%20Quartet%20smaller.png)
 
 `@hint`
 
@@ -83,7 +83,7 @@ On the right are a series of numerical distributions. The correlations between t
 
 `@pre_exercise_code`
 ```{r}
-
+library(gridExtra)
 library(ggplot2)
 
 #correlation
