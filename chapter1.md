@@ -1,3 +1,3 @@
 ---
-title: "collection of review exercies"
+title: 'collection of review exercies'
 output: html_document
