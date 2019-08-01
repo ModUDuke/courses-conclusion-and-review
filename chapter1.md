@@ -38,7 +38,7 @@ In this experiment on the two cereals, which of the following is the outcome var
 ## Anscombe Quartet
 
 ```yaml
-type: MultipleChoiceExercise
+type: PureMultipleChoiceExercise
 key: c229f94a13
 lang: r
 xp: 50
@@ -104,6 +104,6 @@ grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax 
 - Look at the graphs to the right of the page. Are you sure they look identical?
 - Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
 - Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
-- "Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
+- Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
 
 ```
