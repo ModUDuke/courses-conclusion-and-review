@@ -885,7 +885,7 @@ success_msg("Good work! With the standardized measurements, we do indeed see an 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: b9266032e1
+key: 555c326043
 lang: r
 xp: 50
 skills: 1
@@ -945,7 +945,7 @@ Suppose we are interested in how exercising in a gym affects a person's self-est
 
 ```yaml
 type: NormalExercise
-key: e9cecd77c0
+key: 42217b289e
 lang: r
 xp: 100
 skills: 1
@@ -1080,7 +1080,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ```yaml
 type: VideoExercise
-key: 61d08695fd
+key: 9df790f1cd
 lang: r
 xp: 50
 skills: 1
@@ -1093,7 +1093,7 @@ video_link: "//player.vimeo.com/video/314102576"
 
 ```yaml
 type: NormalExercise
-key: 087c0debd1
+key: 38cc1d3f52
 lang: r
 xp: 100
 skills: 1
