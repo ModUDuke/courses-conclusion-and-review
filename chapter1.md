@@ -476,4 +476,6 @@ the solution is nvme=1
 `@sct`
 ```{r}
 nvme=1
+
+did you get nvme=1? then great!
 ```
