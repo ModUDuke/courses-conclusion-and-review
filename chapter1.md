@@ -432,3 +432,48 @@ test_object("Solution1")
 test_object("Solution2")
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: deb104dc83
+xp: 100
+```
+
+blorpy bloro	anasdf thenadlknals dkjf ;ajsdoiuf asdf dlijdf	
+
+`@instructions`
+Firstj do that
+then do this man
+woah
+
+`@hint`
+i told you to do that you person of character!
+
+`@pre_exercise_code`
+```{r}
+library(dplyr)
+library(ggplot2)
+
+do stuff	
+
+nvme<-1
+```
+
+`@sample_code`
+```{r}
+what is it for? man
+```
+
+`@solution`
+```{r}
+the solution is nvme=1
+```
+
+`@sct`
+```{r}
+nvme=1
+```
