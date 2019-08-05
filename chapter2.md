@@ -1,25 +1,24 @@
 ---
-title: 'Experiments'
-description: If you want to go through these topics in more detail, take our free Causal Inference with R - Experiments course here on DataCamp.
-
-
+title: Experiments
+description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Experiments course here on DataCamp.'
 ---
 
 ## EXP: Rainfall in Sonoma County and eBay sales
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+key: f571c52e35
 lang: r
-xp: 50 
+xp: 50
 skills: 1
-key: f571c52e35   
 ```
-
 
 As mentioned in the video, rainfall in Sonoma County, California is highly correlated with eBay's total gross merchandise volume: 
 ![](https://assets.datacamp.com/production/repositories/1145/datasets/b97fef1a9b4ea4e8357ac2b39d04bf4c4e77cb34/ebayandsonomarainfall.png)
 
 Which of the following answers could support a **causal explanation** for this relationship?
+
+`@hint`
 
 
 `@possible_answers`
@@ -28,30 +27,27 @@ Which of the following answers could support a **causal explanation** for this r
 - eBay sales and rainfall in Sonoma County have both been increasing at similar rates in recent years
 - [Rainfall motivates residents of Sonoma County to buy and sell goods on eBay at extraordinarily high rates]
 
-`@hint`
-
-
 `@feedback`
 - This answer is close to correct, but not quite. Remember, eBay sells its goods to people across the world---why would the correlation be so strong with rainfall just in Sonoma County? Try again.
 - This is a possible explanation for the correlation between eBay sales and rainfall in Sonoma County, but not one that involves the rainfall causing the sales. Instead it would suggest that this correlation is spurious. Try again.
 - This is what it means for there to be a correlation between rainfall in Sonoma County and eBay sales, but it is not a causal explanation for this correlation. Try again.
 - Good Job. As ridiculous as this sounds, it is what a causal relationship between rainfall in Sonoma County and eBay sales might suggest. Of course, residents of Sonoma County would have to be providing a huge proportion of all eBay transactions for this to be correct.
 
-
 ---
 
 ## iPhone sales and eBay sales
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+key: caffaa946e
 lang: r
-xp: 50 
+xp: 50
 skills: 1
-key: caffaa946e   
 ```
 
-
 Annual Apple iPhone sales are highly correlated with annual eBay sales. If this relationship is **spurious** (misleading and false), what might be causing this high correlation?
+
+`@hint`
 
 
 `@possible_answers`
@@ -66,23 +62,21 @@ Annual Apple iPhone sales are highly correlated with annual eBay sales. If this 
 - This would suggest a causal relationship rather than a spurious correlation. Try again.
 - This would suggest a causal relationship rather than a spurious correlation. Try again.
 
-
-
-
 ---
 
 ## Confidence Intervals
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+key: 2e74d95e94
 lang: r
-xp: 50 
+xp: 50
 skills: 1
-key: 2e74d95e94   
 ```
 
-
 Why might it be risky to implement a policy that has an that has average treatment effect with a confidence interval that overlaps with zero?
+
+`@hint`
 
 
 `@possible_answers`
@@ -92,7 +86,6 @@ Why might it be risky to implement a policy that has an that has average treatme
 - It's incorrect to think this would be risky; as long as relationship between the policy and its treatment effect are within the desired range, a confidence interval that includes zero is not a problem.
 
 `@feedback`
-
 - This is not true. With tremendous sample size (n > 1,000,000), confidence intervals rarely cross 0, even for relatively insignificant treatment effects. Try again.
 - Correct! It would be very risky to implement a policy that could potentially have the opposite effect than you intended.
 - This is often how such confidence intervals are interpreted, but this is a mistake. A confidence interval that contains zero does is not evidence that there is no treatment effect, but that it is uncertain whether there is a treatment effect. Try again.
@@ -103,27 +96,26 @@ Why might it be risky to implement a policy that has an that has average treatme
 ## Let's Code: Practice with OHIE data
 
 ```yaml
-type: VideoExercise 
-key: 970feae737 
-xp: 50 
-video_link: //player.vimeo.com/video/279737708  
+type: VideoExercise
+key: 970feae737
+xp: 50
+video_link: //player.vimeo.com/video/279737708
 ```
+
 
 ---
 
 ## Oregon Health Experiment Data: Data Structures
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 060acdb7c4
 lang: r
-xp: 100 
+xp: 100
 skills: 1
-key: 060acdb7c4   
 ```
 
-
 Let's say you're wondering how much mens' and womens' health differed in the experiment, and what the data says about Medicaid's effects on those differences, so you decide to look at some of the basic health numbers in the data. A simulated version of the Oregon Health Insurance Experiment data, `OHIE`, is available in the workspace. With this dataframe, we will make some quick calculations to learn about any differences. Our first step will be to separate out the treatment and control groups into new dataframes.
-
 
 `@instructions`
 - 1) Use the `str` function to examine the structure of the `OHIE` dataframe.
@@ -135,7 +127,6 @@ Let's say you're wondering how much mens' and womens' health differed in the exp
 - You can use the `subset` function on the `OHIE` dataframe based on the treatment value.
 
 `@pre_exercise_code`
-
 ```{r}
 library(data.table)
 library(dplyr)
@@ -144,9 +135,7 @@ load(url("https://assets.datacamp.com/production/repositories/1145/datasets/9aab
 OHIE <- OHIE[!is.na(OHIE$treatment),c("id","treatment","gender_inp","bp_sar_inp","bp_dar_inp")]
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Let's get a sense of the OHIE dataframe by looking at its structure with the str() command:
 
@@ -165,18 +154,14 @@ OHIE <- OHIE[!is.na(OHIE$treatment),c("id","treatment","gender_inp","bp_sar_inp"
     ControlGroup<-
 ```
 
-
 `@solution`
-
 ```{r}
 str(OHIE)
 TreatmentGroup <- OHIE[OHIE$treatment==1, ]
 ControlGroup <- OHIE[OHIE$treatment==0, ]
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("str", incorrect_msg = "Did you use the `str` function?")
 test_object("TreatmentGroup")
@@ -185,22 +170,19 @@ test_error()
 success_msg("Good work!")
 ```
 
-
 ---
 
 ## Oregon Health Experiment Data: Balance Checks
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: e3d1a5a3ed
 lang: r
-xp: 100 
+xp: 100
 skills: 1
-key: e3d1a5a3ed   
 ```
 
-
 Now that we've created separate dataframes for the treatment and control groups, let's do some balance checks between the groups to see if they are sufficiently balanced to allow for our comparisons. Run a t-test between the two groups, examine the results, and decide whether the t-test is statistically significant by analyzing its confidence interval. In real analysis, you'll check for statistically significant balance on more than just one variable, but we'll just stick with gender for this set of questions.
-
 
 `@instructions`
 - 1) Run a t-test to see if there is a statistically significant difference in gender between the treatment and control groups (i.e. whether gender is balanced between the treatment and control group). 
@@ -212,7 +194,6 @@ Now that we've created separate dataframes for the treatment and control groups,
 - If the 95% confidence interval includes 0, we cannot be confident that there is a difference between the treatment and control group, so that t-test result is not statistically significant.
 
 `@pre_exercise_code`
-
 ```{r}
 library(data.table)
 library(dplyr)
@@ -224,9 +205,7 @@ TreatmentGroup <- OHIE[OHIE$treatment==1, ]
 ControlGroup <- OHIE[OHIE$treatment==0, ]
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) We need to determine whether gender is balanced between the treatment and control groups. This requires a two sample t-test. In R, the format of the t.test function is t.test(Variable1, Variable2). Try this with the treatment and control groups, and our gender variable gender_inp. To help, we fill in the first half of the t.test function with gender in the treatment group. Replace `y` with gender in the control group.
 
@@ -239,9 +218,7 @@ ControlGroup <- OHIE[OHIE$treatment==0, ]
     Solution2<-""
 ```
 
-
 `@solution`
-
 ```{r}
 t.test(TreatmentGroup$gender_inp,ControlGroup$gender_inp)
 #This is one way to test (without eyes) whether the confidence interval overlaps with 0.
@@ -250,9 +227,7 @@ Solution2<-ifelse(sign(Solution1$conf.int[1])==sign(Solution1$conf.int[2]),"Yes"
 "No")
 ```
 
-
 `@sct`
-
 ```{r}
 test_object("Solution2")
 test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
@@ -260,24 +235,21 @@ test_error()
 success_msg("Good work! Since there is no significant difference in rates of gender between the treatment and control groups, we assume the groups are balanced on gender.")
 ```
 
-
 ---
 
 ## Oregon Health Experiment Data: Finding an ATE
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 1729739153
 lang: r
-xp: 100 
+xp: 100
 skills: 1
-key: 1729739153   
 ```
-
 
 Now that we've checked for balance between our treatment and control, let's check to see the effect of Medicaid on some of our medical outcomes of interest, like the patients' blood pressure. A person's blood pressure is measured by two numbers, e.g. 114/71, where the first number is the "systolic" blood pressure and the second is the "diastolic" blood pressure. These are counted in the `OHIE` dataframe through two variables: systolic pressure in `bp_sar_inp` and diastolic pressure in `bp_var_inp`. 
 
 Now let's check the treatment effect on systolic blood pressure (`bp_sar_inp`) by comparing systolic blood pressure in the treatment and control groups. To check for statistical significance, let's look at p values of the t-test. A p-value below .05 suggests that a result is statistically significant.
-
 
 `@instructions`
 - 1) Manually calculate the average treatment effect on systolic blood pressure by subtracting the `mean` value for systolic blood pressure in the treatment group minus the `mean` value for systolic blood pressure in the control group.
@@ -288,7 +260,6 @@ Now let's check the treatment effect on systolic blood pressure (`bp_sar_inp`) b
 - 2) Your input for the t-tests should look something like t.test(TreatmentGroup$variable,ControlGroup$variable).
 
 `@pre_exercise_code`
-
 ```{r}
 library(data.table)
 library(dplyr)
@@ -300,9 +271,7 @@ TreatmentGroup <- OHIE[OHIE$treatment==1, ]
 ControlGroup <- OHIE[OHIE$treatment==0, ]
 ```
 
-
 `@sample_code`
-
 ```{r}
 #  1) Calculate the average treatment effect of Medicaid on the systolic blood pressure of units in the experiment. This is equal to the `mean` value for systolic blood pressure in the treatment group minus the `mean` value for systolic blood pressure in the control group. We help by filling out the front end of this equation, so fill out the second half:
 
@@ -317,9 +286,7 @@ ControlGroup <- OHIE[OHIE$treatment==0, ]
     Solution3<-""
 ```
 
-
 `@solution`
-
 ```{r}
 mean(TreatmentGroup$bp_sar_inp)-mean(ControlGroup$bp_sar_inp)
 t.test(TreatmentGroup$bp_sar_inp,ControlGroup$bp_sar_inp)
@@ -329,9 +296,7 @@ Solution2<-t.test(TreatmentGroup$bp_sar_inp,ControlGroup$bp_sar_inp)
 Solution3<-ifelse(Solution2$p.value<.05,"Yes","No")
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("mean", incorrect_msg = "Did you use the `mean` function?")
 test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
@@ -340,22 +305,19 @@ test_error()
 success_msg("Good work. The high p-value means that the estimate is not statistically significan, which is not what we were hoping for. Let's see if that's also true of the treatment effect on diastolic blood pressure.")
 ```
 
-
 ---
 
 ## Oregon Health Experiment Data: Finding Another ATE
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 3e2623b84b
 lang: r
-xp: 100 
+xp: 100
 skills: 1
-key: 3e2623b84b   
 ```
 
-
 Now let's check the treatment effect on diastolic blood pressure values `bp_var_inp` across our treatment and control groups. Once again, we'll use a t-test to measure statistical significance, and assume a p-value of less than .05 is statistically significant.
-
 
 `@instructions`
 - 1) Run a t.test to determine if the treatment and control groups have significantly different average values for diastolic blood pressure (`bp_dar_inp`).
@@ -366,7 +328,6 @@ Now let's check the treatment effect on diastolic blood pressure values `bp_var_
 - A p.value of less than .05 is generally considered statistically significant.
 
 `@pre_exercise_code`
-
 ```{r}
 library(data.table)
 library(dplyr)
@@ -378,9 +339,7 @@ TreatmentGroup <- OHIE[OHIE$treatment==1, ]
 ControlGroup <- OHIE[OHIE$treatment==0, ]
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Run a t-test that measures the average treatment effect on diastolic blood pressure.
 
@@ -391,9 +350,7 @@ ControlGroup <- OHIE[OHIE$treatment==0, ]
     Solution2<-""
 ```
 
-
 `@solution`
-
 ```{r}
 t.test(TreatmentGroup$bp_dar_inp,ControlGroup$bp_dar_inp)
 
@@ -402,9 +359,7 @@ Solution1<-t.test(TreatmentGroup$bp_dar_inp,ControlGroup$bp_dar_inp)
 Solution2<-ifelse(Solution1$p.value<.05,"Yes","No")
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
 test_object("Solution2")
@@ -412,24 +367,23 @@ test_error()
 success_msg("Good work. Our estimate for the treatment effect on diastolic blood pressure had a p-value under .05, so we will say that it's statistically significant. Because some of our estimates were not statistically significant, and some are, we probably will need to work a little harder before we can conclude that our experiment suggests that the Medicaid program should be expanded.")
 ```
 
-
-
 ---
 
 ## Offering a Higher Credit Card Limit: Quantifying Noncompliance Concerns
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+key: 1557ba9536
 lang: r
-xp: 50 
+xp: 50
 skills: 1
-key: 1557ba9536   
 ```
-
 
 CreditCo, a large credit card company, decides to run an experiment. It sends an offer in the mail to a random group of 50% of its customers: those in the treatment group are invited to navigate to a webpage and opt in for a 10% higher credit limit. CreditCo wants to see how credit balances and late payments are impacted six months later as a result of the experiment. 
 
 Suppose that, of the group that received the mail offer, 40% of people opted in. Do you think that noncompliance will be a problem for CreditCo's analysis? Why or why not?
+
+`@hint`
 
 
 `@possible_answers`
@@ -444,22 +398,21 @@ Suppose that, of the group that received the mail offer, 40% of people opted in.
 - While high compliance rates indicate a lower noncompliance problem, the rate of 40% in this situation is likely to be problematic.
 - Correct! In this situation, researchers at CreditCo should be worried about the spending habits of those who opted in to the offer.
 
-
-
 ---
 
 ## Ways to Deal with Noncompliance
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+key: c896674673
 lang: r
-xp: 50 
+xp: 50
 skills: 1
-key: c896674673   
 ```
 
-
 Which one of the following approaches is *NOT* a way to deal with treatment noncompliance?
+
+`@hint`
 
 
 `@possible_answers`
@@ -476,22 +429,21 @@ Which one of the following approaches is *NOT* a way to deal with treatment nonc
 - Intention to Treat Analysis is definitely a common way to deal with noncompliance, and we're looking for a way that is **NOT** appropriate, so try again
 - Assuming Random Compliance is not always applicable, but it is nonetheless commonly used to deal with noncompliance, so try again.
 
-
-
 ---
 
 ## As-if Natural experiments
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+key: b3e25ee162
 lang: r
-xp: 50 
+xp: 50
 skills: 1
-key: b3e25ee162   
 ```
 
-
 Which of the following is an accurate description of an "as-if" natural experiment?
+
+`@hint`
 
 
 `@possible_answers`
@@ -506,30 +458,29 @@ Which of the following is an accurate description of an "as-if" natural experime
 - This would not even be a natural experiment! Try again.
 - This would not even be a natural experiment! Try again.
 
-
 ---
 
 ## Let's Code: Putting it All Together
 
 ```yaml
-type: VideoExercise 
-key: 9a2307ad3e 
-xp: 50 
-video_link: //player.vimeo.com/video/279737460  
+type: VideoExercise
+key: 9a2307ad3e
+xp: 50
+video_link: //player.vimeo.com/video/279737460
 ```
+
 
 ---
 
 ## Putting it All Together with KittyCatch: Part 1 - Explore the Data
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 11aa1bb0da
 lang: r
-xp: 100 
+xp: 100
 skills: 2
-key: 11aa1bb0da   
 ```
-
 
 Often, our experiments don't go as planned. This long and complex exercise will test your knowledge in resolving a question with realistic problems. 
 
@@ -541,15 +492,16 @@ To test this hypothesis, Meowtec constructs an experiment: For a small random sa
 
 With the dataset, `KittyCatch`, and the annotations in the R workspace, help Meowtec determine a valid and reliable average treatment effect from their experiment. Specifically, balance the data and correct for any coding errors in the original dataset to estimate a reliable average treatment effect. We will spend many more steps on this problem than in previous exercises, but also more representative of the types of steps that data scientists use when working with experimental data.  But first, we need to get familiar with the data.
 
-
 `@instructions`
 - 1) Take a look at the variable names and dataframe structure.
 - 2) See what a "naive" treatment effect looks like.
 - 3) Run a t-test to see a different early calculation of the treatment effect.
 - 4) Examine the values of our outcome of interest, the distance the users walk.
 
-`@pre_exercise_code`
+`@hint`
 
+
+`@pre_exercise_code`
 ```{r}
 library(data.table)
 library(dplyr)
@@ -598,9 +550,7 @@ n=688
       KittyCatch$DistanceWalked<-round(ifelse(removed==1 & KittyCatch$Treatment==0,1.5*KittyCatch$DistanceWalked,ifelse(removed==0 & KittyCatch$Treatment==1,1.3*KittyCatch$DistanceWalked,KittyCatch$DistanceWalked)),2)
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Let's dig into the data. We first run the structure function, str(), to get a sense of the dataset. DistanceWalked is our outcome of interest, and Treatment is the key independent variable that we care about. TotalHoursPlayed refers to how many hours the user has put into KittyCatch in total.
 
@@ -622,9 +572,7 @@ n=688
     
 ```
 
-
 `@solution`
-
 ```{r}
 #1
 str(KittyCatch)
@@ -636,9 +584,7 @@ t.test(KittyCatch$DistanceWalked[KittyCatch$Treatment==1],KittyCatch$DistanceWal
 summary(KittyCatch$DistanceWalked)
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("str", incorrect_msg = "Did you use the `str` function?")
 test_object("Solution2")
@@ -648,22 +594,19 @@ test_function("summary", incorrect_msg = "Did you use the `summary` function?")
 success_msg("Great Job! Notice that the maximum value is much larger than the mean, median, and 3rd quartile of the dataset. This outlier might bias our t-test results by violating its assumption that the data is normally distributed.")
 ```
 
-
 ---
 
 ## Putting it All Together with KittyCatch: Part 2 - Use Graphs to Understand the Outcome
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 7a39e3fee6
 lang: r
-xp: 100 
+xp: 100
 skills: 2
-key: 7a39e3fee6   
 ```
 
-
 As we saw in the previous exercise, the maximum value for our outcome of interest - the distance users walked - is much larger than the mean, median, and 3rd quartile of the dataset. This outlier might bias our t-test results by violating its assumption that the data is normally distributed, so we need to deal with outliers for this variable. Let's create some charts to see the current distribution of `DistanceWalked`, and then let's try a method to deal with the outliers and make another chart to see if our method makes our data look more like a normal distribution.
-
 
 `@instructions`
 - 1) Chart the values of our outcome of interest.
@@ -671,8 +614,10 @@ As we saw in the previous exercise, the maximum value for our outcome of interes
 - 3) Use top coding to help us handle outlier values of DistanceWalked.
 - 4) Create a new chart to see if Step 3 helps make our values look more normal.
 
-`@pre_exercise_code`
+`@hint`
 
+
+`@pre_exercise_code`
 ```{r}
 library(data.table)
 library(dplyr)
@@ -721,9 +666,7 @@ n=688
       KittyCatch$DistanceWalked<-round(ifelse(removed==1 & KittyCatch$Treatment==0,1.5*KittyCatch$DistanceWalked,ifelse(removed==0 & KittyCatch$Treatment==1,1.3*KittyCatch$DistanceWalked,KittyCatch$DistanceWalked)),2)
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Run a density plot on DistanceWalked to observe the long right tail in the distribution of our outcome of interest.
 
@@ -747,9 +690,7 @@ n=688
     
 ```
 
-
 `@solution`
-
 ```{r}
 #1  
 plot(density(KittyCatch$DistanceWalked))
@@ -761,9 +702,7 @@ KittyCatch$DistanceWalked<-ifelse(KittyCatch$DistanceWalked>2,2,KittyCatch$Dista
 plot(density(KittyCatch$DistanceWalked))
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("plot", incorrect_msg = "Did you use the `plot` function?")
 test_function("head", incorrect_msg = "Did you use the `head` function?")
@@ -772,22 +711,19 @@ test_function("ifelse", incorrect_msg = "Did you use the `ifelse` function?")
 success_msg("Nice work so far!")
 ```
 
-
 ---
 
 ## Putting it All Together with KittyCatch: Part 3 - Balance the Data
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 4d6d2d8bf2
 lang: r
-xp: 100 
+xp: 100
 skills: 2
-key: 4d6d2d8bf2   
 ```
 
-
 So we've looked at our dataframe structure, run some "naive" treatment effect calculations, and identified and corrected for some outliers on our outcome of interest, the distance our users walked while playing KittyCatch during the experiment. Now we are ready to check our treatment and control groups for balance across several variables, and deal with tricky problems that might come up.
-
 
 `@instructions`
 - 1) Create a boxplot to help us look for balance between treatment and control groups.
@@ -796,8 +732,10 @@ So we've looked at our dataframe structure, run some "naive" treatment effect ca
 - 4) Subset the data to help us compare groups with similar ages.
 - 5) Check if these new subsets are balanced on user age.
 
-`@pre_exercise_code`
+`@hint`
 
+
+`@pre_exercise_code`
 ```{r}
 library(data.table)
 library(dplyr)
@@ -847,9 +785,7 @@ n=688
   KittyCatch$DistanceWalked<-ifelse(KittyCatch$DistanceWalked>2,2,KittyCatch$DistanceWalked)
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Next, we'll want to make sure that our control groups and treatment groups are balanced. Let's compare the age of the control group and treatment group with boxplots. Replace the variable names below for creating this boxplot: 
 
@@ -874,9 +810,7 @@ n=688
     t.test()
 ```
 
-
 `@solution`
-
 ```{r}
 #1
 boxplot(KittyCatch$Age[KittyCatch$Treatment==0],KittyCatch$Age[KittyCatch$Treatment==1],names=c("Control","Treatment"))
@@ -890,9 +824,7 @@ KittyCatch<-KittyCatch[KittyCatch$Age<=17,]
 t.test(KittyCatch$Age[KittyCatch$Treatment==0],KittyCatch$Age[KittyCatch$Treatment==1])
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("boxplot", incorrect_msg = "Did you use the `boxplot` function?")
 test_function("cor", incorrect_msg = "Did you use the `cor` function?")
@@ -901,22 +833,19 @@ test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
 success_msg("Great! We've made a lot of progress, so let's look further at the quality of our data.")
 ```
 
-
 ---
 
 ## Putting it All Together with KittyCatch: Part 4 - Missing Data Problems
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 7c37576a8f
 lang: r
-xp: 100 
+xp: 100
 skills: 2
-key: 7c37576a8f   
 ```
 
-
 Let's continue our look at our data by checking for balance on our treatment variable and outcome variable, and looking to see how correlated they are. One common problem in data science is missing data: empty gaps in the values of some variables that will throw off our results. If we find any in our key variables, we will need to deal with them.
-
 
 `@instructions`
 - 1) Check for balance on TotalHoursPlayed
@@ -925,8 +854,10 @@ Let's continue our look at our data by checking for balance on our treatment var
 - 4) Is DistanceWalked balanced across treatment and control groups?
 - 5) Use a rough method to remove some problem data entries
 
-`@pre_exercise_code`
+`@hint`
 
+
+`@pre_exercise_code`
 ```{r}
 library(data.table)
 library(dplyr)
@@ -977,9 +908,7 @@ n=688
   KittyCatch<-KittyCatch[KittyCatch$Age<=17,]
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Now let's look for balance in the last variable we know about the treatment and control groups, TotalHoursPlayed. Run the summary function on the variable TotalHoursPlayed.  
 
@@ -1007,9 +936,7 @@ n=688
     KittyCatch<-dataframe[!is.na(dataframe$variable),].
 ```
 
-
 `@solution`
-
 ```{r}
 #1
 summary(KittyCatch$TotalHoursPlayed)
@@ -1024,9 +951,7 @@ t.test(KittyCatch$TotalHoursPlayed[KittyCatch$Treatment==1],KittyCatch$TotalHour
 KittyCatch<-KittyCatch[!is.na(KittyCatch$TotalHoursPlayed),]
 ```
 
-
 `@sct`
-
 ```{r}
 test_function("summary", incorrect_msg = "Did you use the `summary` function?")
 test_function("cor", incorrect_msg = "Did you use the `cor` function?")
@@ -1036,30 +961,29 @@ test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
 success_msg("Whew! We've explored the data, dealt with the issues, and now we can finally calculate the treatment effect of our experiment!")
 ```
 
-
 ---
 
 ## Putting it All Together with KittyCatch: Part 5 - Calculate ATE
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: f0b1e58f5c
 lang: r
-xp: 100 
+xp: 100
 skills: 2
-key: f0b1e58f5c   
 ```
 
-
 We've examined our data, checked for balance, and dealt with outliers and missing data. Now it's time to calculate the average treatment effect of making KittyCatch users walk farther to their next Point of Kinterest, and see if that effect is statistically significant.
-
 
 `@instructions`
 - 1) Calculate the average treatment effect of the `Treatment` on `DistanceWalked`.
 - 2) Run a t.test to estimate the statistical significance of that result.
 - 3) Based on question 2), indicate whether the above t.test is statistically significant with `Yes` or `No`.
 
-`@pre_exercise_code`
+`@hint`
 
+
+`@pre_exercise_code`
 ```{r}
 library(data.table)
 library(dplyr)
@@ -1111,9 +1035,7 @@ n=688
   KittyCatch<-KittyCatch[!is.na(KittyCatch$TotalHoursPlayed),]
 ```
 
-
 `@sample_code`
-
 ```{r}
 # 1) Now that we have balanced our data on all known dimensions, let's return the average treatment effect of being in the treatment group with distance walked playing KittyCatch by subtracting the mean DistanceWalked of our control group from the mean DistanceWalked of our treatment group. Assign this answer to Solution1.
 
@@ -1130,22 +1052,16 @@ n=688
     Solution3<-""
 ```
 
-
 `@solution`
-
 ```{r}
 Solution1<-mean(KittyCatch$DistanceWalked[KittyCatch$Treatment==1])-mean(KittyCatch$DistanceWalked[KittyCatch$Treatment==0])
   t.test(KittyCatch$DistanceWalked[KittyCatch$Treatment==1],KittyCatch$DistanceWalked[KittyCatch$Treatment==0])
   Solution3<-"Yes"
 ```
 
-
 `@sct`
-
 ```{r}
 test_object("Solution1")
 test_object("Solution3")
 success_msg("Good work! Hooray!! Our naive estimate of the average treatment effect was opposite our estimate after we tried to balance the data. However, we had to ignore a large fraction of our observations to get to that conclusion. This is the difficulty of computing conditional average treatment effects with t-tests. However, this problem can be sidestepped with regression models. Our next module teaches how to use regression models in detail.")
 ```
-
-

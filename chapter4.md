@@ -1,9 +1,6 @@
 ---
 title: 'IV & RDD'
-description: If you want to go through these topics in more detail, take our free Causal Inference with R - IV & RDD course here on DataCamp.
-
-
-
+description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - IV & RDD course here on DataCamp.'
 ---
 
 ## IV: What is the Relationship Between the Instrument and the Outcome?
@@ -120,7 +117,6 @@ So now we can summarize the main purpose of IV analysis. Once again, how does th
 - Correct! Way to go!
 - That is not exactly the process. We do not add these effects together to find the causal effect. Try again.
 
-
 ---
 
 ## An Example of a Weak Instrument
@@ -151,7 +147,6 @@ To untangle this causal relationship, Phoebe decides to conduct an instrumental 
 - Correct! Only a small percentage of people ever inherit a substantial amount of money, and those who do tend to have better wealth to begin with. So despite our theories, the data we have might have very little statistical power on the relationship between wealth and health.
 - This answer is very similar to the first one. In this case, the problem is not that the instrument is 'weak' but that the instrument has a direct causal effect on health.
 - Although this instrumental variable would be poor for this analysis (an instrument should be randomly assigned), this is not an example of a 'weak' instrumental variable.
-
 
 ---
 
@@ -540,7 +535,6 @@ ex() %>% check_object("Solution2") %>% check_equal()
 ex() %>% check_object("Solution3") %>% check_equal()
 success_msg("Good work! This estimate for the causal effect of insurance on our outcome variable, positive depression screens, is about 5 times larger than we saw in the Intention-to-Treat analysis. It looks like health insurance does improve health outcomes, at least for this variable.")
 ```
-
 
 ---
 
@@ -1008,7 +1002,6 @@ ex() %>% check_object("Solution4") %>% check_equal()
 ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! That outlier just below the cutoff looks like a clear sign that the teams are trying to be losing by about a point at halftime. In fact, the p-value is so small that it is nearly 0, and it's hard to be more obvious than that in statistics! But there's more work to be done before we make any conclusions.  The McCrary test cannot prove manipulation just by itself, but it's a very helpful indicator that we should look closer at the exact mechanics going on in these new NBA teams during their games.")
 ```
-
 
 ---
 
@@ -3070,11 +3063,6 @@ ex() %>% check_object("Solution5") %>% check_equal()
 success_msg("Good work! From the looks of it, the quadratic specification of halftime margin looks very similar to the nonparametric estimate (4.8 points versus 4.4 points, respectively), which suggests that they may be closer to the real effect. The linear specification seems to not capture the true relationship between halftime margin and final margin, as it only estimates an effect of 2.5 points.")
 ```
 
-
-
-## Panel Data
-## If you want to go through these topics in more detail, take our free Causal Inference with R - Panel Data course here on DataCamp.
-
 ---
 
 ## Interpreting Longitudinal Outcomes
@@ -3098,18 +3086,13 @@ Now, the mayor of the town next door, Laughterville, is concerned about rates of
 
 Based on this table, which conclusion about the effect of taxing corn syrup products on rates of diabetes seems most reasonable?
 
+`@hint`
+
+
 `@possible_answers`
 - Taxes have no effect, given that rates of diabetes in Springfield were much higher following the implementation of the tax.
 - [Taxes have a negative treatment effect on rates of diabetes (i.e. decreased rates of diabetes), given that rates of diabetes in Springfield were lower than those in Laughterville following the implementation of the tax.]
 - Taxes have a positive treatment effect on rates of diabetes (i.e. increased rates of diabetes), given that rates of diabetes in Springfield were much higher following the implementation of the tax.
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
 
 `@feedback`
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
@@ -3152,9 +3135,9 @@ p+geom_line()+geom_point()+
   labs(y="Proportion Own Solar Panels",color="Watched Birdemic")
 ```
 
-`@feedback`
-- Try again
-- Correct! Rates of solar panel sales for both groups at the same rate prior to Birdemic's release, but the rate of this increase was smaller for those who watched Birdemic following 2010
+`@sct`
+```{r}
+
 ```
 
 ---
@@ -3171,19 +3154,14 @@ skills: 1
 
 Think about what you know about causal inference. What might be an advantage for modeling your data with a lagged dependent variable; that is, a dependent variable measured at a time point after your explanatory variables were measured?
 
+`@hint`
+
+
 `@possible_answers`
 - Letting time pass allows confounding factors to disappear.
 - It gives you more time to formulate your hypothesis.
 - [It helps you more clearly establish the causal direction.]
 - A dependent variable depends on time, so dependent variables always happen after the independent variables.
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
 
 `@feedback`
 - Time isn't really a factor with determing what is a confounder. If an outside variable affects outcomes, it's a confounder, no matter when in the process it happens. Try again.
@@ -3202,6 +3180,7 @@ key: 5d24574731
 xp: 50
 video_link: //player.vimeo.com/video/314102565
 ```
+
 
 ---
 
@@ -3348,6 +3327,7 @@ key: 61d08695fd
 xp: 50
 video_link: //player.vimeo.com/video/314102576
 ```
+
 
 ---
 

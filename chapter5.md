@@ -1,7 +1,6 @@
 ---
 title: 'Panel Data'
-description: If you want to go through these topics in more detail, take our free Causal Inference with R - Panel Data course here on DataCamp.
-
+description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Panel Data course here on DataCamp.'
 ---
 
 ## Interpreting Longitudinal Outcomes
@@ -25,18 +24,13 @@ Now, the mayor of the town next door, Laughterville, is concerned about rates of
 
 Based on this table, which conclusion about the effect of taxing corn syrup products on rates of diabetes seems most reasonable?
 
+`@hint`
+
+
 `@possible_answers`
 - Taxes have no effect, given that rates of diabetes in Springfield were much higher following the implementation of the tax.
 - [Taxes have a negative treatment effect on rates of diabetes (i.e. decreased rates of diabetes), given that rates of diabetes in Springfield were lower than those in Laughterville following the implementation of the tax.]
 - Taxes have a positive treatment effect on rates of diabetes (i.e. increased rates of diabetes), given that rates of diabetes in Springfield were much higher following the implementation of the tax.
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
 
 `@feedback`
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
@@ -79,9 +73,9 @@ p+geom_line()+geom_point()+
   labs(y="Proportion Own Solar Panels",color="Watched Birdemic")
 ```
 
-`@feedback`
-- Try again
-- Correct! Rates of solar panel sales for both groups at the same rate prior to Birdemic's release, but the rate of this increase was smaller for those who watched Birdemic following 2010
+`@sct`
+```{r}
+
 ```
 
 ---
@@ -98,19 +92,14 @@ skills: 1
 
 Think about what you know about causal inference. What might be an advantage for modeling your data with a lagged dependent variable; that is, a dependent variable measured at a time point after your explanatory variables were measured?
 
+`@hint`
+
+
 `@possible_answers`
 - Letting time pass allows confounding factors to disappear.
 - It gives you more time to formulate your hypothesis.
 - [It helps you more clearly establish the causal direction.]
 - A dependent variable depends on time, so dependent variables always happen after the independent variables.
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
 
 `@feedback`
 - Time isn't really a factor with determing what is a confounder. If an outside variable affects outcomes, it's a confounder, no matter when in the process it happens. Try again.
@@ -129,8 +118,9 @@ key: 5d24574731
 lang: r
 xp: 50
 skills: 1
-video_link: "//player.vimeo.com/video/314102565"
+video_link: //player.vimeo.com/video/314102565
 ```
+
 
 ---
 
@@ -277,8 +267,9 @@ key: 61d08695fd
 lang: r
 xp: 50
 skills: 1
-video_link: "//player.vimeo.com/video/314102576"
+video_link: //player.vimeo.com/video/314102576
 ```
+
 
 ---
 
@@ -538,21 +529,6 @@ test_object("Solution6")
 success_msg("Congratulations! By now, you should have a sense of the sorts of causal inference problems that panel data can help us overcome. There are a variety of methodological approaches you can take with panel data, each with their own pros and cons. This is why it is always critical to carefully think through what your cause and outcomes of interest are, and how they might be related causally. If you found this course useful, consider trying our other courses on Causal Inference with R.")
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Assumptions of Difference-in-Differences Analysis
@@ -567,59 +543,18 @@ skills: 1
 
 What is the main assumption that we make when we study a causal effect by comparing trends among a treatment group with trends among a control group?
 
-`@possible_answers`
-- If there are no differences between the two groups, the null hypothesis is confirmed.
-- If the control group has the same outcome as the treatment group, then the treatment has no effect.
-- Any difference between the control group and the treatment group that is statistically significant is meaningful.
-- [Any difference in the trends we see among the treatment group and control groups are due to the treatment.]
-
 `@hint`
 
-
-
-`@feedback`
-- This answer is deliberately vague but it's not really an "assumption" that we make. Try again.
-- Almost. However, for this to be completely true, we would need to insert in front of the statement: "controlling for spurious differences in the control group and the treatment group..." Try again.
-- This is simply not true; we can find statistically significant results that are not necessarily "meaningful". Try again.
-- Correct! If there is a different factor that causes trends in the treatment group to differ from the control group, our finding would be spurious.
-
-
-## Interpreting Longitudinal Outcomes
-
-```yaml
-type: PureMultipleChoiceExercise
-key: bfcf99d7c6
-lang: r
-xp: 50
-skills: 1
-```
-
-In the early 1970s, the mayor of Springfield, Oklahoma, noticed that his citizens had higher rates of diabetes than ever before. To combat diabetes, the mayor of Springfield implemented a permanent 2% sales tax on all food items that contained corn syrup in the year 1979. 
-
-Now, the mayor of the town next door, Laughterville, is concerned about rates of diabetes in his city, and is considering implementing similar a tax on food items that contain corn syrup. To inform his decision, the mayor of Laughterville compares rates of diabetes (percentage of population) in Laughterville to rates of diabetes in Springfield over time. A table of the data is included below.
-
-|     City      | 1950 | 1960 | 1970 | 1980 | 1990 | 2000 | 2010 |
-|---------------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
-| Springfield   |  .98 | 1.13 | 1.88 | 2.69 | 2.91 | 3.84 | 5.20 |
-| Laughterville | 1.01 | 1.14 | 1.87 | 3.14 | 3.67 | 4.75 | 6.66 |
-
-Based on this table, which conclusion about the effect of taxing corn syrup products on rates of diabetes seems most reasonable?
 
 `@possible_answers`
 - Taxes have no effect, given that rates of diabetes in Springfield were much higher following the implementation of the tax.
 - [Taxes have a negative treatment effect on rates of diabetes (i.e. decreased rates of diabetes), given that rates of diabetes in Springfield were lower than those in Laughterville following the implementation of the tax.]
 - Taxes have a positive treatment effect on rates of diabetes (i.e. increased rates of diabetes), given that rates of diabetes in Springfield were much higher following the implementation of the tax.
 
-`@hint`
-
-
-
-
 `@feedback`
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
 - Correct! This is exactly how we interpret difference-in-differences outcomes. Even though Springfield had higher rates of diabetes following the implementation of its tax on corn syrup products, it appears that Springfield's rate diabetes grew at a smaller rate than in Laughterville.
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
-
 
 ---
 
@@ -635,18 +570,13 @@ skills: 1
 
 What is the main advantage you get from studying a causal effect with longitudinal dataset rather than repeated cross-sectional datasets?
 
+`@hint`
+
+
 `@possible_answers`
 - [Systematic differences between the treatment and control group are less likely to confound the average treatment effect.]
 - You can see systematic changes across a population with time.
 - It inherently uses a smaller sample of people, so fewer random differences should arise between datasets.
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{r}
-
-```
 
 `@feedback`
 - Correct! This is especially the case when we use time-series data. Systematic differences between the treatment and control group are only important if we expect the treatment to have a difference effect on different types of people. For example, if it turned out that the death penalty was only a deterrent for homicide in states with high urban populations, but our treatment group only contained states with high rural populations, we would not see any causal effect of the death penalty on homicide rates.
@@ -668,21 +598,20 @@ skills: 1
 
 When we have repeated cross-sectional data, we have a different sample at each time point. With this sort of data, we cannot estimate within person fixed effects or any difference-in-differences style outcome, as we only have a response from each surveyed individual at one separate time point. Nonetheless, why might repeated cross-sectional data be useful?
 
+`@hint`
+
+
 `@possible_answers`
 - Because it increases your sample size.
 - [It can help reveal time trends among a population and outcome of interest.]
 - To remove bias that could result from generational differences across a population.
 - It is cheaper than gathering longitudinal samples.
 
-`@hint`
-
-
 `@feedback`
 - This is sort of true, but not really the main reason people use repeated cross-sectional survey.
 - Correct!
 - This is a possible advantage of repeated cross-sectional data, although it is relatively uncommon to have so many cross sections in a dataset that you could even pick up generational differences in outcomes (i.e. cohort effects). Try again.
 - This is sort of true, except it is still very expensive to conduct multiple cross-sectional surveys. Cost is less of an issue than is the difficulty in reaching out to individuals who took the survey before.
-
 
 ---
 
@@ -772,7 +701,6 @@ Solution4<-glm(rate~Year*Implemented,data=Jail)
 ```{r}
 success_msg("Good work! Implementing a difference-in-differences analysis is relatively easy. We can see from the result of Solution2 that the estimate for Year 2005 and Implemented were positive, suggesting that there was an increasing trend in rates of incarceration over time, and cities that implemented the Housing First policy tended to have higher rates of incarceration. However, the interaction term 'Year2015:Implemented' was negative, meaning that over time, cities that implemented the Housing First policy had negative association with incarceration rates relative to those who did not implement the Housing First policy. In other words, cities that implemented the Housing First policy had lower rates of incarceration than one would expect based on common trends.")
 ```
-
 
 ---
 
@@ -878,7 +806,6 @@ test_error()
 success_msg("Good work! With the standardized measurements, we do indeed see an increase in watch time that is very statistically significant (the p value is about 0.003). So getting a new TV does seem to have a causal effect on how much television people watch. Measurement in surveys is always a tricky matter, because how you measure a response can impact what kinds of quantitative analysis methods you can use, as well as how to interpret the results. In addition, and just as importantly, the respondents will interpret different options in different ways: some might be intimidated if they see too many choices, and others may skip questions that ask for free form answers. It's complicated, so be sure to take it slowly, carefully, and talk about the analysis with other people.")
 ```
 
-
 ---
 
 ## Why use a lagged dependent variable?
@@ -893,23 +820,20 @@ skills: 1
 
 Think about what you know about causal inference. What might be an advantage for modeling your data with a lagged dependent variable; that is, a dependent variable measured at a time point after your explanatory variables were measured?
 
+`@hint`
+
+
 `@possible_answers`
 - Letting time pass allows confounding factors to disappear.
 - It gives you more time to formulate your hypothesis.
 - [It helps you more clearly establish the causal direction.]
 - A dependent variable depends on time, so dependent variables always happen after the independent variables.
 
-`@hint`
-
-
-
-
 `@feedback`
 - Time isn't really a factor with determing what is a confounder. If an outside variable affects outcomes, it's a confounder, no matter when in the process it happens. Try again.
 - You should be testing a hypothesis you formed before you started, otherwise you aren't following the scientific method! Try again.
 - Well done
-- You have labeled the dependent and independent variables based on your theory and knowledge of the research question, not based on the direction of the arrow of time. So try again. 
-
+- You have labeled the dependent and independent variables based on your theory and knowledge of the research question, not based on the direction of the arrow of time. So try again.
 
 ---
 
@@ -925,19 +849,16 @@ skills: 1
 
 Suppose we are interested in how exercising in a gym affects a person's self-esteem. We try to gather a random sample of individuals at multiple time points, and examine whether individuals who increased their frequency of exercise in a gym had higher self-esteem. However, when assessing the data, we realize that we oversampled white men, who are known to exercise at gyms at high rates, and who tend to have relatively high self-esteem. If we estimate a fixed effects model with this data, will the fact that we oversampled white men confound our results?
 
+`@hint`
+
+
 `@possible_answers`
 - Yes
 - [No]
 
-`@hint`
-
-
-
-
 `@feedback`
 - Try again
 - Correct! Our oversampling of men would clearly confound our estimates in a typical OLS regression model, but since we are only looking at within-person changes, the fact that our sample is biased towards a group of men who tend to exercise and have high self-esteem should not confound our results. As long as the effect of exercise on self-esteem is equal among white men and all other people, and that White men change their rate of exercise as often as the rest of the population, our fixed effects models with this data should accurately reflect the effect of exercise on self-esteem among all people. What is most important is how  the rate of exercise among our sample *changed* over time. If few individuals in our sample increased or decreased their rate of exercise, or if only particular groups tended to change their rates of exercise, our fixed effects models would be biased and have limited statistical power. Individuals whose behavior does not change between waves cannot add to our understanding about how a change in that behavior effects changes in their outcomes.
-
 
 ---
 
@@ -1084,8 +1005,9 @@ key: 9df790f1cd
 lang: r
 xp: 50
 skills: 1
-video_link: "//player.vimeo.com/video/314102576"
+video_link: //player.vimeo.com/video/314102576
 ```
+
 
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Regressions & Modeling with Regression'
-description: If you want to go through these topics in more detail, take our free Causal Inference with R - Regression & Modeling with Regression course here on DataCamp.
-
-
-
+description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Regression & Modeling with Regression course here on DataCamp.'
 ---
 
 ## REG: Interpreting Regressions
@@ -42,10 +39,10 @@ model<-lm(`Price Sold`~Age,data=WePhone)
 ggplot(data=WePhone,aes(Age, `Price Sold`))+geom_point()+geom_abline(intercept = model$coefficients[1],slope=model$coefficients[2])+ ggtitle("Scatter Plot and OLS Regression of WePhone Age on Price Sold")
 ```
 
-`@feedback`
-- Correct! As the age of WePhones increased, the price at which they were sold decreased.
-- Although the plot does not indicate if their results were statistically significant, they do indicate a relationship. Try again.
-- Think this through carefully. Does an increase in age increase or decrease the price sold of a WePhone? Try again.
+`@sct`
+```{r}
+
+```
 
 ---
 
@@ -83,10 +80,10 @@ model<-lm(Age~`Price Sold`,data=WePhone)
 ggplot(data=WePhone,aes(`Price Sold`,Age))+geom_point()+geom_abline(intercept = model$coefficients[1],slope=model$coefficients[2])+ ggtitle("Scatter Plot and OLS Regression of WePhone Age on Price Sold")
 ```
 
-`@feedback`
-- This phrasing does not address a causal interpretation of the relationship, but rather is a description of an association between WePhone age and sales price.
-- This is the most intuitive explanation for the relationship between WePhone sale price and age, but not for this particular regression model, which was designed to use age as the dependent variable. Try again.
-- Correct! Well, at least according to this model. This is an example of reverse causality. Obviously, we know that in reality the age of any object can only be influenced by time, so we know that this interpretation of their causal relationship is false: price sold cannot cause a phone's age. The analyst should try a different model next time.
+`@sct`
+```{r}
+
+```
 
 ---
 
@@ -127,11 +124,10 @@ Based on this formula, what is a valid predicted price for a WePhone that is exa
 
 ```
 
-`@feedback`
-- Not quite. Try again.
-- Well done! Notice any advantages of regression models versus t-tests? In a t.test, we can only predict the outcome from a binary treatment variable (that is, the outcome for respondents in the treatment versus control group), In a regression model, we can predict the outcome from a continuous treatment variable (e.g. age).
-- Oops, that's too high. Try again.
-- That's too low. Try again.
+`@sct`
+```{r}
+
+```
 
 ---
 
@@ -153,16 +149,14 @@ Papers often report several regression models next to each other. This table sho
 | Latitude   |         |.89(.49) |.37(.51) |
 | Asia Dummy |         |         |-.62(.19)|
 
+`@hint`
+
+
 `@possible_answers`
 - Because the inclusion of more variables weakens the statistical power of an independent variable
 - Because omitting these variables caused the effect of property rights protection on GDP to be downwardly biased. 
 - Because the inclusion of more variables strengthens the statistical power of an independent variable
 - [Because omitting these variables caused the effect of property rights protection on GDP to be upwardly biased.]
-
-`@hint`
-
-
-
 
 `@feedback`
 - Although this is often true, this is not indicated in this figure. If you look at the standard errors, the statistical significance of property rights protections on GDP is relatively small and consistent across models. Try again.
@@ -184,22 +178,20 @@ skills: 1
 
 Although regression models are great for summarizing the association between variables, any causal interpretation of a regression models rests on the uncounfoundedness assumption (also known as the selection-on-observables assumption; and sometimes referred to as the conditional independence assumption). Which of the following summarizes this assumption?
 
+`@hint`
+
+
 `@possible_answers`
 - [All variables that affect treatment assignment and the outcome of interest are observable and conditioned upon.]
 - If something happens more frequently than expected during a given period, we can expect that it will happen less frequently in the future
 - There is little or no multicollinearity in the data
 - The residuals of a regression model are normally distributed.
 
-`@hint`
-
-
-
 `@feedback`
 - Correct. Put even more simply, any causal interpretation of a regression model assumes that the relationships observed in the data are unconfounded. In most cases, this is impossible to verify empirically. However, it is a pretty large assumption. Most variations of regression models that we will describe in later chapters try to reduce the strength of this assumption.
 - This is actually a summary of the gambler's fallacy. Try again
 - This is an assumption that regression models make, but it is not a description of the unconfoundedness assumption
 - This is an assumption that regression models make, but it is not a description of the unconfoundedness assumption
-
 
 ---
 
@@ -549,7 +541,6 @@ test_error()
 success_msg("Good work! Even though our model in Solution 1 appears similar to our model in Solution2,  we should **not** include all of these variables into our final model, or use them to inform NixSplash's ad-campaign. Statistical models should always be guided by theory. If there is no clear reason why a variable should effect an outcome of interest, we should not include it in our model, even if it improves model fit. As a reminder, statistical models do not provide definitive proof of causality; they are simply a tool that we can use to test our assumptions about the world.")
 ```
 
-
 ---
 
 ## Let’s Code: Communication Skills in Video Games
@@ -558,7 +549,7 @@ success_msg("Good work! Even though our model in Solution 1 appears similar to o
 type: VideoExercise
 key: 6f0ace9f0e
 xp: 50
-video_link: "//player.vimeo.com/video/293196315"
+video_link: //player.vimeo.com/video/293196315
 ```
 
 
@@ -783,4 +774,3 @@ test_object("Solution5")
 test_error()
 success_msg("Good work! In our unmatched model, the treatment effect (playing NERD) appeared to have a positive and statistically significant effect on respondent's communication skills. However, when we balanced the data, this effect disappeared. It turns out that the original treatment effect was spurious; it resulted from our biased sample of people who play NERD. When we compared people who played NERD to relatively similar people who don't play nerd, this treatment effect disappeared. That means that playing NERD does not improve people's communication skills; rather, NERD players have good communication skills because the people who are attracted to NERD tend to have good communication skills. Or in other words, this association results from a selection bias - not from a treatment effect.")
 ```
-
