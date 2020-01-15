@@ -323,11 +323,9 @@ head(Baseball)
 
 `@sct`
 ```{r}
-test_function("head", incorrect_msg = "Did you use the `head` function?")
-test_function("nrow", incorrect_msg = "Did you use the `nrow` function?")
-test_object("Solution1")
-test_object("Solution2")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
+ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! You should always explore your data before running analyses. These are very typical steps that one might take")
 ```
 
@@ -419,9 +417,9 @@ Baseball$ExpMonths<-Baseball$month=="July" | Baseball$month=="August" | Baseball
 
 `@sct`
 ```{r}
-test_object("Solution2")
-    test_error()
-    success_msg("Good work! The ad campaign had a positive average treatment effect. However, there are several potential confounders that we might want to consider before declaring victory. Let's explore some in the next few questions.")
+ex() %>% check_error()
+ex() %>% check_object("Solution2") %>% check_equal()
+success_msg("Good work! The ad campaign had a positive average treatment effect. However, there are several potential confounders that we might want to consider before declaring victory. Let's explore some in the next few questions.")
 ```
 
 ---
@@ -508,10 +506,8 @@ dfMonth
 
 `@sct`
 ```{r}
-test_function("merge", incorrect_msg = "Did you use the `merge` function?")
-    test_error()
-    
-    success_msg("Good work! This is a common way to merge data from different sized dataframes together. Now we can see whether these other variables are associated with attending baseball games and whether they may be confounding the relationship between baseball attendance and  number of ads served.")
+ex() %>% check_error()
+success_msg("Good work! This is a common way to merge data from different sized dataframes together. Now we can see whether these other variables are associated with attending baseball games and whether they may be confounding the relationship between baseball attendance and  number of ads served.")
 ```
 
 ---
@@ -617,9 +613,9 @@ Solution5<-"decrease"
 
 `@sct`
 ```{r}
-test_object("Solution4")
-    test_object("Solution5")
-    test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
+ex() %>% check_object("Solution5") %>% check_equal()
     success_msg("Nice job. This result makes intuitive sense: people want to get outside more often when it gets warmer than when it's colder, and when it does get colder, they will likely go to fewer games. There are potential other complicating factors, like the other variables in our dataset, and some potential complicating factors that aren't in our dataset, like when kids are out of school for the summer and families are therefore more available to go to baseball games. So let's keep digging!")
 ```
 
@@ -717,9 +713,9 @@ Solution4<-"decrease"
 
 `@sct`
 ```{r}
-test_object("Solution3")
-    test_object("Solution4")
-    test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution3") %>% check_equal()
+ex() %>% check_object("Solution4") %>% check_equal()
     success_msg("Good job. Negative correlations can often be confusing to interpret, and their real-world implications is not always intuitive. In this case, do people go to more baseball games when the team improves, or does the team improve when more people go to their games? We can't tell. This data just shows us that there is a negative correlation between these variables in our sample, not a causal effect.")
 ```
 
