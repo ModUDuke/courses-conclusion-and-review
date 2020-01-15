@@ -39,10 +39,13 @@ model<-lm(`Price Sold`~Age,data=WePhone)
 ggplot(data=WePhone,aes(Age, `Price Sold`))+geom_point()+geom_abline(intercept = model$coefficients[1],slope=model$coefficients[2])+ ggtitle("Scatter Plot and OLS Regression of WePhone Age on Price Sold")
 ```
 
-`@sct`
 ```{r}
-
+msg1="Correct! As the age of WePhones increased, the price at which they were sold decreased."
+msg2="Although the plot does not indicate if their results were statistically significant, they do indicate a relationship. Try again."
+msg3="Think this through carefully. Does an increase in age increase or decrease the price sold of a WePhone? Try again."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```
+
 
 ---
 
@@ -82,7 +85,10 @@ ggplot(data=WePhone,aes(`Price Sold`,Age))+geom_point()+geom_abline(intercept = 
 
 `@sct`
 ```{r}
-
+msg1="This phrasing does not address a causal interpretation of the relationship, but rather is a description of an association between WePhone age and sales price."
+msg2="This is the most intuitive explanation for the relationship between WePhone sale price and age, but not for this particular regression model, which was designed to use age as the dependent variable. Try again."
+msg3="Correct! Well, at least according to this model. This is an example of reverse causality. Obviously, we know that in reality the age of any object can only be influenced by time, so we know that this interpretation of their causal relationship is false: price sold cannot cause a phone's age. The analyst should try a different model next time."
+ex() %>% check_mc(3, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
 ---
@@ -126,6 +132,11 @@ Based on this formula, what is a valid predicted price for a WePhone that is exa
 
 `@sct`
 ```{r}
+msg1="Not quite. Try again."
+msg2="Well done! Notice any advantages of regression models versus t-tests? In a t.test, we can only predict the outcome from a binary treatment variable (that is, the outcome for respondents in the treatment versus control group), In a regression model, we can predict the outcome from a continuous treatment variable (e.g. age)."
+msg3="Oops, that's too high. Try again."
+msg4="That's too low. Try again."
+ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 
 ```
 
@@ -310,8 +321,8 @@ names(WePhone)[2]<-"PriceSold"
 
 `@sct`
 ```{r}
-test_object("Solution5")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution5") %>% check_equal()
 success_msg("Good work! Outliers typically effect the slope of a bivariate regression line least when they occur at middle values of X. When an outlier significantly alters the slope of a regression line, we refer to it as an 'influence point.' These typically need to be dealt with or removed to produce reliable regression results (i.e. a single outlier could mask the entire relationship between two variables). As a caveat, it should be noted that outliers do not always bias bivariate relationships (e.g. when an unusually high value of Y occurs with an unusually high value of X), but such outliers tend to have great statistical 'leverage,' which can lead to substantial bias in multivariate relationships (such as when a regression model includes more than one key independent variable). ")
 ```
 
@@ -420,10 +431,10 @@ Solution4<-"Solution3"
 
 `@sct`
 ```{r}
-test_object("Solution2")
-test_object("Solution3")
-test_object("Solution4")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution2") %>% check_equal()
+ex() %>% check_object("Solution3") %>% check_equal()
+ex() %>% check_object("Solution4") %>% check_equal()
 success_msg("Good work! Larger datasets tend to be more robust to 'statistical noise' - unexplained variation in the sample. In this example, statistical noise decreased the relationship between Age and PriceSold (i.e. the coefficient of Age in the model). However, it is possible for statistical noise to induce spurious relationships as well.")
 ```
 
@@ -536,8 +547,8 @@ Solution4<-"No"
 
 `@sct`
 ```{r}
-test_object("Solution4")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
 success_msg("Good work! Even though our model in Solution 1 appears similar to our model in Solution2,  we should **not** include all of these variables into our final model, or use them to inform NixSplash's ad-campaign. Statistical models should always be guided by theory. If there is no clear reason why a variable should effect an outcome of interest, we should not include it in our model, even if it improves model fit. As a reminder, statistical models do not provide definitive proof of causality; they are simply a tool that we can use to test our assumptions about the world.")
 ```
 
@@ -650,9 +661,9 @@ t.test(NERD$ParentEducation[NERD$Treatment==1],NERD$ParentEducation[NERD$Treatme
 
 `@sct`
 ```{r}
-test_object("Solution2")
-test_object("Solution3")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution2") %>% check_equal()
+ex() %>% check_object("Solution3") %>% check_equal()
 success_msg("Good work! There appears to be a positive and statistically significant effect for playing NERD on respondent's communication skills, but the t-test suggests that our Treatment group has much more educated parents than in our Control group, so our treatment and control groups are imbalanced. In the next question, we'll try to use matching methods to overcome this problem.")
 ```
 
@@ -769,8 +780,8 @@ match.it <- matchit(Treatment ~ ParentEducation+BooksOwned+ReadsBlogs+Siblings+B
 
 `@sct`
 ```{r}
-test_object("Solution4")
-test_object("Solution5")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
+ex() %>% check_object("Solution5") %>% check_equal()
 success_msg("Good work! In our unmatched model, the treatment effect (playing NERD) appeared to have a positive and statistically significant effect on respondent's communication skills. However, when we balanced the data, this effect disappeared. It turns out that the original treatment effect was spurious; it resulted from our biased sample of people who play NERD. When we compared people who played NERD to relatively similar people who don't play nerd, this treatment effect disappeared. That means that playing NERD does not improve people's communication skills; rather, NERD players have good communication skills because the people who are attracted to NERD tend to have good communication skills. Or in other words, this association results from a selection bias - not from a treatment effect.")
 ```
