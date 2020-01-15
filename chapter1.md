@@ -127,13 +127,13 @@ plot4 <- ggplot(anscombe, aes(x=x4, y=y4)) + geom_point(size=circle.size, pch=21
 grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax to produce graphs borrowed from Sean Dolinar (stats.seandolinar.com-Tutorials)")
 ```
 
-`@feedback`
+`@sct`
 ```{r}
-- Look at the graphs to the right of the page. Are you sure they look identical?
-- Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
-- Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
-- Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
-
+msg1="Look at the graphs to the right of the page. Are you sure they look identical?"
+msg2="Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them."
+msg3="Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again."
+msg4="Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again."
+ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -148,7 +148,7 @@ xp: 50
 skills: 1
 ```
 
-![](https://assets.datacamp.com/production/repositories/1444/datasets/fdf1e1ca75881f0c95ccd9c843580761cda5612e/chart.jpeg)
+![](https://assets.datacamp.com/production/repositories/5613/datasets/141dd1f6a9e9a83bca93fa3e6bd292702d7f8a4e/chart%20resized.jpeg)
 
 As you can see in this chart, the per capita consumption of mozzarella cheese in the US is highly correlated with the number of PhDs awarded annually in Civil Engineering in the US. In fact, it’s a 95% correlation. Therefore, does this strong data prove that these two variables are **causally** connected?
 
@@ -303,7 +303,8 @@ Solution1<- mean(UnterHR$LeaveJob[UnterHR$Treatment==1])-mean(UnterHR$LeaveJob[U
 
 `@sct`
 ```{r}
-test_object("Solution1")
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
 success_msg("Good work! It seems that reducing the size of HR reduced Unter employees' intentions to leave their jobs")
 ```
 
@@ -358,8 +359,13 @@ n=382
 ```
 
 `@sct`
-```{r}
 
+```{r}
+msg1="Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
+msg2="Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again."
+msg3="While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again."
+msg4="You're right about the gender-specific effects, but not the pooled effects. Check your results again."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -418,6 +424,7 @@ n=382
 # 2) Write the code that determines the average treatment effect among women. Assign this value to Solution2.
 
     Solution2<-
+    
 ```
 
 `@solution`
@@ -428,54 +435,10 @@ Solution2 <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==1])-me
 
 `@sct`
 ```{r}
-test_object("Solution1")
-test_object("Solution2")
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
+ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
 
----
 
-## Insert exercise title here
-
-```yaml
-type: NormalExercise
-key: deb104dc83
-xp: 100
-```
-
-blorpy bloro	anasdf thenadlknals dkjf ;ajsdoiuf asdf dlijdf	
-
-`@instructions`
-Firstj do that
-then do this man
-woah
-
-`@hint`
-i told you to do that you person of character!
-
-`@pre_exercise_code`
-```{r}
-library(dplyr)
-library(ggplot2)
-
-do stuff	
-
-nvme<-1
-```
-
-`@sample_code`
-```{r}
-what is it for? man
-```
-
-`@solution`
-```{r}
-the solution is nvme=1
-```
-
-`@sct`
-```{r}
-nvme=1
-
-did you get nvme=1? then great!
-```
