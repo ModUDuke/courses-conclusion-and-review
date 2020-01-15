@@ -75,7 +75,9 @@ p+geom_line()+geom_point()+
 
 `@sct`
 ```{r}
-
+msg1="Take a closer look at the chart. Does it seem to change after the year 2020? Try again." 
+msg2="Correct! Rates of solar panel sales for both groups at the same rate prior to Birdemic's release, but the rate of this increase was smaller for those who watched Birdemic following 2010" 
+ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
 ```
 
 ---
