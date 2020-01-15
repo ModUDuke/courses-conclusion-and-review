@@ -253,7 +253,8 @@ Exams3<-data.frame(id=1:n,wave=3)
 
 `@sct`
 ```{r}
-test_object("Solution7")
+ex() %>% check_error()
+ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! You now know the basics to estimating fixed and random effects models with panel data. As you can see, these models often give very different results than typical pooled OLS models, and their estimates tend to be much more robust. You may still be wondering when you should use random versus fixed effects models. In general, if you can find statistically significant effects with fixed effects models, they are preferable to random effects models. However, there are a variety of tools available for comparing whether you get any benefit from using a fixed effects model (e.g. the Hausman test). In general, use you intution and see what other people have done in similar situations!")
 ```
 
@@ -524,8 +525,9 @@ Solution6 <- "yes"
 
 `@sct`
 ```{r}
-test_object("Solution4")
-test_object("Solution6")
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
+ex() %>% check_object("Solution6") %>% check_equal()
 success_msg("Congratulations! By now, you should have a sense of the sorts of causal inference problems that panel data can help us overcome. There are a variety of methodological approaches you can take with panel data, each with their own pros and cons. This is why it is always critical to carefully think through what your cause and outcomes of interest are, and how they might be related causally. If you found this course useful, consider trying our other courses on Causal Inference with R.")
 ```
 
@@ -699,6 +701,8 @@ Solution4<-glm(rate~Year*Implemented,data=Jail)
 
 `@sct`
 ```{r}
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
 success_msg("Good work! Implementing a difference-in-differences analysis is relatively easy. We can see from the result of Solution2 that the estimate for Year 2005 and Implemented were positive, suggesting that there was an increasing trend in rates of incarceration over time, and cities that implemented the Housing First policy tended to have higher rates of incarceration. However, the interaction term 'Year2015:Implemented' was negative, meaning that over time, cities that implemented the Housing First policy had negative association with incarceration rates relative to those who did not implement the Housing First policy. In other words, cities that implemented the Housing First policy had lower rates of incarceration than one would expect based on common trends.")
 ```
 
@@ -801,8 +805,8 @@ set.seed(1)
 
 `@sct`
 ```{r}
-test_object("TV")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("TV") %>% check_equal()
 success_msg("Good work! With the standardized measurements, we do indeed see an increase in watch time that is very statistically significant (the p value is about 0.003). So getting a new TV does seem to have a causal effect on how much television people watch. Measurement in surveys is always a tricky matter, because how you measure a response can impact what kinds of quantitative analysis methods you can use, as well as how to interpret the results. In addition, and just as importantly, the respondents will interpret different options in different ways: some might be intimidated if they see too many choices, and others may skip questions that ask for free form answers. It's complicated, so be sure to take it slowly, carefully, and talk about the analysis with other people.")
 ```
 
@@ -991,7 +995,8 @@ Exams3<-data.frame(id=1:n,wave=3)
 
 `@sct`
 ```{r}
-test_object("Solution7")
+ex() %>% check_error()
+ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! You now know the basics to estimating fixed and random effects models with panel data. As you can see, these models often give very different results than typical pooled OLS models, and their estimates tend to be much more robust. You may still be wondering when you should use random versus fixed effects models. In general, if you can find statistically significant effects with fixed effects models, they are preferable to random effects models. However, there are a variety of tools available for comparing whether you get any benefit from using a fixed effects model (e.g. the Hausman test). In general, use you intution and see what other people have done in similar situations!")
 ```
 
@@ -1262,7 +1267,8 @@ Solution6 <- "yes"
 
 `@sct`
 ```{r}
-test_object("Solution4")
-test_object("Solution6")
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
+ex() %>% check_object("Solution6") %>% check_equal()
 success_msg("Congratulations! By now, you should have a sense of the sorts of causal inference problems that panel data can help us overcome. There are a variety of methodological approaches you can take with panel data, each with their own pros and cons. This is why it is always critical to carefully think through what your cause and outcomes of interest are, and how they might be related causally. If you found this course useful, consider trying our other courses on Causal Inference with R.")
 ```
