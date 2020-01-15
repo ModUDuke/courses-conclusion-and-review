@@ -163,10 +163,9 @@ ControlGroup <- OHIE[OHIE$treatment==0, ]
 
 `@sct`
 ```{r}
-test_function("str", incorrect_msg = "Did you use the `str` function?")
-test_object("TreatmentGroup")
-test_object("ControlGroup")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("TreatmentGroup") %>% check_equal()
+ex() %>% check_object("ControlGroup") %>% check_equal()
 success_msg("Good work!")
 ```
 
@@ -229,9 +228,8 @@ Solution2<-ifelse(sign(Solution1$conf.int[1])==sign(Solution1$conf.int[2]),"Yes"
 
 `@sct`
 ```{r}
-test_object("Solution2")
-test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! Since there is no significant difference in rates of gender between the treatment and control groups, we assume the groups are balanced on gender.")
 ```
 
@@ -298,10 +296,8 @@ Solution3<-ifelse(Solution2$p.value<.05,"Yes","No")
 
 `@sct`
 ```{r}
-test_function("mean", incorrect_msg = "Did you use the `mean` function?")
-test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
-test_object("Solution3")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution3") %>% check_equal()
 success_msg("Good work. The high p-value means that the estimate is not statistically significan, which is not what we were hoping for. Let's see if that's also true of the treatment effect on diastolic blood pressure.")
 ```
 
@@ -361,9 +357,8 @@ Solution2<-ifelse(Solution1$p.value<.05,"Yes","No")
 
 `@sct`
 ```{r}
-test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
-test_object("Solution2")
-test_error()
+ex() %>% check_error()
+ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work. Our estimate for the treatment effect on diastolic blood pressure had a p-value under .05, so we will say that it's statistically significant. Because some of our estimates were not statistically significant, and some are, we probably will need to work a little harder before we can conclude that our experiment suggests that the Medicaid program should be expanded.")
 ```
 
@@ -586,10 +581,8 @@ summary(KittyCatch$DistanceWalked)
 
 `@sct`
 ```{r}
-test_function("str", incorrect_msg = "Did you use the `str` function?")
-test_object("Solution2")
-test_function("mean", incorrect_msg = "Did you use the `mean` function?")
-test_function("summary", incorrect_msg = "Did you use the `summary` function?")
+ex() %>% check_error()
+ex() %>% check_object("Solution2") %>% check_equal()
 
 success_msg("Great Job! Notice that the maximum value is much larger than the mean, median, and 3rd quartile of the dataset. This outlier might bias our t-test results by violating its assumption that the data is normally distributed.")
 ```
@@ -704,9 +697,7 @@ plot(density(KittyCatch$DistanceWalked))
 
 `@sct`
 ```{r}
-test_function("plot", incorrect_msg = "Did you use the `plot` function?")
-test_function("head", incorrect_msg = "Did you use the `head` function?")
-test_function("ifelse", incorrect_msg = "Did you use the `ifelse` function?")
+ex() %>% check_error()
 
 success_msg("Nice work so far!")
 ```
@@ -826,9 +817,7 @@ t.test(KittyCatch$Age[KittyCatch$Treatment==0],KittyCatch$Age[KittyCatch$Treatme
 
 `@sct`
 ```{r}
-test_function("boxplot", incorrect_msg = "Did you use the `boxplot` function?")
-test_function("cor", incorrect_msg = "Did you use the `cor` function?")
-test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
+ex() %>% check_error()
 
 success_msg("Great! We've made a lot of progress, so let's look further at the quality of our data.")
 ```
@@ -953,10 +942,8 @@ KittyCatch<-KittyCatch[!is.na(KittyCatch$TotalHoursPlayed),]
 
 `@sct`
 ```{r}
-test_function("summary", incorrect_msg = "Did you use the `summary` function?")
-test_function("cor", incorrect_msg = "Did you use the `cor` function?")
-test_function("is.na", incorrect_msg = "Did you use the `is.na` function?")
-test_function("t.test", incorrect_msg = "Did you use the `t.test` function?")
+ex() %>% check_error()
+
 
 success_msg("Whew! We've explored the data, dealt with the issues, and now we can finally calculate the treatment effect of our experiment!")
 ```
@@ -1061,7 +1048,8 @@ Solution1<-mean(KittyCatch$DistanceWalked[KittyCatch$Treatment==1])-mean(KittyCa
 
 `@sct`
 ```{r}
-test_object("Solution1")
-test_object("Solution3")
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
+ex() %>% check_object("Solution3") %>% check_equal()
 success_msg("Good work! Hooray!! Our naive estimate of the average treatment effect was opposite our estimate after we tried to balance the data. However, we had to ignore a large fraction of our observations to get to that conclusion. This is the difficulty of computing conditional average treatment effects with t-tests. However, this problem can be sidestepped with regression models. Our next module teaches how to use regression models in detail.")
 ```
