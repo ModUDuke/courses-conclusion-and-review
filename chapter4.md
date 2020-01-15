@@ -531,6 +531,7 @@ Solution3<-summary(lm(pos_depression_screen~prediction+gender_inp+age_35_49_inp+
 
 `@sct`
 ```{r}
+ex() %>% check_error()
 ex() %>% check_object("Solution2") %>% check_equal()
 ex() %>% check_object("Solution3") %>% check_equal()
 success_msg("Good work! This estimate for the causal effect of insurance on our outcome variable, positive depression screens, is about 5 times larger than we saw in the Intention-to-Treat analysis. It looks like health insurance does improve health outcomes, at least for this variable.")
@@ -998,6 +999,7 @@ DCdensity <- function(runvar,cutpoint,bin=NULL,bw=NULL,verbose=FALSE,plot=TRUE,e
 
 `@sct`
 ```{r}
+ex() %>% check_error()
 ex() %>% check_object("Solution4") %>% check_equal()
 ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! That outlier just below the cutoff looks like a clear sign that the teams are trying to be losing by about a point at halftime. In fact, the p-value is so small that it is nearly 0, and it's hard to be more obvious than that in statistics! But there's more work to be done before we make any conclusions.  The McCrary test cannot prove manipulation just by itself, but it's a very helpful indicator that we should look closer at the exact mechanics going on in these new NBA teams during their games.")
@@ -3059,6 +3061,7 @@ summary.RD<-function(object,digits=max(3, getOption("digits") - 3),...){
 
 `@sct`
 ```{r}
+ex() %>% check_error()
 ex() %>% check_object("Solution5") %>% check_equal()
 success_msg("Good work! From the looks of it, the quadratic specification of halftime margin looks very similar to the nonparametric estimate (4.8 points versus 4.4 points, respectively), which suggests that they may be closer to the real effect. The linear specification seems to not capture the true relationship between halftime margin and final margin, as it only estimates an effect of 2.5 points.")
 ```
@@ -3135,10 +3138,9 @@ p+geom_line()+geom_point()+
   labs(y="Proportion Own Solar Panels",color="Watched Birdemic")
 ```
 
-`@sct`
-```{r}
-
-```
+msg1="Take a closer look at the chart. Does it seem to change after the year 2020? Try again."
+msg2="Correct! Rates of solar panel sales for both groups at the same rate prior to Birdemic's release, but the rate of this increase was smaller for those who watched Birdemic following 2010"
+ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
 
 ---
 
@@ -3313,7 +3315,8 @@ Exams3<-data.frame(id=1:n,wave=3)
 
 `@sct`
 ```{r}
-test_object("Solution7")
+ex() %>% check_error()
+ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! You now know the basics to estimating fixed and random effects models with panel data. As you can see, these models often give very different results than typical pooled OLS models, and their estimates tend to be much more robust. You may still be wondering when you should use random versus fixed effects models. In general, if you can find statistically significant effects with fixed effects models, they are preferable to random effects models. However, there are a variety of tools available for comparing whether you get any benefit from using a fixed effects model (e.g. the Hausman test). In general, use you intution and see what other people have done in similar situations!")
 ```
 
@@ -3582,7 +3585,9 @@ Solution6 <- "yes"
 
 `@sct`
 ```{r}
-test_object("Solution4")
-test_object("Solution6")
+ex() %>% check_error()
+ex() %>% check_object("Solution4") %>% check_equal()
+ex() %>% check_object("Solution6") %>% check_equal()
+
 success_msg("Congratulations! By now, you should have a sense of the sorts of causal inference problems that panel data can help us overcome. There are a variety of methodological approaches you can take with panel data, each with their own pros and cons. This is why it is always critical to carefully think through what your cause and outcomes of interest are, and how they might be related causally. If you found this course useful, consider trying our other courses on Causal Inference with R.")
 ```
