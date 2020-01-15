@@ -112,8 +112,7 @@ mean(Soggy$time[Soggy$cereal=="TechnoCrunch"])
 
 `@sct`
 ```{r}
-test_function("mean", incorrect_msg = "Did you use the `mean` function?")
-test_error()
+ex() %>% check_error()
 success_msg("Good work! It appears that TechnoCrunch's crunchiness lasts longer than does NeoPuffs. But could there be any factors that are confounding this relationship?")
 ```
 
@@ -194,8 +193,7 @@ cor(Soggy$milk,Soggy$time)
 
 `@sct`
 ```{r}
-test_function("cor", incorrect_msg = "Did you use the `cor` function?")
-test_error()
+ex() %>% check_error()
 success_msg("Good work! There is a positive correlation between fiber and time. It is possible that this correlation might confound the relationship between time and cereal brand, but Puritan Wheat Inc. seems to be satisfied with these results!")
 ```
 
@@ -257,7 +255,11 @@ Suppose Eddie's Ice Cream wants to know the effect of a new chocolate ice cream 
 
 `@sct`
 ```{r}
-
+msg1="What does (-10 + 6 + -5)/3 equal? Try again."
+msg2="What does (-10 + 6 + -5)/3 equal? Try again."
+msg3="What does (-10 + 6 + -5)/3 equal? Try again."
+msg4="Correct!"
+ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -290,7 +292,11 @@ Eddie's then surveyed three people who were not regular Eddie's customers. Their
 
 `@sct`
 ```{r}
-
+msg1="Correct! CATE(regular) = (-10 + 6 + (-5)/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3. So the difference is -3 - 1/3 = -3.33. We see that the average effect on regular customers is much different than on non-regulars: the regular customers will buy a lot less ice cream on average."
+msg2="Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3."
+msg3="Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3."
+msg4="Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -370,7 +376,8 @@ Solution1<- mean(UnterHR$LeaveJob[UnterHR$Treatment==1])-mean(UnterHR$LeaveJob[U
 
 `@sct`
 ```{r}
-test_object("Solution1")
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
 success_msg("Good work! It seems that reducing the size of HR reduced Unter employees' intentions to leave their jobs")
 ```
 
@@ -426,11 +433,11 @@ n=382
 
 `@sct`
 ```{r}
-msg1 = "Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
-msg2 = "Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive.  Try again."
-msg3 = "While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again."
-msg4 = "You're right about the gender-specific effects, but not the pooled effects. Check your results again."
-test_mc(correct = 1, feedback_msgs = c(msg1,msg2,msg3,msg4))
+msg1="Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
+msg2="Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again."
+msg3="While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again."
+msg4="You're right about the gender-specific effects, but not the pooled effects. Check your results again."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -499,7 +506,8 @@ Solution2 <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==1])-me
 
 `@sct`
 ```{r}
-test_object("Solution1")
-test_object("Solution2")
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
+ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
