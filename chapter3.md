@@ -1,6 +1,19 @@
 ---
 title: 'Regressions & Modeling with Regression'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Regression & Modeling with Regression course here on DataCamp.'
+
+---
+
+## Basic Elements of a Regression Table
+
+```yaml
+type: VideoExercise
+key: 8bb34ee718
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/217554002
+```
 ---
 
 ## REG: Interpreting Regressions
@@ -174,6 +187,23 @@ Papers often report several regression models next to each other. This table sho
 - This would mean that the omitted variables confound the relationship between property rights protections and GDP by decreasing the it. Try again
 - This is usually not true, nor shown in this figure. Try again.
 - Correct! Without controlling for these variables, the relationship between property rights protections and GDP seemed larger than it truly was.
+
+
+
+
+
+---
+
+## The Credibility of the Unconfoundedness Assumption
+
+```yaml
+type: VideoExercise
+key: 2bbda58ea3
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/217555887
+```
 
 ---
 
@@ -551,6 +581,20 @@ ex() %>% check_error()
 ex() %>% check_object("Solution4") %>% check_equal()
 success_msg("Good work! Even though our model in Solution 1 appears similar to our model in Solution2,  we should **not** include all of these variables into our final model, or use them to inform NixSplash's ad-campaign. Statistical models should always be guided by theory. If there is no clear reason why a variable should effect an outcome of interest, we should not include it in our model, even if it improves model fit. As a reminder, statistical models do not provide definitive proof of causality; they are simply a tool that we can use to test our assumptions about the world.")
 ```
+
+---
+
+## Matching Methods
+
+```yaml
+type: VideoExercise
+key: b53f684199
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/217555077
+```
+
 
 ---
 
