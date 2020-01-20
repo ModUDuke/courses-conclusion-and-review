@@ -3,6 +3,21 @@ title: Introduction
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.'
 ---
 
+
+
+## Correlation vs. Causation
+
+```yaml
+type: VideoExercise
+key: 0f66a8c3f0
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/230622365
+```
+
+
+
 ## INTRO: Comparing Breakfast Cereals: Outcome Variables
 
 ```yaml
@@ -138,6 +153,20 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ---
 
+## The Average Treatment Effect
+
+```yaml
+type: VideoExercise
+key: df9b958a75
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/230622767
+```
+
+
+---
+
 ## Learn Engineering by Eating Cheese?
 
 ```yaml
@@ -227,6 +256,21 @@ Since the number of baseball games that this individual went to appears to incre
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
 - Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion.
+
+
+---
+
+## The Conditional Average Treatment Effect
+
+```yaml
+type: VideoExercise
+key: 6fc38f8905
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/230623221
+```
+
 
 ---
 
