@@ -1,6 +1,19 @@
 ---
 title: 'Panel Data'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Panel Data course here on DataCamp.'
+
+---
+## The Common Trends Assumption
+```yaml
+type: VideoExercise
+key: 5d221a7ed2
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/226208683
+```
+
+
 ---
 
 ## Interpreting Longitudinal Outcomes
@@ -36,6 +49,17 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
 - Correct! This is exactly how we interpret difference-in-differences outcomes. Even though Springfield had higher rates of diabetes following the implementation of its tax on corn syrup products, it appears that Springfield's rate diabetes grew at a smaller rate than in Laughterville.
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
+```
+
+---
+## Graphical Analysis of the Common Trend Assumption and Diff-in-Diffs
+```yaml
+type: VideoExercise
+key: e594e9c9a2
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/226206681
 ```
 
 ---
@@ -108,6 +132,17 @@ Think about what you know about causal inference. What might be an advantage for
 - You should be testing a hypothesis you formed before you started, otherwise you aren't following the scientific method! Try again.
 - Well done
 - You have labeled the dependent and independent variables based on your theory and knowledge of the research question, not based on the direction of the arrow of time. So try again. 
+```
+
+---
+## The Three Kinds of Panel Data
+```yaml
+type: VideoExercise
+key: 768ce0d1ab
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/226207544
 ```
 
 ---
@@ -810,6 +845,19 @@ set.seed(1)
 ex() %>% check_error()
 ex() %>% check_object("TV") %>% check_equal()
 success_msg("Good work! With the standardized measurements, we do indeed see an increase in watch time that is very statistically significant (the p value is about 0.003). So getting a new TV does seem to have a causal effect on how much television people watch. Measurement in surveys is always a tricky matter, because how you measure a response can impact what kinds of quantitative analysis methods you can use, as well as how to interpret the results. In addition, and just as importantly, the respondents will interpret different options in different ways: some might be intimidated if they see too many choices, and others may skip questions that ask for free form answers. It's complicated, so be sure to take it slowly, carefully, and talk about the analysis with other people.")
+```
+
+---
+
+## Panel Data Terminology
+
+```yaml
+type: VideoExercise
+key: bd7bd16de8
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/226207441
 ```
 
 ---
