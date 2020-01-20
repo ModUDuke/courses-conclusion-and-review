@@ -3,7 +3,21 @@ title: Experiments
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Experiments course here on DataCamp.'
 ---
 
-## EXP: Rainfall in Sonoma County and eBay sales
+
+## Randomized Experiments
+
+```yaml
+type: VideoExercise
+key: 9e9326a35b
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/198212082
+```
+
+
+---
+## Rainfall in Sonoma County and eBay sales
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -13,7 +27,7 @@ xp: 50
 skills: 1
 ```
 
-As mentioned in the video, rainfall in Sonoma County, California is highly correlated with eBay's total gross merchandise volume: 
+It turns out that rainfall in Sonoma County, California is highly correlated with eBay's total gross merchandise volume: 
 ![](https://assets.datacamp.com/production/repositories/1145/datasets/b97fef1a9b4ea4e8357ac2b39d04bf4c4e77cb34/ebayandsonomarainfall.png)
 
 Which of the following answers could support a **causal explanation** for this relationship?
@@ -64,6 +78,19 @@ Annual Apple iPhone sales are highly correlated with annual eBay sales. If this 
 
 ---
 
+## p Values, Confidence Intervals, and Hypothesis Tests
+
+```yaml
+type: VideoExercise
+key: 76542ba835
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/205124286
+```
+
+---
+
 ## Confidence Intervals
 
 ```yaml
@@ -90,6 +117,19 @@ Why might it be risky to implement a policy that has an that has average treatme
 - Correct! It would be very risky to implement a policy that could potentially have the opposite effect than you intended.
 - This is often how such confidence intervals are interpreted, but this is a mistake. A confidence interval that contains zero does is not evidence that there is no treatment effect, but that it is uncertain whether there is a treatment effect. Try again.
 - A confidence interval that contains zero is inherently problematic.  Try again.
+
+---
+
+## Reading Average Treatment Effect & Confidence Intervals in a Table: Depression in the Oregon Health Experiment
+
+```yaml
+type: VideoExercise
+key: 47f92415c5
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/198212094
+```
 
 ---
 
@@ -364,6 +404,19 @@ success_msg("Good work. Our estimate for the treatment effect on diastolic blood
 
 ---
 
+## Noncompliance in Experiments
+
+```yaml
+type: VideoExercise
+key: a5a7d9f747
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/198212091
+```
+
+---
+
 ## Offering a Higher Credit Card Limit: Quantifying Noncompliance Concerns
 
 ```yaml
@@ -423,6 +476,21 @@ Which one of the following approaches is *NOT* a way to deal with treatment nonc
 - Correct! Randomized Control Trials are not a valid way to correct for noncompliance, because they themselves are susceptible to treatment noncompliance.
 - Intention to Treat Analysis is definitely a common way to deal with noncompliance, and we're looking for a way that is **NOT** appropriate, so try again
 - Assuming Random Compliance is not always applicable, but it is nonetheless commonly used to deal with noncompliance, so try again.
+
+
+---
+
+## The Two Kinds of Natural Experiments
+
+```yaml
+type: VideoExercise
+key: 355ed25bc9
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/199856738
+```
+
 
 ---
 
