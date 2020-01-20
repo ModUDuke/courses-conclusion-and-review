@@ -657,9 +657,9 @@ video_link: //player.vimeo.com/video/218502963
 
 ```yaml
 type: VideoExercise
-key: bf3c9abc64
+key: b16cee29d0
 xp: 50
-video_link: //player.vimeo.com/video/306239772
+video_link: "//player.vimeo.com/video/306239772"
 ```
 
 
