@@ -1,8 +1,22 @@
 ---
 title: 'IV & RDD'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - IV & RDD course here on DataCamp.'
+
+
 ---
 
+## The Logic of Instrumental Variables
+
+```yaml
+type: VideoExercise
+key: 9c7273586e
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/219558904
+```
+
+---
 ## IV: What is the Relationship Between the Instrument and the Outcome?
 
 ```yaml
@@ -116,6 +130,32 @@ So now we can summarize the main purpose of IV analysis. Once again, how does th
 - Incorrect. We need to subtract out the effect of the instrument on the treatment from the correlation of the instrument on the outcome. Try again.
 - Correct! Way to go!
 - That is not exactly the process. We do not add these effects together to find the causal effect. Try again.
+
+---
+
+## Some Instrumental Variables Terminology
+
+```yaml
+type: VideoExercise
+key: 3ae8d65d96
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/219565557
+```
+
+---
+
+## The Problem of Weak Instruments
+
+```yaml
+type: VideoExercise
+key: bf3c9abc64
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/219559996
+```
 
 ---
 
@@ -599,6 +639,20 @@ So in this study, which variable is the outcome variable, which is the running v
 
 ---
 
+## How to Compute Causal Effects in a Regression Discontinuity Analysis
+
+```yaml
+type: VideoExercise
+key: 1a5dfd94ba
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/218502963
+```
+
+
+---
+
 ## Let's Code: Examining Manipulation in Regression Discontinuity Design
 
 ```yaml
@@ -1003,6 +1057,20 @@ ex() %>% check_error()
 ex() %>% check_object("Solution4") %>% check_equal()
 ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! That outlier just below the cutoff looks like a clear sign that the teams are trying to be losing by about a point at halftime. In fact, the p-value is so small that it is nearly 0, and it's hard to be more obvious than that in statistics! But there's more work to be done before we make any conclusions.  The McCrary test cannot prove manipulation just by itself, but it's a very helpful indicator that we should look closer at the exact mechanics going on in these new NBA teams during their games.")
+```
+
+
+---
+
+## "Fuzzy" Regression Discontinuity: Addressing Blurry Lines Between Groups
+
+```yaml
+type: VideoExercise
+key: f862652b6e
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/218504968
 ```
 
 ---
@@ -3064,6 +3132,19 @@ summary.RD<-function(object,digits=max(3, getOption("digits") - 3),...){
 ex() %>% check_error()
 ex() %>% check_object("Solution5") %>% check_equal()
 success_msg("Good work! From the looks of it, the quadratic specification of halftime margin looks very similar to the nonparametric estimate (4.8 points versus 4.4 points, respectively), which suggests that they may be closer to the real effect. The linear specification seems to not capture the true relationship between halftime margin and final margin, as it only estimates an effect of 2.5 points.")
+```
+
+---
+
+## ATEs, CATEs, and LATEs: What's the Difference?
+
+```yaml
+type: VideoExercise
+key: 162436a553
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/219561649
 ```
 
 ---
