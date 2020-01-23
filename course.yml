@@ -1,5 +1,17 @@
-title: woopie test
-description: Course description goes here.
+title: Causal Inference with R - Conclusion & Review
+description: Welcome to the conclusion of the Causal Inference with R Bootcamp series, the last of 7 courses on causal inference concepts and methods created by Duke University with support from eBay, Inc. Designed to teach you about concepts, methods, and how to code in R with realistic data, this course reviews each of the main methods for finding causal inference in your data, touching on some of the key concepts (and problems) with each, and gives you a chance to practice them. We’ll stay away from dense statistical math and focus instead on higher level concepts that data scientists need to always consider when examining and making inferences about experimental data. The course instructors and creators are Dr. Matt Masten (Duke University), James Speckart (Duke), Brian Aronson (Duke), Dr. Tyler Ransom (University of Oklahoma), Dr. Bentley Coffey (University of South Carolina), and Alexandra Cooper (Duke).
+instructors      :
+ - matt.masten@duke.edu
+ - bentleygcoffey@gmail.com
+ - speckart@duke.edu
+ - bdaronson@gmail.com
+ - ransom@ou.edu
+ - cooper@duke.edu
+ - weston@datacamp.com
+university       : DataCamp
+difficulty_level : 4
+time_needed      : 10 hours
+programming_language: r
 programming_language: r
 from: "r-base-prod:v1.0.2"
 #from: "tidyverse-base-prod:v1.0.2"
