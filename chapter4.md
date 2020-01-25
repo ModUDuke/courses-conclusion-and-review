@@ -1,6 +1,6 @@
 ---
-title: 'Regressions & Modeling with Regression'
-description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Regression & Modeling with Regression course here on DataCamp.'
+title: 'Regressions'
+description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Regression course here on DataCamp.'
 
 ---
 
