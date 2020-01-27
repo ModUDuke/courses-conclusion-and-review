@@ -3,22 +3,7 @@ title: Introduction
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.'
 ---
 
-
-
 ## Correlation vs. Causation
-
-```yaml
-type: VideoExercise
-key: 0f66a8c3f0
-lang: r
-xp: 50
-skills: 1
-video_link: //player.vimeo.com/video/230622365
-```
-
-
-
-## INTRO: Comparing Breakfast Cereals: Outcome Variables
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -26,6 +11,7 @@ key: 362bf33c36
 lang: r
 xp: 50
 skills: 1
+video_link: //player.vimeo.com/video/230622365
 ```
 
 The food scientists at breakfast cereal manufacturer Puritan Wheat Inc. have developed a new breakfast cereal product called TechnoCrunch. It has a biodegradable nanomaterial coating designed to keep its flakes crispy in milk for longer than the flakes in its competitor cereal, NeoPuffs. Now Puritan Wheat wants to run an experiment to see if the formula works, so it compares the time it takes for TechnoCrunch to get soggy in milk versus the time it takes for NeoPuffs to get soggy. 
@@ -257,7 +243,6 @@ Since the number of baseball games that this individual went to appears to incre
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables.
 - Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion.
 
-
 ---
 
 ## The Conditional Average Treatment Effect
@@ -403,7 +388,6 @@ n=382
 ```
 
 `@sct`
-
 ```{r}
 msg1="Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
 msg2="Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again."
@@ -484,5 +468,3 @@ ex() %>% check_object("Solution1") %>% check_equal()
 ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
-
-

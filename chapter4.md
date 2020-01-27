@@ -1,7 +1,6 @@
 ---
-title: 'Regressions'
+title: Regressions
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Regression course here on DataCamp.'
-
 ---
 
 ## Basic Elements of a Regression Table
@@ -14,6 +13,8 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/217554002
 ```
+
+
 ---
 
 ## Interpreting Regressions
@@ -40,25 +41,16 @@ eGulf runs an OLS regression to determine the relationship between WePhone age a
 
 `@pre_exercise_code`
 ```{r}
-set.seed(1)
-library(ggplot2)
-WePhone<-data.frame(age=rep(c(1,2,3,4,5),5))
-WePhone$Feedback<-round(rnorm(n=25,mean=90,sd=3))
-WePhone$Age<-WePhone$age+rnorm(n=25,mean=0,sd=.3)-WePhone$Feedback/10+mean(WePhone$Feedback/10)
-WePhone$Value<-500-(9*WePhone$age^2)+ round(rnorm(n=25,mean=0,sd=30))
-names(WePhone)[4]<-"Price Sold"
-WePhone$`Price Sold`<-WePhone$`Price Sold`+20*(WePhone$Feedback-mean(WePhone$Feedback))
-model<-lm(`Price Sold`~Age,data=WePhone)
-ggplot(data=WePhone,aes(Age, `Price Sold`))+geom_point()+geom_abline(intercept = model$coefficients[1],slope=model$coefficients[2])+ ggtitle("Scatter Plot and OLS Regression of WePhone Age on Price Sold")
-```
-
-```{r}
 msg1="Correct! As the age of WePhones increased, the price at which they were sold decreased."
 msg2="Although the plot does not indicate if their results were statistically significant, they do indicate a relationship. Try again."
 msg3="Think this through carefully. Does an increase in age increase or decrease the price sold of a WePhone? Try again."
 ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
+`@sct`
+```{r}
+
+```
 
 ---
 
@@ -188,10 +180,6 @@ Papers often report several regression models next to each other. This table sho
 - This is usually not true, nor shown in this figure. Try again.
 - Correct! Without controlling for these variables, the relationship between property rights protections and GDP seemed larger than it truly was.
 
-
-
-
-
 ---
 
 ## The Credibility of the Unconfoundedness Assumption
@@ -204,6 +192,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/217555887
 ```
+
 
 ---
 

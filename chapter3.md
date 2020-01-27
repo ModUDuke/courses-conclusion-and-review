@@ -3,7 +3,6 @@ title: Experiments
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Experiments course here on DataCamp.'
 ---
 
-
 ## Randomized Experiments
 
 ```yaml
@@ -17,6 +16,7 @@ video_link: //player.vimeo.com/video/198212082
 
 
 ---
+
 ## Rainfall in Sonoma County and eBay sales
 
 ```yaml
@@ -89,6 +89,7 @@ skills: 1
 video_link: //player.vimeo.com/video/205124286
 ```
 
+
 ---
 
 ## Confidence Intervals
@@ -130,6 +131,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/198212094
 ```
+
 
 ---
 
@@ -415,6 +417,7 @@ skills: 1
 video_link: //player.vimeo.com/video/198212091
 ```
 
+
 ---
 
 ## Offering a Higher Credit Card Limit: Quantifying Noncompliance Concerns
@@ -476,7 +479,6 @@ Which one of the following approaches is *NOT* a way to deal with treatment nonc
 - Correct! Randomized Control Trials are not a valid way to correct for noncompliance, because they themselves are susceptible to treatment noncompliance.
 - Intention to Treat Analysis is definitely a common way to deal with noncompliance, and we're looking for a way that is **NOT** appropriate, so try again
 - Assuming Random Compliance is not always applicable, but it is nonetheless commonly used to deal with noncompliance, so try again.
-
 
 ---
 

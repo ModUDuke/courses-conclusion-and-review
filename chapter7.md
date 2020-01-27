@@ -1,8 +1,6 @@
 ---
 title: 'IV & RDD'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - IV & RDD course here on DataCamp.'
-
-
 ---
 
 ## The Logic of Instrumental Variables
@@ -16,7 +14,9 @@ skills: 1
 video_link: //player.vimeo.com/video/219558904
 ```
 
+
 ---
+
 ## IV: What is the Relationship Between the Instrument and the Outcome?
 
 ```yaml
@@ -144,6 +144,7 @@ skills: 1
 video_link: //player.vimeo.com/video/219565557
 ```
 
+
 ---
 
 ## The Problem of Weak Instruments
@@ -156,6 +157,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/219559996
 ```
+
 
 ---
 
@@ -659,7 +661,7 @@ video_link: //player.vimeo.com/video/218502963
 type: VideoExercise
 key: b16cee29d0
 xp: 50
-video_link: "//player.vimeo.com/video/306239772"
+video_link: //player.vimeo.com/video/306239772
 ```
 
 
@@ -1059,7 +1061,6 @@ ex() %>% check_object("Solution7") %>% check_equal()
 success_msg("Good work! That outlier just below the cutoff looks like a clear sign that the teams are trying to be losing by about a point at halftime. In fact, the p-value is so small that it is nearly 0, and it's hard to be more obvious than that in statistics! But there's more work to be done before we make any conclusions.  The McCrary test cannot prove manipulation just by itself, but it's a very helpful indicator that we should look closer at the exact mechanics going on in these new NBA teams during their games.")
 ```
 
-
 ---
 
 ## "Fuzzy" Regression Discontinuity: Addressing Blurry Lines Between Groups
@@ -1072,6 +1073,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/218504968
 ```
+
 
 ---
 
@@ -3147,6 +3149,7 @@ skills: 1
 video_link: //player.vimeo.com/video/219561649
 ```
 
+
 ---
 
 ## Interpreting Longitudinal Outcomes
@@ -3219,9 +3222,10 @@ p+geom_line()+geom_point()+
   labs(y="Proportion Own Solar Panels",color="Watched Birdemic")
 ```
 
-msg1="Take a closer look at the chart. Does it seem to change after the year 2020? Try again."
-msg2="Correct! Rates of solar panel sales for both groups at the same rate prior to Birdemic's release, but the rate of this increase was smaller for those who watched Birdemic following 2010"
-ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
+`@sct`
+```{r}
+
+```
 
 ---
 

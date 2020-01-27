@@ -1,9 +1,10 @@
 ---
 title: 'Panel Data'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Panel Data course here on DataCamp.'
-
 ---
+
 ## The Common Trends Assumption
+
 ```yaml
 type: VideoExercise
 key: 5d221a7ed2
@@ -52,7 +53,9 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 ```
 
 ---
+
 ## Graphical Analysis of the Common Trend Assumption and Diff-in-Diffs
+
 ```yaml
 type: VideoExercise
 key: e594e9c9a2
@@ -61,6 +64,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/226206681
 ```
+
 
 ---
 
@@ -135,7 +139,9 @@ Think about what you know about causal inference. What might be an advantage for
 ```
 
 ---
+
 ## The Three Kinds of Panel Data
+
 ```yaml
 type: VideoExercise
 key: 768ce0d1ab
@@ -144,6 +150,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/226207544
 ```
+
 
 ---
 
@@ -859,6 +866,7 @@ xp: 50
 skills: 1
 video_link: //player.vimeo.com/video/226207441
 ```
+
 
 ---
 
