@@ -16,7 +16,7 @@ video_link: //player.vimeo.com/video/217554002
 ```
 ---
 
-## REG: Interpreting Regressions
+## Interpreting Regressions
 
 ```yaml
 type: MultipleChoiceExercise
