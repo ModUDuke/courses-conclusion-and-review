@@ -70,28 +70,46 @@ skills: 1
 video_link: //player.vimeo.com/video/231747210
 ```
 
-
----
-
+--- 
 ## Why Use Models Instead of Experiments?
-
+  
 ```yaml
-type: undefined
-key: 37e8196773
+type: PureMultipleChoiceExercise
+key: 
+lang: r
+xp: 50
+skills: 1
 ```
+  
+What is the best reason to use a model to find causality instead of a randomized control experiment?
+  
+`@hint`
+  
+`@possible_answers`
+- I already tried an experiment that did not give me the expected result, so I want to try modeling instead.
+- My treatment happened in the past, so I can't create a new experiment to test it in the future.
+- A control group doesn't make sense with my topic, so I will use modeling instead.
+- [Creating a control and treatment group would require me to do something immoral and possibly illegal.]
+  
+  
+`@feedback`
+- A well run experiment is almost always more trustworthy than a model of that same causal effect. Maybe the experiment was right and your hypothesis was wrong, that's a big part of science! Try again.
+- In some cases, you actually can use experimental techniques on historical data to find causalities. While you can't always do it, there are a lot of great techniques to find causality within past data (check out our other Casual Inference with R courses to find out more). Try again!
+- In order to find a causal effect, you need to have a control group and a treatment group, whether it's in an experiment or another method. If you can't create both groups, then whatever you are modeling will not be for causal inference. Try again
+- Correct. This is a great reason not to do something, no matter what it is! Like we mentioned in our videos, sometimes you just can't run an experiment if it involves harming others or destroying something valuable, so we need to look to creating really good models instead.
 
 
-
----
-
+--- 
 ## Let's Code: Red Wine - The Secret to Living Longer?
-
 ```yaml
-type: undefined
-key: d89266b4c8
+type: VideoExercise 
+key:
+lang: r
+xp: 50 
+skills: 1 
+  
+video_link: //player.vimeo.com/video/379871850
 ```
-
-
 
 ---
 
