@@ -5,7 +5,7 @@ description: 'This chapter will briefly review and summarize the methods and arg
 
 ## Recap of the Causal Inference Bootcamp
 
-```yaml
+--- key:48aaeb7d52
 type: VideoExercise
 key: 
 lang: r
@@ -19,7 +19,7 @@ video_link: //player.vimeo.com/video/231747529
 
 ## The Power of Assumptions
 
-```yaml
+--- key:2d305d59c1
 type: VideoExercise
 key: 
 lang: r
@@ -34,7 +34,7 @@ video_link: //player.vimeo.com/video/231747639
 
 ## Balancing Data vs. Assumptions
 
-```yaml
+--- key:f0e3ee92d8
 type: VideoExercise
 key: 
 lang: r
@@ -49,7 +49,7 @@ video_link: //player.vimeo.com/video/231747398
 
 ## Issues in Causal Inference We Haven't Discussed
 
-```yaml
+--- key:28bec42981
 type: VideoExercise
 key: 
 lang: r
@@ -65,7 +65,7 @@ video_link: //player.vimeo.com/video/231747485
 ## ATEs, CATEs, and LATEs: What's the Difference?
 
 
-```yaml
+--- key:758ae4fa5c
 type: VideoExercise
 key: 
 lang: r
