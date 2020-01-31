@@ -19,7 +19,7 @@ video_link: //player.vimeo.com/video/231747529
 
 ## The Power of Assumptions
 
-```yaml
+--- key:bd99bc8148
 type: VideoExercise
 key: 1b7bc85492
 lang: r
@@ -34,7 +34,7 @@ video_link: //player.vimeo.com/video/231747639
 
 ## Balancing Data vs. Assumptions
 
-```yaml
+--- key:9e3dc622b6
 type: VideoExercise
 key: 1b7bc85492
 lang: r
@@ -49,7 +49,7 @@ video_link: //player.vimeo.com/video/231747398
 
 ## Issues in Causal Inference We Haven't Discussed
 
-```yaml
+--- key:adfad3b70e
 type: VideoExercise
 key: 1b7bc85492
 lang: r
@@ -64,7 +64,7 @@ video_link: //player.vimeo.com/video/231747485
 
 ## ATEs, CATEs, and LATEs: What's the Difference?
 
-```yaml
+--- key:7383a2f5cf
 type: VideoExercise
 key: 1b7bc85492
 lang: r
@@ -79,7 +79,7 @@ video_link: //player.vimeo.com/video/219561649
 
 ## Which Causal Inference Method is the Best?
 
-```yaml
+--- key:2fa7a33546
 type: VideoExercise
 key: 1b7bc85492
 lang: r
