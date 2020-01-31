@@ -7,7 +7,7 @@ description: 'This chapter will briefly review and summarize the methods and arg
 
 ```yaml
 type: VideoExercise
-key: 1b7bc85492
+key: 
 lang: r
 xp: 50
 skills: 1
@@ -19,9 +19,9 @@ video_link: //player.vimeo.com/video/231747529
 
 ## The Power of Assumptions
 
---- key:bd99bc8148
+```yaml
 type: VideoExercise
-key: 1b7bc85492
+key: 
 lang: r
 xp: 50
 skills: 1
@@ -34,9 +34,9 @@ video_link: //player.vimeo.com/video/231747639
 
 ## Balancing Data vs. Assumptions
 
---- key:9e3dc622b6
+```yaml
 type: VideoExercise
-key: 1b7bc85492
+key: 
 lang: r
 xp: 50
 skills: 1
@@ -49,9 +49,9 @@ video_link: //player.vimeo.com/video/231747398
 
 ## Issues in Causal Inference We Haven't Discussed
 
---- key:adfad3b70e
+```yaml
 type: VideoExercise
-key: 1b7bc85492
+key: 
 lang: r
 xp: 50
 skills: 1
@@ -64,9 +64,10 @@ video_link: //player.vimeo.com/video/231747485
 
 ## ATEs, CATEs, and LATEs: What's the Difference?
 
---- key:7383a2f5cf
+
+```yaml
 type: VideoExercise
-key: 1b7bc85492
+key: 
 lang: r
 xp: 50
 skills: 1
@@ -79,9 +80,10 @@ video_link: //player.vimeo.com/video/219561649
 
 ## Which Causal Inference Method is the Best?
 
---- key:2fa7a33546
+
+```yaml
 type: VideoExercise
-key: 1b7bc85492
+key: 
 lang: r
 xp: 50
 skills: 1
