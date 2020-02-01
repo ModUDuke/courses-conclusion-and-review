@@ -73,7 +73,7 @@ video_link: //player.vimeo.com/video/231747210
 --- 
 ## Why Use Models Instead of Experiments?
   
-```yaml
+--- key:d484f782b5
 type: PureMultipleChoiceExercise
 key: 
 lang: r
@@ -101,7 +101,7 @@ What is the best reason to use a model to find causality instead of a randomized
 
 --- 
 ## Let's Code: Red Wine - The Secret to Living Longer?
-```yaml
+--- key:e4d0e19e8e
 type: VideoExercise 
 key:
 lang: r
@@ -222,7 +222,7 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
 ---
 ## Does This Model Hold Up Under Pressure?
   
-```yaml
+--- key:b7a72f4259
 type: NormalExercise
 key: 326e16239a
 lang: r
@@ -463,7 +463,7 @@ The results of the previous exercise were not as clear as we were hoping: instea
 ---
 ## Finishing Up with A Final Model
   
-```yaml
+--- key:a4ad867206
 type: NormalExercise
 key: 326e16239a
 lang: r
