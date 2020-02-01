@@ -223,7 +223,7 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
 ---
 ## Does This Model Hold Up Under Pressure?
   
-```yaml
+--- key:b5662d45a2
 type: NormalExercise
 key: 326e16239a
 lang: r
