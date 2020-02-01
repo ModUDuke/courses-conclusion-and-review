@@ -71,11 +71,12 @@ video_link: //player.vimeo.com/video/231747210
 ```
 
 --- 
+
 ## Why Use Models Instead of Experiments?
   
---- key:d484f782b5
+```yaml
 type: PureMultipleChoiceExercise
-key: 
+key: d484f782b5
 lang: r
 xp: 50
 skills: 1
@@ -100,14 +101,14 @@ What is the best reason to use a model to find causality instead of a randomized
 
 
 --- 
+
 ## Let's Code: Red Wine - The Secret to Living Longer?
---- key:e4d0e19e8e
+```yaml
 type: VideoExercise 
-key:
+key: e4d0e19e8e
 lang: r
 xp: 50 
 skills: 1 
-  
 video_link: //player.vimeo.com/video/379871850
 ```
 
@@ -222,7 +223,7 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
 ---
 ## Does This Model Hold Up Under Pressure?
   
---- key:b7a72f4259
+```yaml
 type: NormalExercise
 key: 326e16239a
 lang: r
@@ -423,11 +424,8 @@ Survey.Data$Age<-(Survey.Data$Age*((Survey.Data$res.red.wine+Survey.Data$res.ros
 `@sct`
 ```{r}
 ex() %>% check_error()
-success_msg("")
+success_msg("Nice work! This dataset has a lot more variables and participants than our first dataset, but at least some of the results seem to be holding up. The chemical resveratrol, common in red wines, does seem to show a positive impact on life expectancy. But we're not quite done. We do have some potential confounders to consider that might also be effecting life expectancy in these survey subjects, so let's look into that next.")
 ```
-
-
-
 
 
 ---
@@ -463,16 +461,15 @@ The results of the previous exercise were not as clear as we were hoping: instea
 ---
 ## Finishing Up with A Final Model
   
---- key:a4ad867206
+```yaml
 type: NormalExercise
-key: 326e16239a
+key: a4ad867206
 lang: r
 xp: 100
 skills: 1
 ```
   
 We finish up with a final model based on all that we have discovered so far. Does this second, larger study support the theory that regular drinking of red wine, which has the chemical resveratrol in higher quantities than other drinks, will make you live a longer life? Let's find out!
-
 
 Data Dictionary for the dataframe `Survey.Data`:
     
@@ -586,8 +583,7 @@ Data Dictionary for the dataframe `Survey.Data`:
 ```
      
 `@sample_code`
-```{r}
-  
+```{r} 
 # 1) Since we think that the number of alcoholic drinks consumed might be confounding the effect of resveratrol on lifespan, let's subset our sample to exclude the highest drinkers. But where should we make the cutoff? Let's revisit the summary statistics on the variable `count` in the datframe `Survey.Data` to see what our mean, median, and standard deviations are:
   
   
@@ -618,7 +614,6 @@ Data Dictionary for the dataframe `Survey.Data`:
   
 # 6) And based on this model, what is the average treatment effect of drinking red wine on lifespan for an average drinker in our sample? Be precise and don't round!
   
-  
     ATE<-
   
   
@@ -630,12 +625,12 @@ Data Dictionary for the dataframe `Survey.Data`:
   subset.model<-lm(Age~total.res, Drink.Study)
     summary(subset.model)
   count.is.a.confounder.for.subset<-"no"
-  ATE<-
+  ATE<-6.1187
 ```
   
 `@sct`
 ```{r}
 ex() %>% check_error()
-success_msg("Great job!")
+success_msg("Great job! It really does look like our average treatment effect of resveratrol on life expectancy is positive and statistically significant, even when accounting for heavy wine drinkers, which would likely be our biggest potential confounder. Our model works!")
 ```
 
