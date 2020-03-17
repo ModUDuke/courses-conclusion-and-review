@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 362bf33c36
+key:
 lang: r
 xp: 50
 skills: 1
@@ -39,7 +39,7 @@ In this experiment on the two cereals, which of the following is the outcome var
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 50d28d8b25
+key:
 lang: r
 xp: 50
 skills: 1
@@ -68,7 +68,7 @@ Puritan Wheat generates some data from a sample of individual flakes in a box of
 
 ```yaml
 type: MultipleChoiceExercise
-key: c229f94a13
+key:
 lang: r
 xp: 50
 skills: 1
@@ -143,7 +143,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ```yaml
 type: VideoExercise
-key: df9b958a75
+key:
 lang: r
 xp: 50
 skills: 1
@@ -157,7 +157,7 @@ video_link: //player.vimeo.com/video/230622767
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 4b7a7da2a4
+key:
 lang: r
 xp: 50
 skills: 1
@@ -184,7 +184,7 @@ As you can see in this chart, the per capita consumption of mozzarella cheese in
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: ac9bc35c31
+key:
 lang: r
 xp: 50
 skills: 1
@@ -211,7 +211,7 @@ Why are confounding variables a potential problem for causal inference?
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 0ecec920ef
+key:
 lang: r
 xp: 50
 skills: 1
@@ -249,7 +249,7 @@ Since the number of baseball games that this individual went to appears to incre
 
 ```yaml
 type: VideoExercise
-key: 6fc38f8905
+key:
 lang: r
 xp: 50
 skills: 1
@@ -263,7 +263,7 @@ video_link: //player.vimeo.com/video/230623221
 
 ```yaml
 type: VideoExercise
-key: 6b8a71d25a
+key:
 xp: 50
 video_link: //player.vimeo.com/video/276320364
 ```
@@ -275,7 +275,7 @@ video_link: //player.vimeo.com/video/276320364
 
 ```yaml
 type: NormalExercise
-key: 311670fb1a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -343,7 +343,7 @@ success_msg("Good work! It seems that reducing the size of HR reduced Unter empl
 
 ```yaml
 type: MultipleChoiceExercise
-key: 6217752659
+key:
 lang: r
 xp: 50
 skills: 1
@@ -402,7 +402,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ```yaml
 type: NormalExercise
-key: a4ab5d9f9b
+key:
 lang: r
 xp: 100
 skills: 1
