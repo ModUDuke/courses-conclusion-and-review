@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key: 8bb34ee718
+key:
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/217554002
 
 ```yaml
 type: MultipleChoiceExercise
-key: 1a2137dd19
+key:
 lang: r
 xp: 50
 skills: 1
@@ -58,7 +58,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 
 ```yaml
 type: MultipleChoiceExercise
-key: 4b9a40fa01
+key:
 lang: r
 xp: 50
 skills: 1
@@ -102,7 +102,7 @@ ex() %>% check_mc(3, feedback_msgs = c(msg1, msg2, msg3))
 
 ```yaml
 type: MultipleChoiceExercise
-key: 470a340b81
+key:
 lang: r
 xp: 50
 skills: 1
@@ -151,7 +151,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 408e61980c
+key:
 lang: r
 xp: 50
 skills: 1
@@ -186,7 +186,7 @@ Papers often report several regression models next to each other. This table sho
 
 ```yaml
 type: VideoExercise
-key: 2bbda58ea3
+key:
 lang: r
 xp: 50
 skills: 1
@@ -200,7 +200,7 @@ video_link: //player.vimeo.com/video/217555887
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: ff6e381314
+key:
 lang: r
 xp: 50
 skills: 1
@@ -229,7 +229,7 @@ Although regression models are great for summarizing the association between var
 
 ```yaml
 type: VideoExercise
-key: 5c9d6dd3fc
+key:
 xp: 50
 video_link: //player.vimeo.com/video/293196260
 ```
@@ -241,7 +241,7 @@ video_link: //player.vimeo.com/video/293196260
 
 ```yaml
 type: NormalExercise
-key: 1ff9f6d33f
+key:
 lang: r
 xp: 100
 skills: 1
@@ -351,7 +351,7 @@ success_msg("Good work! Outliers typically effect the slope of a bivariate regre
 
 ```yaml
 type: NormalExercise
-key: 4bb956183e
+key:
 lang: r
 xp: 100
 skills: 1
@@ -463,7 +463,7 @@ success_msg("Good work! Larger datasets tend to be more robust to 'statistical n
 
 ```yaml
 type: VideoExercise
-key: 83030c0953
+key:
 xp: 50
 video_link: //player.vimeo.com/video/293196276
 ```
@@ -475,7 +475,7 @@ video_link: //player.vimeo.com/video/293196276
 
 ```yaml
 type: NormalExercise
-key: d4a11a1bf2
+key:
 lang: r
 xp: 100
 skills: 1
@@ -577,7 +577,7 @@ success_msg("Good work! Even though our model in Solution 1 appears similar to o
 
 ```yaml
 type: VideoExercise
-key: b53f684199
+key:
 lang: r
 xp: 50
 skills: 1
@@ -591,7 +591,7 @@ video_link: //player.vimeo.com/video/217555077
 
 ```yaml
 type: VideoExercise
-key: 6f0ace9f0e
+key:
 xp: 50
 video_link: //player.vimeo.com/video/293196315
 ```
@@ -603,7 +603,7 @@ video_link: //player.vimeo.com/video/293196315
 
 ```yaml
 type: NormalExercise
-key: 85dcc72fd0
+key:
 lang: r
 xp: 100
 skills: 1
@@ -706,7 +706,7 @@ success_msg("Good work! There appears to be a positive and statistically signifi
 
 ```yaml
 type: NormalExercise
-key: 409e58ed54
+key:
 lang: r
 xp: 100
 skills: 1
