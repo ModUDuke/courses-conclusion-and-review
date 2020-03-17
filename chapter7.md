@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key: 9c7273586e
+key:
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/219558904
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 8c410956e7
+key:
 lang: r
 xp: 50
 skills: 1
@@ -50,7 +50,7 @@ As the videos discussed, there are some strict requirements to use instrumental 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 4c7896c749
+key:
 lang: r
 xp: 50
 skills: 1
@@ -79,7 +79,7 @@ Now let us review the relationship between the instrument and the treatment.  Wh
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 8a1ad925e4
+key:
 lang: r
 xp: 50
 skills: 1
@@ -108,7 +108,7 @@ The instrument is one of many variables that could be confounding the effect of 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: ed73a92806
+key:
 lang: r
 xp: 50
 skills: 1
@@ -137,7 +137,7 @@ So now we can summarize the main purpose of IV analysis. Once again, how does th
 
 ```yaml
 type: VideoExercise
-key: 3ae8d65d96
+key:
 lang: r
 xp: 50
 skills: 1
@@ -151,7 +151,7 @@ video_link: //player.vimeo.com/video/219565557
 
 ```yaml
 type: VideoExercise
-key: bf3c9abc64
+key:
 lang: r
 xp: 50
 skills: 1
@@ -165,7 +165,7 @@ video_link: //player.vimeo.com/video/219559996
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 02e185272f
+key:
 lang: r
 xp: 50
 skills: 1
@@ -196,7 +196,7 @@ To untangle this causal relationship, Phoebe decides to conduct an instrumental 
 
 ```yaml
 type: VideoExercise
-key: 1ce6f872eb
+key:
 xp: 50
 video_link: //player.vimeo.com/video/306239756
 ```
@@ -208,7 +208,7 @@ video_link: //player.vimeo.com/video/306239756
 
 ```yaml
 type: NormalExercise
-key: 834d82578f
+key:
 lang: r
 xp: 100
 skills: 1
@@ -585,7 +585,7 @@ success_msg("Good work! This estimate for the causal effect of insurance on our 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: f401e635a5
+key:
 lang: r
 xp: 50
 skills: 1
@@ -614,7 +614,7 @@ Which of the following variables is *not* a key (required) variable in a regress
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 7977c48f95
+key:
 lang: r
 xp: 50
 skills: 1
@@ -645,7 +645,7 @@ So in this study, which variable is the outcome variable, which is the running v
 
 ```yaml
 type: VideoExercise
-key: 1a5dfd94ba
+key:
 lang: r
 xp: 50
 skills: 1
@@ -659,7 +659,7 @@ video_link: //player.vimeo.com/video/218502963
 
 ```yaml
 type: VideoExercise
-key: b16cee29d0
+key:
 xp: 50
 video_link: //player.vimeo.com/video/306239772
 ```
@@ -671,7 +671,7 @@ video_link: //player.vimeo.com/video/306239772
 
 ```yaml
 type: NormalExercise
-key: 1de601c34a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -1067,7 +1067,7 @@ success_msg("Good work! That outlier just below the cutoff looks like a clear si
 
 ```yaml
 type: VideoExercise
-key: f862652b6e
+key:
 lang: r
 xp: 50
 skills: 1
@@ -1081,7 +1081,7 @@ video_link: //player.vimeo.com/video/218504968
 
 ```yaml
 type: NormalExercise
-key: 8dfb92fd8e
+key:
 lang: r
 xp: 100
 skills: 1
@@ -3142,7 +3142,7 @@ success_msg("Good work! From the looks of it, the quadratic specification of hal
 
 ```yaml
 type: VideoExercise
-key: 162436a553
+key:
 lang: r
 xp: 50
 skills: 1
@@ -3156,7 +3156,7 @@ video_link: //player.vimeo.com/video/219561649
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: bfcf99d7c6
+key:
 lang: r
 xp: 50
 skills: 1
@@ -3193,7 +3193,7 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 
 ```yaml
 type: MultipleChoiceExercise
-key: 8dc7e4a720
+key:
 lang: r
 xp: 50
 skills: 1
@@ -3233,7 +3233,7 @@ p+geom_line()+geom_point()+
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: b9266032e1
+key:
 lang: r
 xp: 50
 skills: 1
@@ -3263,7 +3263,7 @@ Think about what you know about causal inference. What might be an advantage for
 
 ```yaml
 type: VideoExercise
-key: 5d24574731
+key:
 xp: 50
 video_link: //player.vimeo.com/video/314102565
 ```
@@ -3275,7 +3275,7 @@ video_link: //player.vimeo.com/video/314102565
 
 ```yaml
 type: NormalExercise
-key: e9cecd77c0
+key:
 lang: r
 xp: 100
 skills: 1
@@ -3411,7 +3411,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ```yaml
 type: VideoExercise
-key: 61d08695fd
+key:
 xp: 50
 video_link: //player.vimeo.com/video/314102576
 ```
@@ -3423,7 +3423,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ```yaml
 type: NormalExercise
-key: 087c0debd1
+key: 
 lang: r
 xp: 100
 skills: 1
