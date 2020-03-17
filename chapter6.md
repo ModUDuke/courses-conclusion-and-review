@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key: 5d221a7ed2
+key:
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/226208683
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: bfcf99d7c6
+key:
 lang: r
 xp: 50
 skills: 1
@@ -58,7 +58,7 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 
 ```yaml
 type: VideoExercise
-key: e594e9c9a2
+key:
 lang: r
 xp: 50
 skills: 1
@@ -72,7 +72,7 @@ video_link: //player.vimeo.com/video/226206681
 
 ```yaml
 type: MultipleChoiceExercise
-key: 8dc7e4a720
+key:
 lang: r
 xp: 50
 skills: 1
@@ -114,7 +114,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: b9266032e1
+key:
 lang: r
 xp: 50
 skills: 1
@@ -144,7 +144,7 @@ Think about what you know about causal inference. What might be an advantage for
 
 ```yaml
 type: VideoExercise
-key: 768ce0d1ab
+key:
 lang: r
 xp: 50
 skills: 1
@@ -158,7 +158,7 @@ video_link: //player.vimeo.com/video/226207544
 
 ```yaml
 type: VideoExercise
-key: 5d24574731
+key:
 lang: r
 xp: 50
 skills: 1
@@ -172,7 +172,7 @@ video_link: //player.vimeo.com/video/314102565
 
 ```yaml
 type: NormalExercise
-key: e9cecd77c0
+key:
 lang: r
 xp: 100
 skills: 1
@@ -308,7 +308,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ```yaml
 type: VideoExercise
-key: 61d08695fd
+key:
 lang: r
 xp: 50
 skills: 1
@@ -322,7 +322,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ```yaml
 type: NormalExercise
-key: 087c0debd1
+key:
 lang: r
 xp: 100
 skills: 1
@@ -581,7 +581,7 @@ success_msg("Congratulations! By now, you should have a sense of the sorts of ca
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 15a897d978
+key:
 lang: r
 xp: 50
 skills: 1
@@ -608,7 +608,7 @@ What is the main assumption that we make when we study a causal effect by compar
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 1019f22cf2
+key:
 lang: r
 xp: 50
 skills: 1
@@ -636,7 +636,7 @@ What is the main advantage you get from studying a causal effect with longitudin
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 625dd45a40
+key:
 lang: r
 xp: 50
 skills: 1
@@ -665,7 +665,7 @@ When we have repeated cross-sectional data, we have a different sample at each t
 
 ```yaml
 type: NormalExercise
-key: c747fbb05d
+key:
 lang: r
 xp: 100
 skills: 1
@@ -756,7 +756,7 @@ success_msg("Good work! Implementing a difference-in-differences analysis is rel
 
 ```yaml
 type: NormalExercise
-key: 5326271e36
+key:
 lang: r
 xp: 100
 skills: 1
@@ -860,7 +860,7 @@ success_msg("Good work! With the standardized measurements, we do indeed see an 
 
 ```yaml
 type: VideoExercise
-key: bd7bd16de8
+key:
 lang: r
 xp: 50
 skills: 1
@@ -874,7 +874,7 @@ video_link: //player.vimeo.com/video/226207441
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 555c326043
+key:
 lang: r
 xp: 50
 skills: 1
@@ -903,7 +903,7 @@ Think about what you know about causal inference. What might be an advantage for
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: f5f1233e13
+key:
 lang: r
 xp: 50
 skills: 1
@@ -928,7 +928,7 @@ Suppose we are interested in how exercising in a gym affects a person's self-est
 
 ```yaml
 type: NormalExercise
-key: 42217b289e
+key:
 lang: r
 xp: 100
 skills: 1
@@ -1064,7 +1064,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ```yaml
 type: VideoExercise
-key: 9df790f1cd
+key:
 lang: r
 xp: 50
 skills: 1
@@ -1078,7 +1078,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ```yaml
 type: NormalExercise
-key: 38cc1d3f52
+key:
 lang: r
 xp: 100
 skills: 1
