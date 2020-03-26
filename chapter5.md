@@ -3,7 +3,7 @@ title: 'Modeling with Regression'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Modeling with Regression course here on DataCamp.'
 ---
 
-## The Basics of Modeling Behavior
+## The Basics of Modeling Behavior.
 
 ```yaml
 type: VideoExercise
@@ -17,7 +17,7 @@ video_link: //player.vimeo.com/video/231746347
 
 ---
 
-## Discrete Choice Analysis
+## Discrete Choice Analysis.
 
 ```yaml
 type: VideoExercise
@@ -31,7 +31,7 @@ video_link: //player.vimeo.com/video/231746571
 
 ---
 
-## Lots of Variables vs. Confounders in Discrete Choice Analysis
+## Lots of Variables versus Confounders in Discrete Choice Analysis
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -59,7 +59,7 @@ Someone doing a Big Data analysis tells you the following. "I included over 1,00
 
 ---
 
-## Using Modeling When Experiments Are Impossible
+## Using Modeling When Experiments Are Impossible.
 
 ```yaml
 type: VideoExercise
@@ -72,7 +72,7 @@ video_link: //player.vimeo.com/video/231747210
 
 --- 
 
-## Why Use Models Instead of Experiments?
+## Why Do We Use Models Instead of Experiments?
   
 ```yaml
 type: PureMultipleChoiceExercise
@@ -102,7 +102,7 @@ What is the best reason to use a model to find causality instead of a randomized
 
 --- 
 
-## Let's Code: Red Wine - The Secret to Living Longer?
+## Let's Code: Is Red Wine The Secret to Living Longer?
 ```yaml
 type: VideoExercise 
 key:
@@ -114,7 +114,7 @@ video_link: //player.vimeo.com/video/379871850
 
 ---
 
-## Red Wine: the Secret to Living Longer?
+## Red Wine Study: Red Wine Study: Red Wine Study:  the Secret to Living Longer?
 
 ```yaml
 type: NormalExercise
@@ -221,7 +221,7 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
 ```
 
 ---
-## Does This Model Hold Up Under Pressure?
+## Red Wine Study: Red Wine Study: Red Wine Study: Does This Model Hold Up Under Pressure?
   
 --- key:b5662d45a2
 type: NormalExercise
@@ -430,7 +430,7 @@ success_msg("Nice work! This dataset has a lot more variables and participants t
 
 ---
 
-## Do We Have Problems with a Confounder?
+## Red Wine Study: Red Wine Study: Do We Have Problems with a Confounder?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -459,7 +459,7 @@ The results of the previous exercise were not as clear as we were hoping: instea
 
 
 ---
-## Finishing Up with A Final Model
+## Red Wine Study: Finishing Up with A Final Model
   
 ```yaml
 type: NormalExercise
