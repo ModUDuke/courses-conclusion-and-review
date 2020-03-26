@@ -3,7 +3,7 @@ title: Experiments
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Experiments course here on DataCamp.'
 ---
 
-## Randomized Experiments
+## Randomized Experiments.
 
 ```yaml
 type: VideoExercise
@@ -17,7 +17,7 @@ video_link: //player.vimeo.com/video/198212082
 
 ---
 
-## Rainfall in Sonoma County and eBay sales
+## Rainfall in Sonoma County and Sales on eBay
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -49,7 +49,7 @@ Which of the following answers could support a **causal explanation** for this r
 
 ---
 
-## iPhone sales and eBay sales
+## iPhone Sales and Sales on eBay
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -78,7 +78,7 @@ Annual Apple iPhone sales are highly correlated with annual eBay sales. If this 
 
 ---
 
-## p Values, Confidence Intervals, and Hypothesis Tests
+## p Values, Confidence Intervals, & Hypothesis Tests
 
 ```yaml
 type: VideoExercise
@@ -92,7 +92,7 @@ video_link: //player.vimeo.com/video/205124286
 
 ---
 
-## Confidence Intervals
+## Confidence Intervals.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -121,7 +121,7 @@ Why might it be risky to implement a policy that has an that has average treatme
 
 ---
 
-## Reading Average Treatment Effect & Confidence Intervals in a Table: Depression in the Oregon Health Experiment
+## Reading Average Treatment Effect & Confidence Intervals in a Table: Depression in the Oregon Health Experiment.
 
 ```yaml
 type: VideoExercise
@@ -135,7 +135,7 @@ video_link: //player.vimeo.com/video/198212094
 
 ---
 
-## Let's Code: Practice with OHIE data
+## Let's Code: Practice with OHIE Data.
 
 ```yaml
 type: VideoExercise
@@ -147,7 +147,7 @@ video_link: //player.vimeo.com/video/279737708
 
 ---
 
-## Oregon Health Experiment Data: Data Structures
+## Oregon Health Experiment Data: Data Structures.
 
 ```yaml
 type: NormalExercise
@@ -213,7 +213,7 @@ success_msg("Good work!")
 
 ---
 
-## Oregon Health Experiment Data: Balance Checks
+## Oregon Health Experiment Data: Balance Checks.
 
 ```yaml
 type: NormalExercise
@@ -277,7 +277,7 @@ success_msg("Good work! Since there is no significant difference in rates of gen
 
 ---
 
-## Oregon Health Experiment Data: Finding an ATE
+## Oregon Health Experiment Data: Finding an Average Treatment Effect
 
 ```yaml
 type: NormalExercise
@@ -345,7 +345,7 @@ success_msg("Good work. The high p-value means that the estimate is not statisti
 
 ---
 
-## Oregon Health Experiment Data: Finding Another ATE
+## Oregon Health Experiment Data: Finding Another ATE.
 
 ```yaml
 type: NormalExercise
@@ -406,7 +406,7 @@ success_msg("Good work. Our estimate for the treatment effect on diastolic blood
 
 ---
 
-## Noncompliance in Experiments
+## Noncompliance in Experiments.
 
 ```yaml
 type: VideoExercise
@@ -420,7 +420,7 @@ video_link: //player.vimeo.com/video/198212091
 
 ---
 
-## Offering a Higher Credit Card Limit: Quantifying Noncompliance Concerns
+## Offering a Higher Credit Card Limit: Quantifying Noncompliance Concerns.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -451,7 +451,7 @@ Suppose that, of the group that received the mail offer, 40% of people opted in.
 
 ---
 
-## Ways to Deal with Noncompliance
+## Ways to Deal with Noncompliance.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -482,7 +482,7 @@ Which one of the following approaches is *NOT* a way to deal with treatment nonc
 
 ---
 
-## The Two Kinds of Natural Experiments
+## The Two Kinds of Natural Experiments.
 
 ```yaml
 type: VideoExercise
@@ -496,7 +496,7 @@ video_link: //player.vimeo.com/video/199856738
 
 ---
 
-## As-if Natural experiments
+## As-if Natural Experiments.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -525,7 +525,7 @@ Which of the following is an accurate description of an "as-if" natural experime
 
 ---
 
-## Let's Code: Putting it All Together
+## Let's Code - Putting it All Together
 
 ```yaml
 type: VideoExercise
@@ -537,7 +537,7 @@ video_link: //player.vimeo.com/video/279737460
 
 ---
 
-## Putting it All Together with KittyCatch: Part 1 - Explore the Data
+## Putting it All Together with KittyCatch: Part 1 - Explore the Data.
 
 ```yaml
 type: NormalExercise
@@ -659,7 +659,7 @@ success_msg("Great Job! Notice that the maximum value is much larger than the me
 
 ---
 
-## Putting it All Together with KittyCatch: Part 2 - Use Graphs to Understand the Outcome
+## Putting it All Together with KittyCatch: Part 2 - Use Graphs to Understand the Outcome.
 
 ```yaml
 type: NormalExercise
@@ -774,7 +774,7 @@ success_msg("Nice work so far!")
 
 ---
 
-## Putting it All Together with KittyCatch: Part 3 - Balance the Data
+## Putting it All Together with KittyCatch: Part 3 - Balance the Data.
 
 ```yaml
 type: NormalExercise
@@ -894,7 +894,7 @@ success_msg("Great! We've made a lot of progress, so let's look further at the q
 
 ---
 
-## Putting it All Together with KittyCatch: Part 4 - Missing Data Problems
+## Putting it All Together with KittyCatch: Part 4 - Missing Data Problems.
 
 ```yaml
 type: NormalExercise
@@ -1020,7 +1020,7 @@ success_msg("Whew! We've explored the data, dealt with the issues, and now we ca
 
 ---
 
-## Putting it All Together with KittyCatch: Part 5 - Calculate ATE
+## Putting it All Together with KittyCatch: Part 5 - Calculate the ATE
 
 ```yaml
 type: NormalExercise
