@@ -3,7 +3,7 @@ title: Introduction
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.'
 ---
 
-## Correlation vs. Causation
+## Correlation versus Causation
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -35,7 +35,7 @@ In this experiment on the two cereals, which of the following is the outcome var
 
 ---
 
-## Comparing Breakfast Cereals: Units of Analysis
+## Comparing Breakfast Cereals - Units of Analysis
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -64,7 +64,7 @@ Puritan Wheat generates some data from a sample of individual flakes in a box of
 
 ---
 
-## Anscombe Quartet
+## The Anscombe Quartet
 
 ```yaml
 type: MultipleChoiceExercise
@@ -153,7 +153,7 @@ video_link: //player.vimeo.com/video/230622767
 
 ---
 
-## Learn Engineering by Eating Cheese?
+## Can You Learn Engineering by Eating Cheese?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -180,7 +180,7 @@ As you can see in this chart, the per capita consumption of mozzarella cheese in
 
 ---
 
-## Understanding Confounders
+## Understanding Confounders.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -207,7 +207,7 @@ Why are confounding variables a potential problem for causal inference?
 
 ---
 
-## Baseball Ad Campaign: Early Success?
+## Baseball Advertising Campaign: Early Success?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -245,7 +245,7 @@ Since the number of baseball games that this individual went to appears to incre
 
 ---
 
-## The Conditional Average Treatment Effect
+## The Conditional Average Treatment Effect.
 
 ```yaml
 type: VideoExercise
@@ -259,7 +259,7 @@ video_link: //player.vimeo.com/video/230623221
 
 ---
 
-## Let’s Code: A Problem with Employee Unhappiness
+## Let’s Code: A Problem with Employee Unhappiness.
 
 ```yaml
 type: VideoExercise
@@ -271,7 +271,7 @@ video_link: //player.vimeo.com/video/276320364
 
 ---
 
-## Unhappiness at Unter: Identifying Heterogeneous Outcomes - ATE
+## Unhappiness at Unter: Identifying Heterogeneous Outcomes - ATE.
 
 ```yaml
 type: NormalExercise
@@ -339,7 +339,7 @@ success_msg("Good work! It seems that reducing the size of HR reduced Unter empl
 
 ---
 
-## Unhappiness at Unter: Identifying Heterogeneous Outcomes - CATEs
+## Unhappiness at Unter: Identifying Heterogeneous Outcomes - CATEs.
 
 ```yaml
 type: MultipleChoiceExercise
@@ -398,7 +398,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ---
 
-## Unhappiness at Unter: Identifying Heterogeneous Outcomes - CATEs (2)
+## Unhappiness at Unter: Identifying Heterogeneous Outcomes - CATEs, part 2
 
 ```yaml
 type: NormalExercise
