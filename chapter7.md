@@ -3,7 +3,7 @@ title: 'IV & RDD'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - IV & RDD course here on DataCamp.'
 ---
 
-## The Logic of Instrumental Variables
+## The Logic of Instrumental Variables Analysis
 
 ```yaml
 type: VideoExercise
@@ -17,7 +17,7 @@ video_link: //player.vimeo.com/video/219558904
 
 ---
 
-## IV: What is the Relationship Between the Instrument and the Outcome?
+## IV: What is the Relationship Between the Instrument & the Outcome?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -46,7 +46,7 @@ As the videos discussed, there are some strict requirements to use instrumental 
 
 ---
 
-## What is the Relationship Between the Instrument and the Treatment?
+## What is the Relationship Between the Instrument & the Treatment?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -75,7 +75,7 @@ Now let us review the relationship between the instrument and the treatment.  Wh
 
 ---
 
-## What is the Relationship Between the Instrument and the Other Pre-Treatment Variables?
+## What is the Relationship Between the Instrument & the Other Pre-Treatment Variables?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -104,7 +104,7 @@ The instrument is one of many variables that could be confounding the effect of 
 
 ---
 
-## How Do We Calculate a Causal Effect with Instrumental Variables Analysis?
+## How Do We Actually Calculate a Causal Effect with Instrumental Variables Analysis?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -133,7 +133,7 @@ So now we can summarize the main purpose of IV analysis. Once again, how does th
 
 ---
 
-## Some Instrumental Variables Terminology
+## Some Terminology for Instrumental Variables
 
 ```yaml
 type: VideoExercise
@@ -147,7 +147,7 @@ video_link: //player.vimeo.com/video/219565557
 
 ---
 
-## The Problem of Weak Instruments
+## The Problem with Weak Instruments
 
 ```yaml
 type: VideoExercise
@@ -161,7 +161,7 @@ video_link: //player.vimeo.com/video/219559996
 
 ---
 
-## An Example of a Weak Instrument
+## An Example of Using a Weak Instrument
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -192,7 +192,7 @@ To untangle this causal relationship, Phoebe decides to conduct an instrumental 
 
 ---
 
-## Let's Code: Practice Using IV to Solve Noncompliance in the OHIE
+## Let's Code - Practice Using IV to Solve Noncompliance in the OHIE
 
 ```yaml
 type: VideoExercise
@@ -204,7 +204,7 @@ video_link: //player.vimeo.com/video/306239756
 
 ---
 
-## Practice Using IV to Solve Noncompliance in the OHIE
+## Practice Using IV to Solve Noncompliance in the OHIE.
 
 ```yaml
 type: NormalExercise
@@ -581,7 +581,7 @@ success_msg("Good work! This estimate for the causal effect of insurance on our 
 
 ---
 
-## Key Variables in an RD Design
+## Key Variables in an Regression Discontinuity Design
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -610,7 +610,7 @@ Which of the following variables is *not* a key (required) variable in a regress
 
 ---
 
-## Identifying Key Variables in an RD Design
+## Identifying the Key Variables in an RD Design
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -641,7 +641,7 @@ So in this study, which variable is the outcome variable, which is the running v
 
 ---
 
-## How to Compute Causal Effects in a Regression Discontinuity Analysis
+## How to Compute Causal Effects in Regression Discontinuity Analysis
 
 ```yaml
 type: VideoExercise
@@ -655,7 +655,7 @@ video_link: //player.vimeo.com/video/218502963
 
 ---
 
-## Let's Code: Examining Manipulation in Regression Discontinuity Design
+## Let's Code - Examining Manipulation in Regression Discontinuity Design
 
 ```yaml
 type: VideoExercise
@@ -667,7 +667,7 @@ video_link: //player.vimeo.com/video/306239772
 
 ---
 
-## Examining Manipulation in Regression Discontinuity Design
+## Examining Manipulation in Regression Discontinuity Design.
 
 ```yaml
 type: NormalExercise
@@ -1063,7 +1063,7 @@ success_msg("Good work! That outlier just below the cutoff looks like a clear si
 
 ---
 
-## "Fuzzy" Regression Discontinuity: Addressing Blurry Lines Between Groups
+## "Fuzzy" Regression Discontinuity - Addressing Blurry Lines Between Groups
 
 ```yaml
 type: VideoExercise
@@ -1077,7 +1077,7 @@ video_link: //player.vimeo.com/video/218504968
 
 ---
 
-## Practice Computing Regression Discontinuity Effects
+## Practice Computing Effects with Regression Discontinuity
 
 ```yaml
 type: NormalExercise
@@ -3138,7 +3138,7 @@ success_msg("Good work! From the looks of it, the quadratic specification of hal
 
 ---
 
-## ATEs, CATEs, and LATEs: What's the Difference?
+## ATEs, CATEs, and LATEs: What are the Differences?
 
 ```yaml
 type: VideoExercise
@@ -3152,7 +3152,7 @@ video_link: //player.vimeo.com/video/219561649
 
 ---
 
-## Interpreting Longitudinal Outcomes
+## Interpreting Longitudinal Outcomes.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -3185,11 +3185,11 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
 - Correct! This is exactly how we interpret difference-in-differences outcomes. Even though Springfield had higher rates of diabetes following the implementation of its tax on corn syrup products, it appears that Springfield's rate diabetes grew at a smaller rate than in Laughterville.
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
-```
+
 
 ---
 
-## Interpreting Graphed Time Trends
+## Interpreting Graphed Time Trends.
 
 ```yaml
 type: MultipleChoiceExercise
@@ -3229,7 +3229,7 @@ p+geom_line()+geom_point()+
 
 ---
 
-## Why use a lagged dependent variable?
+## Why Might We Use a Lagged Dependent Variable?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -3255,11 +3255,11 @@ Think about what you know about causal inference. What might be an advantage for
 - You should be testing a hypothesis you formed before you started, otherwise you aren't following the scientific method! Try again.
 - Correct! Well done.
 - You have labeled the dependent and independent variables based on your theory and knowledge of the research question, not based on the direction of the arrow of time. So try again. 
-```
+
 
 ---
 
-## Let's Code: Practice Running Fixed and Random Effects Models
+## Let's Code - Practice Running Fixed and Random Effects Models
 
 ```yaml
 type: VideoExercise
@@ -3271,7 +3271,7 @@ video_link: //player.vimeo.com/video/314102565
 
 ---
 
-## Practice Running Fixed and Random Effects Regression Models
+## Getting Practice Running Fixed and Random Effects Regression Models
 
 ```yaml
 type: NormalExercise
@@ -3407,7 +3407,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ---
 
-## Let's Code: Will Subsidies for Electric Cars Help Rural Towns?
+## Let's Code - Will a Subsidy for Electric Cars Help Rural Towns?
 
 ```yaml
 type: VideoExercise
@@ -3419,7 +3419,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ---
 
-## Putting It All Together: Will Subsidies for Electric Cars Help Rural Towns?
+## Putting It All Together: Will a Subsidy for Electric Cars Help Rural Towns?
 
 ```yaml
 type: NormalExercise
