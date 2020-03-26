@@ -3,7 +3,7 @@ title: 'Panel Data'
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Panel Data course here on DataCamp.'
 ---
 
-## The Common Trends Assumption
+## The Common Trends Assumption.
 
 ```yaml
 type: VideoExercise
@@ -17,7 +17,7 @@ video_link: //player.vimeo.com/video/226208683
 
 ---
 
-## Interpreting Longitudinal Outcomes
+## Interpreting Longitudinal Outcomes.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -68,7 +68,7 @@ video_link: //player.vimeo.com/video/226206681
 
 ---
 
-## Interpreting Graphed Time Trends
+## Interpreting Graphed Time Trends.
 
 ```yaml
 type: MultipleChoiceExercise
@@ -110,7 +110,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
 
 ---
 
-## Why use a lagged dependent variable?
+## Why Would We Use a Lagged Dependent Variable?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -136,11 +136,11 @@ Think about what you know about causal inference. What might be an advantage for
 - You should be testing a hypothesis you formed before you started, otherwise you aren't following the scientific method! Try again.
 - Well done
 - You have labeled the dependent and independent variables based on your theory and knowledge of the research question, not based on the direction of the arrow of time. So try again. 
-```
+
 
 ---
 
-## The Three Kinds of Panel Data
+## The 3 Kinds of Panel Data
 
 ```yaml
 type: VideoExercise
@@ -154,7 +154,7 @@ video_link: //player.vimeo.com/video/226207544
 
 ---
 
-## Let's Code: Practice Running Fixed and Random Effects Models
+## Let's Code: Practice Running Fixed and Random Effects Models.
 
 ```yaml
 type: VideoExercise
@@ -168,7 +168,7 @@ video_link: //player.vimeo.com/video/314102565
 
 ---
 
-## Practice Running Fixed and Random Effects Regression Models
+## Practice Running Fixed and Random Effects Regression Models.
 
 ```yaml
 type: NormalExercise
@@ -304,7 +304,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ---
 
-## Let's Code: Will Subsidies for Electric Cars Help Rural Towns?
+## Let's Code: Will Subsidies for Electric Cars Help Out Rural Towns?
 
 ```yaml
 type: VideoExercise
@@ -318,7 +318,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ---
 
-## Putting It All Together: Will Subsidies for Electric Cars Help Rural Towns?
+## Putting It All Together - Will Subsidies for Electric Cars Help Rural Towns?
 
 ```yaml
 type: NormalExercise
@@ -577,7 +577,7 @@ success_msg("Congratulations! By now, you should have a sense of the sorts of ca
 
 ---
 
-## Assumptions of Difference-in-Differences Analysis
+## The Assumptions of Difference-in-Differences Analysis
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -604,7 +604,7 @@ What is the main assumption that we make when we study a causal effect by compar
 
 ---
 
-## Advantage of Longitudinal Data
+## The Advantage of Longitudinal Data
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -628,11 +628,11 @@ What is the main advantage you get from studying a causal effect with longitudin
 - Correct! This is especially the case when we use time-series data. Systematic differences between the treatment and control group are only important if we expect the treatment to have a difference effect on different types of people. For example, if it turned out that the death penalty was only a deterrent for homicide in states with high urban populations, but our treatment group only contained states with high rural populations, we would not see any causal effect of the death penalty on homicide rates.
 - Actually, you can see systematic changes across a population with time even with repeated cross sectional datasets. Try again.
 - This is close, but having larger samples is generally good for studying causal effects.
-```
+
 
 ---
 
-## Repeated cross-sectional data versus time-series data
+## Repeated Cross-Sectional Data vs Time-Series Data
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -661,7 +661,7 @@ When we have repeated cross-sectional data, we have a different sample at each t
 
 ---
 
-## Practice implementing difference-in-differences models
+## Practice Implementing a Difference-in-Differences Model
 
 ```yaml
 type: NormalExercise
@@ -752,7 +752,7 @@ success_msg("Good work! Implementing a difference-in-differences analysis is rel
 
 ---
 
-## Practice Correcting for Changing Measurements
+## Practice Correcting for Changing Measurements.
 
 ```yaml
 type: NormalExercise
@@ -856,7 +856,7 @@ success_msg("Good work! With the standardized measurements, we do indeed see an 
 
 ---
 
-## Panel Data Terminology
+## Terminology of Panel Data
 
 ```yaml
 type: VideoExercise
@@ -870,7 +870,7 @@ video_link: //player.vimeo.com/video/226207441
 
 ---
 
-## Why use a lagged dependent variable?
+## Why Should We Use a Lagged Dependent Variable?
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -899,7 +899,7 @@ Think about what you know about causal inference. What might be an advantage for
 
 ---
 
-## Confounders in fixed effects models
+## Confounders with Fixed Effects Models
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -924,7 +924,7 @@ Suppose we are interested in how exercising in a gym affects a person's self-est
 
 ---
 
-## Practice Running Fixed and Random Effects Regression Models
+## Practice Running Fixed & Random Effects Regression Models
 
 ```yaml
 type: NormalExercise
@@ -1060,7 +1060,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ---
 
-## Let's Code: Will Subsidies for Electric Cars Help Rural Towns?
+## Let's Code - Will Subsidies for Electric Cars Help Rural Towns?
 
 ```yaml
 type: VideoExercise
@@ -1074,7 +1074,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ---
 
-## Putting It All Together: Will Subsidies for Electric Cars Help Rural Towns?
+## Putting It All Together: Will Subsidies for Electric Cars Help Out Rural Towns?
 
 ```yaml
 type: NormalExercise
