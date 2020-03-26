@@ -3,7 +3,7 @@ title: Regressions
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Regression course here on DataCamp.'
 ---
 
-## Basic Elements of a Regression Table
+## The Basic Elements of a Regression Table
 
 ```yaml
 type: VideoExercise
@@ -17,7 +17,7 @@ video_link: //player.vimeo.com/video/217554002
 
 ---
 
-## Interpreting Regressions
+## Interpreting Regressions.
 
 ```yaml
 type: MultipleChoiceExercise
@@ -54,7 +54,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 
 ---
 
-## Reversing Causal Direction
+## Reversing the Causal Direction?
 
 ```yaml
 type: MultipleChoiceExercise
@@ -98,7 +98,7 @@ ex() %>% check_mc(3, feedback_msgs = c(msg1, msg2, msg3))
 
 ---
 
-## Reading a Bivariate Regression Table
+## Reading a Bivariate Regression Table.
 
 ```yaml
 type: MultipleChoiceExercise
@@ -147,7 +147,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 
 ---
 
-## Multiple Regression Models
+## Multiple Regression Models.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -182,7 +182,7 @@ Papers often report several regression models next to each other. This table sho
 
 ---
 
-## The Credibility of the Unconfoundedness Assumption
+## The Credibility of the Unconfoundedness Assumption.
 
 ```yaml
 type: VideoExercise
@@ -196,7 +196,7 @@ video_link: //player.vimeo.com/video/217555887
 
 ---
 
-## The Uncounfoundedness Assumption
+## The Uncounfoundedness Assumption.
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -225,7 +225,7 @@ Although regression models are great for summarizing the association between var
 
 ---
 
-## Let’s Code: Toying with OLS - Outliers & Statistical Power
+## Let’s Code: Toying with OLS - Outliers & Statistical Power.
 
 ```yaml
 type: VideoExercise
@@ -237,7 +237,7 @@ video_link: //player.vimeo.com/video/293196260
 
 ---
 
-## Toying with OLS I: Outliers
+## Toying with OLS I: Outliers.
 
 ```yaml
 type: NormalExercise
@@ -347,7 +347,7 @@ success_msg("Good work! Outliers typically effect the slope of a bivariate regre
 
 ---
 
-## Toying with OLS II: Statistical Power
+## Toying with OLS II: Statistical Power.
 
 ```yaml
 type: NormalExercise
@@ -459,7 +459,7 @@ success_msg("Good work! Larger datasets tend to be more robust to 'statistical n
 
 ---
 
-## Let’s Code: Toying with OLS III - Model Selection
+## Let’s Code: Toying with OLS III - Model Selection.
 
 ```yaml
 type: VideoExercise
@@ -471,7 +471,7 @@ video_link: //player.vimeo.com/video/293196276
 
 ---
 
-## Toying with OLS III: Model Selection
+## Toying with OLS III: Model Selection.
 
 ```yaml
 type: NormalExercise
@@ -573,7 +573,7 @@ success_msg("Good work! Even though our model in Solution 1 appears similar to o
 
 ---
 
-## Matching Methods
+## Matching Methods.
 
 ```yaml
 type: VideoExercise
@@ -587,7 +587,7 @@ video_link: //player.vimeo.com/video/217555077
 
 ---
 
-## Let’s Code: Communication Skills in Video Games
+## Let’s Code: Communication Skills in Video Games.
 
 ```yaml
 type: VideoExercise
@@ -599,7 +599,7 @@ video_link: //player.vimeo.com/video/293196315
 
 ---
 
-## Communication Skills in Video Games: Do We Need to Use Matching Methods?
+## Communication Skills in Video Games: Do We Have to Use Matching Methods?
 
 ```yaml
 type: NormalExercise
@@ -702,7 +702,7 @@ success_msg("Good work! There appears to be a positive and statistically signifi
 
 ---
 
-## Communication Skills in Video Games: Propensity Score Matching in R
+## Communication Skills in Video Games: Propensity Score Matching in R.
 
 ```yaml
 type: NormalExercise
