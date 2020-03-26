@@ -62,7 +62,7 @@ video_link: //player.vimeo.com/video/231747485
 
 ---
 
-## ATEs, CATEs, and LATEs: What's the Difference?
+## ATEs, CATEs, and LATEs: What is the Difference?
 
 ```yaml
 type: VideoExercise
