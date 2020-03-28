@@ -7,7 +7,7 @@ description: 'This chapter will briefly review and summarize the methods and arg
 
 ```yaml
 type: VideoExercise
-key:
+key: 
 lang: r
 xp: 50
 skills: 1
