@@ -7,7 +7,7 @@ description: 'This chapter will briefly review and summarize the methods and arg
 
 ```yaml
 type: VideoExercise
-key: 
+key: 975f8f0633
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/231747529
 
 ```yaml
 type: VideoExercise
-key:
+key: 69d49befe4
 lang: r
 xp: 50
 skills: 1
@@ -36,7 +36,7 @@ video_link: //player.vimeo.com/video/231747639
 
 ```yaml
 type: VideoExercise
-key:
+key: 2924a5cf9c
 lang: r
 xp: 50
 skills: 1
@@ -51,7 +51,7 @@ video_link: //player.vimeo.com/video/231747398
 
 ```yaml
 type: VideoExercise
-key:
+key: 560c90847e
 lang: r
 xp: 50
 skills: 1
@@ -66,7 +66,7 @@ video_link: //player.vimeo.com/video/231747485
 
 ```yaml
 type: VideoExercise
-key:
+key: 956a7d02f2
 lang: r
 xp: 50
 skills: 1
@@ -81,7 +81,7 @@ video_link: //player.vimeo.com/video/219561649
 
 ```yaml
 type: VideoExercise
-key:
+key: 975f8d0633
 lang: r
 xp: 50
 skills: 1
