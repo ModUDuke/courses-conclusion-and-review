@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key:
+key: 38caf431ad
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/217554002
 
 ```yaml
 type: MultipleChoiceExercise
-key:
+key: 38caf432ad
 lang: r
 xp: 50
 skills: 1
@@ -41,15 +41,25 @@ eGulf runs an OLS regression to determine the relationship between WePhone age a
 
 `@pre_exercise_code`
 ```{r}
-msg1="Correct! As the age of WePhones increased, the price at which they were sold decreased."
-msg2="Although the plot does not indicate if their results were statistically significant, they do indicate a relationship. Try again."
-msg3="Think this through carefully. Does an increase in age increase or decrease the price sold of a WePhone? Try again."
-ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
+set.seed(1)
+library(ggplot2)
+WePhone<-data.frame(age=rep(c(1,2,3,4,5),5))
+WePhone$Feedback<-round(rnorm(n=25,mean=90,sd=3))
+WePhone$Age<-WePhone$age+rnorm(n=25,mean=0,sd=.3)-WePhone$Feedback/10+mean(WePhone$Feedback/10)
+WePhone$Value<-500-(9*WePhone$age^2)+ round(rnorm(n=25,mean=0,sd=30))
+names(WePhone)[4]<-"Price Sold"
+WePhone$`Price Sold`<-WePhone$`Price Sold`+20*(WePhone$Feedback-mean(WePhone$Feedback))
+model<-lm(`Price Sold`~Age,data=WePhone)
+ggplot(data=WePhone,aes(Age, `Price Sold`))+geom_point()+geom_abline(intercept = model$coefficients[1],slope=model$coefficients[2])+ ggtitle("Scatter Plot and OLS Regression of WePhone Age on Price Sold")
+
 ```
 
 `@sct`
 ```{r}
-
+msg1="Correct! As the age of WePhones increased, the price at which they were sold decreased."
+msg2="Although the plot does not indicate if their results were statistically significant, they do indicate a relationship. Try again."
+msg3="Think this through carefully. Does an increase in age increase or decrease the price sold of a WePhone? Try again."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
 ---
@@ -58,7 +68,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3))
 
 ```yaml
 type: MultipleChoiceExercise
-key:
+key: d3362faa14
 lang: r
 xp: 50
 skills: 1
@@ -102,7 +112,7 @@ ex() %>% check_mc(3, feedback_msgs = c(msg1, msg2, msg3))
 
 ```yaml
 type: MultipleChoiceExercise
-key:
+key: 90d6e52a99
 lang: r
 xp: 50
 skills: 1
@@ -151,7 +161,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 1272dad180
 lang: r
 xp: 50
 skills: 1
@@ -186,7 +196,7 @@ Papers often report several regression models next to each other. This table sho
 
 ```yaml
 type: VideoExercise
-key:
+key: 3a87588a15
 lang: r
 xp: 50
 skills: 1
@@ -200,7 +210,7 @@ video_link: //player.vimeo.com/video/217555887
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 3f12d7ac14
 lang: r
 xp: 50
 skills: 1
@@ -229,7 +239,7 @@ Although regression models are great for summarizing the association between var
 
 ```yaml
 type: VideoExercise
-key:
+key: 0043c7bdab
 xp: 50
 video_link: //player.vimeo.com/video/293196260
 ```
@@ -241,7 +251,7 @@ video_link: //player.vimeo.com/video/293196260
 
 ```yaml
 type: NormalExercise
-key:
+key: 1bb5748da5
 lang: r
 xp: 100
 skills: 1
@@ -351,7 +361,7 @@ success_msg("Good work! Outliers typically effect the slope of a bivariate regre
 
 ```yaml
 type: NormalExercise
-key:
+key: a1c86897de
 lang: r
 xp: 100
 skills: 1
@@ -463,7 +473,7 @@ success_msg("Good work! Larger datasets tend to be more robust to 'statistical n
 
 ```yaml
 type: VideoExercise
-key:
+key: 4ca7d61f52
 xp: 50
 video_link: //player.vimeo.com/video/293196276
 ```
@@ -475,7 +485,7 @@ video_link: //player.vimeo.com/video/293196276
 
 ```yaml
 type: NormalExercise
-key:
+key: 23daa37fbe
 lang: r
 xp: 100
 skills: 1
@@ -577,7 +587,7 @@ success_msg("Good work! Even though our model in Solution 1 appears similar to o
 
 ```yaml
 type: VideoExercise
-key:
+key: 1665b0b39b
 lang: r
 xp: 50
 skills: 1
@@ -591,7 +601,7 @@ video_link: //player.vimeo.com/video/217555077
 
 ```yaml
 type: VideoExercise
-key:
+key: abcb56164f
 xp: 50
 video_link: //player.vimeo.com/video/293196315
 ```
@@ -603,7 +613,7 @@ video_link: //player.vimeo.com/video/293196315
 
 ```yaml
 type: NormalExercise
-key:
+key: 02cba6354e
 lang: r
 xp: 100
 skills: 1
@@ -706,7 +716,7 @@ success_msg("Good work! There appears to be a positive and statistically signifi
 
 ```yaml
 type: NormalExercise
-key:
+key: 7b9e526139
 lang: r
 xp: 100
 skills: 1
