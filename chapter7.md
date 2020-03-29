@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key:
+key: 77e659ac36
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/219558904
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 77e659ac35
 lang: r
 xp: 50
 skills: 1
@@ -50,7 +50,7 @@ As the videos discussed, there are some strict requirements to use instrumental 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 22957c2411
 lang: r
 xp: 50
 skills: 1
@@ -79,7 +79,7 @@ Now let us review the relationship between the instrument and the treatment.  Wh
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 8cf442d5b7
 lang: r
 xp: 50
 skills: 1
@@ -108,7 +108,7 @@ The instrument is one of many variables that could be confounding the effect of 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 431456917c
 lang: r
 xp: 50
 skills: 1
@@ -137,7 +137,7 @@ So now we can summarize the main purpose of IV analysis. Once again, how does th
 
 ```yaml
 type: VideoExercise
-key:
+key: ffa44f7179
 lang: r
 xp: 50
 skills: 1
@@ -151,7 +151,7 @@ video_link: //player.vimeo.com/video/219565557
 
 ```yaml
 type: VideoExercise
-key:
+key: 0999e6e6f0
 lang: r
 xp: 50
 skills: 1
@@ -165,7 +165,7 @@ video_link: //player.vimeo.com/video/219559996
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: d8cf103994
 lang: r
 xp: 50
 skills: 1
@@ -196,7 +196,7 @@ To untangle this causal relationship, Phoebe decides to conduct an instrumental 
 
 ```yaml
 type: VideoExercise
-key:
+key: 3bc678cfb9
 xp: 50
 video_link: //player.vimeo.com/video/306239756
 ```
@@ -208,7 +208,7 @@ video_link: //player.vimeo.com/video/306239756
 
 ```yaml
 type: NormalExercise
-key:
+key: 0a5fd5af11
 lang: r
 xp: 100
 skills: 1
@@ -585,7 +585,7 @@ success_msg("Good work! This estimate for the causal effect of insurance on our 
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 0873ca9d88
 lang: r
 xp: 50
 skills: 1
@@ -614,7 +614,7 @@ Which of the following variables is *not* a key (required) variable in a regress
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: c874bebcac
 lang: r
 xp: 50
 skills: 1
@@ -645,7 +645,7 @@ So in this study, which variable is the outcome variable, which is the running v
 
 ```yaml
 type: VideoExercise
-key:
+key: b56a22797e
 lang: r
 xp: 50
 skills: 1
@@ -659,7 +659,7 @@ video_link: //player.vimeo.com/video/218502963
 
 ```yaml
 type: VideoExercise
-key:
+key: 1d22c71666
 xp: 50
 video_link: //player.vimeo.com/video/306239772
 ```
@@ -671,7 +671,7 @@ video_link: //player.vimeo.com/video/306239772
 
 ```yaml
 type: NormalExercise
-key:
+key: 32a4f677f9
 lang: r
 xp: 100
 skills: 1
@@ -1067,7 +1067,7 @@ success_msg("Good work! That outlier just below the cutoff looks like a clear si
 
 ```yaml
 type: VideoExercise
-key:
+key: 3140530dac
 lang: r
 xp: 50
 skills: 1
@@ -1081,7 +1081,7 @@ video_link: //player.vimeo.com/video/218504968
 
 ```yaml
 type: NormalExercise
-key:
+key: 6bf34a7275
 lang: r
 xp: 100
 skills: 1
@@ -3142,7 +3142,7 @@ success_msg("Good work! From the looks of it, the quadratic specification of hal
 
 ```yaml
 type: VideoExercise
-key:
+key: 1d0efb7311
 lang: r
 xp: 50
 skills: 1
