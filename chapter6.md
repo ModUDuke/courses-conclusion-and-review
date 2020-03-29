@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key:
+key: bc0c024f07
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/226208683
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: bc0c024f08
 lang: r
 xp: 50
 skills: 1
@@ -50,7 +50,7 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
 - Correct! This is exactly how we interpret difference-in-differences outcomes. Even though Springfield had higher rates of diabetes following the implementation of its tax on corn syrup products, it appears that Springfield's rate diabetes grew at a smaller rate than in Laughterville.
 - Not quite. Try comparing the outcomes of Springfield to Laughterville.
-```
+
 
 ---
 
@@ -58,7 +58,7 @@ Based on this table, which conclusion about the effect of taxing corn syrup prod
 
 ```yaml
 type: VideoExercise
-key:
+key: 0d960ed709
 lang: r
 xp: 50
 skills: 1
@@ -72,7 +72,7 @@ video_link: //player.vimeo.com/video/226206681
 
 ```yaml
 type: MultipleChoiceExercise
-key:
+key: 5226527508
 lang: r
 xp: 50
 skills: 1
@@ -114,7 +114,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 8862cc8d4c
 lang: r
 xp: 50
 skills: 1
@@ -144,7 +144,7 @@ Think about what you know about causal inference. What might be an advantage for
 
 ```yaml
 type: VideoExercise
-key:
+key: d8dac97b22
 lang: r
 xp: 50
 skills: 1
@@ -158,7 +158,7 @@ video_link: //player.vimeo.com/video/226207544
 
 ```yaml
 type: VideoExercise
-key:
+key: 19920e92a6
 lang: r
 xp: 50
 skills: 1
@@ -172,7 +172,7 @@ video_link: //player.vimeo.com/video/314102565
 
 ```yaml
 type: NormalExercise
-key:
+key: c1b037d54e
 lang: r
 xp: 100
 skills: 1
@@ -308,7 +308,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ```yaml
 type: VideoExercise
-key:
+key: 65f4ff211a
 lang: r
 xp: 50
 skills: 1
@@ -322,7 +322,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ```yaml
 type: NormalExercise
-key:
+key: e799cb8516
 lang: r
 xp: 100
 skills: 1
@@ -581,7 +581,7 @@ success_msg("Congratulations! By now, you should have a sense of the sorts of ca
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: c2d707b4b8
 lang: r
 xp: 50
 skills: 1
@@ -608,7 +608,7 @@ What is the main assumption that we make when we study a causal effect by compar
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: cd49576c07
 lang: r
 xp: 50
 skills: 1
@@ -636,7 +636,7 @@ What is the main advantage you get from studying a causal effect with longitudin
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: d1ecc09b78
 lang: r
 xp: 50
 skills: 1
@@ -665,7 +665,7 @@ When we have repeated cross-sectional data, we have a different sample at each t
 
 ```yaml
 type: NormalExercise
-key:
+key: 0935eeebd0
 lang: r
 xp: 100
 skills: 1
@@ -756,7 +756,7 @@ success_msg("Good work! Implementing a difference-in-differences analysis is rel
 
 ```yaml
 type: NormalExercise
-key:
+key: d31f6a933d
 lang: r
 xp: 100
 skills: 1
@@ -860,7 +860,7 @@ success_msg("Good work! With the standardized measurements, we do indeed see an 
 
 ```yaml
 type: VideoExercise
-key:
+key: 71b8f49dd5
 lang: r
 xp: 50
 skills: 1
@@ -874,7 +874,7 @@ video_link: //player.vimeo.com/video/226207441
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 8c5abdde47
 lang: r
 xp: 50
 skills: 1
@@ -903,7 +903,7 @@ Think about what you know about causal inference. What might be an advantage for
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 8558b47720
 lang: r
 xp: 50
 skills: 1
@@ -928,7 +928,7 @@ Suppose we are interested in how exercising in a gym affects a person's self-est
 
 ```yaml
 type: NormalExercise
-key:
+key: 01c162cb87
 lang: r
 xp: 100
 skills: 1
@@ -1064,7 +1064,7 @@ success_msg("Good work! You now know the basics to estimating fixed and random e
 
 ```yaml
 type: VideoExercise
-key:
+key: dd8be1b9a4
 lang: r
 xp: 50
 skills: 1
@@ -1078,7 +1078,7 @@ video_link: //player.vimeo.com/video/314102576
 
 ```yaml
 type: NormalExercise
-key:
+key: a13f46371b
 lang: r
 xp: 100
 skills: 1
