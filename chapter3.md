@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key:
+key: 211885a5c3
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/198212082
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 2f330faa51
 lang: r
 xp: 50
 skills: 1
@@ -53,7 +53,7 @@ Which of the following answers could support a **causal explanation** for this r
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 985255540b
 lang: r
 xp: 50
 skills: 1
@@ -82,7 +82,7 @@ Annual Apple iPhone sales are highly correlated with annual eBay sales. If this 
 
 ```yaml
 type: VideoExercise
-key:
+key: 246bdcd5a4
 lang: r
 xp: 50
 skills: 1
@@ -96,7 +96,7 @@ video_link: //player.vimeo.com/video/205124286
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 017a7dbcd4
 lang: r
 xp: 50
 skills: 1
@@ -125,7 +125,7 @@ Why might it be risky to implement a policy that has an that has average treatme
 
 ```yaml
 type: VideoExercise
-key:
+key: 93c820b6f5
 lang: r
 xp: 50
 skills: 1
@@ -139,7 +139,7 @@ video_link: //player.vimeo.com/video/198212094
 
 ```yaml
 type: VideoExercise
-key:
+key: c7fefe9955
 xp: 50
 video_link: //player.vimeo.com/video/279737708
 ```
@@ -151,7 +151,7 @@ video_link: //player.vimeo.com/video/279737708
 
 ```yaml
 type: NormalExercise
-key:
+key: d83627517a
 lang: r
 xp: 100
 skills: 1
@@ -217,7 +217,7 @@ success_msg("Good work!")
 
 ```yaml
 type: NormalExercise
-key:
+key: 24419a9971
 lang: r
 xp: 100
 skills: 1
@@ -281,7 +281,7 @@ success_msg("Good work! Since there is no significant difference in rates of gen
 
 ```yaml
 type: NormalExercise
-key:
+key: 026a8e4ecc
 lang: r
 xp: 100
 skills: 1
@@ -349,7 +349,7 @@ success_msg("Good work. The high p-value means that the estimate is not statisti
 
 ```yaml
 type: NormalExercise
-key:
+key: e810ded9f0
 lang: r
 xp: 100
 skills: 1
@@ -410,7 +410,7 @@ success_msg("Good work. Our estimate for the treatment effect on diastolic blood
 
 ```yaml
 type: VideoExercise
-key:
+key: ebd1b39382
 lang: r
 xp: 50
 skills: 1
@@ -424,7 +424,7 @@ video_link: //player.vimeo.com/video/198212091
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 5cbf8ec701
 lang: r
 xp: 50
 skills: 1
@@ -455,7 +455,7 @@ Suppose that, of the group that received the mail offer, 40% of people opted in.
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: f8a2acb234
 lang: r
 xp: 50
 skills: 1
@@ -486,7 +486,7 @@ Which one of the following approaches is *NOT* a way to deal with treatment nonc
 
 ```yaml
 type: VideoExercise
-key:
+key: f2be66a4bf
 lang: r
 xp: 50
 skills: 1
@@ -500,7 +500,7 @@ video_link: //player.vimeo.com/video/199856738
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 57f8ecba1f
 lang: r
 xp: 50
 skills: 1
@@ -529,7 +529,7 @@ Which of the following is an accurate description of an "as-if" natural experime
 
 ```yaml
 type: VideoExercise
-key:
+key: aaf9d38420
 xp: 50
 video_link: //player.vimeo.com/video/279737460
 ```
@@ -541,7 +541,7 @@ video_link: //player.vimeo.com/video/279737460
 
 ```yaml
 type: NormalExercise
-key:
+key: 6c6e8bd0f6
 lang: r
 xp: 100
 skills: 2
@@ -663,7 +663,7 @@ success_msg("Great Job! Notice that the maximum value is much larger than the me
 
 ```yaml
 type: NormalExercise
-key:
+key: 1a8d9df47f
 lang: r
 xp: 100
 skills: 2
@@ -778,7 +778,7 @@ success_msg("Nice work so far!")
 
 ```yaml
 type: NormalExercise
-key:
+key: 75d5b765a9
 lang: r
 xp: 100
 skills: 2
@@ -898,7 +898,7 @@ success_msg("Great! We've made a lot of progress, so let's look further at the q
 
 ```yaml
 type: NormalExercise
-key:
+key: f776a54033
 lang: r
 xp: 100
 skills: 2
@@ -1024,7 +1024,7 @@ success_msg("Whew! We've explored the data, dealt with the issues, and now we ca
 
 ```yaml
 type: NormalExercise
-key:
+key: eb6f954699
 lang: r
 xp: 100
 skills: 2
