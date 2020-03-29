@@ -1,6 +1,21 @@
 ---
 title: Introduction
 description: 'If you want to go through these topics in more detail, take our free Causal Inference with R - Introduction course here on DataCamp.'
+
+---
+
+## Correlation vs. Causation
+
+```yaml
+type: VideoExercise
+key:
+lang: r
+xp: 50
+skills: 1
+video_link: //player.vimeo.com/video/230622365
+```
+
+
 ---
 
 ## Correlation versus Causation
