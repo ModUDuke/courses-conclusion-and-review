@@ -7,7 +7,7 @@ description: 'If you want to go through these topics in more detail, take our fr
 
 ```yaml
 type: VideoExercise
-key:
+key: 354cb7703f
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/231746347
 
 ```yaml
 type: VideoExercise
-key:
+key: 454cb7703f
 lang: r
 xp: 50
 skills: 1
@@ -35,7 +35,7 @@ video_link: //player.vimeo.com/video/231746571
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: b4a61819ef
 lang: r
 xp: 50
 skills: 1
@@ -63,7 +63,7 @@ Someone doing a Big Data analysis tells you the following. "I included over 1,00
 
 ```yaml
 type: VideoExercise
-key:
+key: d91889e381
 lang: r
 xp: 50
 skills: 1
@@ -76,7 +76,7 @@ video_link: //player.vimeo.com/video/231747210
   
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: f19e324a99
 lang: r
 xp: 50
 skills: 1
@@ -105,7 +105,7 @@ What is the best reason to use a model to find causality instead of a randomized
 ## Let's Code: Is Red Wine The Secret to Living Longer?
 ```yaml
 type: VideoExercise 
-key:
+key: 9d91e1aff7
 lang: r
 xp: 50 
 skills: 1 
@@ -118,7 +118,7 @@ video_link: //player.vimeo.com/video/379871850
 
 ```yaml
 type: NormalExercise
-key:
+key: f193b5ffa5
 lang: r
 xp: 100
 skills: 1
@@ -223,9 +223,9 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
 ---
 ## Red Wine Study: Red Wine Study: Red Wine Study: Does This Model Hold Up Under Pressure?
   
---- key:b5662d45a2
+```yaml
 type: NormalExercise
-key:
+key: 6055e77000
 lang: r
 xp: 100
 skills: 1
@@ -434,7 +434,7 @@ success_msg("Nice work! This dataset has a lot more variables and participants t
 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: f1891254da
 lang: r
 xp: 50
 skills: 1
@@ -463,7 +463,7 @@ The results of the previous exercise were not as clear as we were hoping: instea
   
 ```yaml
 type: NormalExercise
-key:
+key: f1841254da
 lang: r
 xp: 100
 skills: 1
